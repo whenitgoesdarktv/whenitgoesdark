@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /thanks.html
+Disallow: /media/
 
 Sitemap: https://whenitgoesdarktv.github.io/whenitgoesdark/sitemap.xml
-Disallow: /media/
