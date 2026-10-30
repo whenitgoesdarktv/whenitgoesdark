@@ -3,3 +3,4 @@ Allow: /
 Disallow: /thanks.html
 
 Sitemap: https://whenitgoesdarktv.github.io/whenitgoesdark/sitemap.xml
+Disallow: /media/
