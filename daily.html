@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>STAY or LEAVE Daily · When It Goes Dark</title>
+<meta name="description" content="One storm decision a day. Pick STAY or LEAVE, see the real rule behind it, and keep your streak going.">
+<meta property="og:title" content="STAY or LEAVE Daily">
+<meta property="og:description" content="One storm decision a day. Can you keep your streak?">
+<meta property="og:image" content="https://whenitgoesdarktv.github.io/whenitgoesdark/img/ep01-cover.jpg">
+<meta name="theme-color" content="#090e18">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root { --night:#090e18; --band:#0f1726; --panel:#141e31; --line:#24324c; --text:#ece6d9; --muted:#a3acbf; --amber:#ffb547; --stay:#ffc766; --leave:#8ec5ff; --ok:#86d69a; --bad:#ff7a66;
+  --display:"Anton","Oswald","Arial Narrow",Impact,sans-serif; --body:"Barlow","Segoe UI",Roboto,Helvetica,Arial,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; color-scheme: dark; }
+* { box-sizing: border-box; } [hidden] { display: none !important; }
+html, body { margin: 0; background: var(--night); color: var(--text); }
+body { font-family: var(--body); font-size: 17px; line-height: 1.5; padding: max(14px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+a { color: var(--amber); } button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 540px; margin: 0 auto; display: grid; gap: 14px; }
+.top { display: flex; justify-content: space-between; gap: 10px; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.top a { color: var(--muted); text-decoration: none; }
+.title { font-family: var(--display); font-weight: 400; font-size: clamp(42px, 12vw, 60px); line-height: .95; margin: 0; }
+.title .s { color: var(--stay); } .title .o { color: var(--muted); font-size: .5em; vertical-align: .35em; padding: 0 .12em; } .title .l { color: var(--leave); }
+.meta { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; display: flex; gap: 14px; flex-wrap: wrap; }
+.meta b { color: var(--amber); font-weight: 600; }
+.card { background: var(--band); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.scene { position: relative; aspect-ratio: 4 / 3; max-width: 100%; overflow: hidden; background: #060a12; }
+.scene img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.scene::after { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 70% at 18% -10%, rgba(255,181,71,.28), rgba(255,181,71,0) 55%), linear-gradient(180deg, rgba(9,14,24,0) 45%, rgba(15,23,38,.95) 100%); }
+.status { position: absolute; left: 10px; right: 10px; top: 10px; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 6px; z-index: 1; }
+.chip { background: rgba(9,14,24,.85); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 4px 6px; text-align: center; min-width: 0; }
+.chip span { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--muted); }
+.chip b { display: block; font-family: var(--display); font-weight: 400; font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip b.off { color: var(--bad); } .chip b.low { color: var(--amber); }
+.sname { position: absolute; left: 14px; right: 14px; bottom: 10px; z-index: 1; font-family: var(--display); font-size: 27px; line-height: 1.05; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+.prompt { padding: 14px 16px 4px; margin: 0; font-size: 18px; }
+.ask { padding: 6px 16px 0; font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--amber); text-transform: uppercase; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px 16px 16px; }
+.choice { border: 2px solid var(--line); background: var(--panel); border-radius: 12px; padding: 14px 10px 12px; cursor: pointer; text-align: center; display: grid; gap: 4px; min-width: 0; transition: transform .12s ease, border-color .12s ease; }
+.choice .k { font-family: var(--display); font-size: clamp(21px, 6vw, 29px); line-height: 1; overflow-wrap: anywhere; }
+.choice .d { font-size: 13.5px; color: var(--muted); line-height: 1.3; }
+.choice[data-side="a"] .k { color: var(--stay); } .choice[data-side="b"] .k { color: var(--leave); }
+.choice:hover:not([disabled]) { border-color: var(--amber); transform: translateY(-2px); }
+.choice[disabled] { cursor: default; } .choice.picked { border-color: var(--amber); background: #22314c; } .choice.dim { opacity: .5; }
+.reveal { display: grid; gap: 12px; padding: 16px; border-top: 1px solid var(--line); background: linear-gradient(180deg, #16223a, var(--band)); }
+.badge { justify-self: start; font-family: var(--mono); font-weight: 600; font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; padding: 5px 9px; border-radius: 6px; color: #0c1424; }
+.badge.yes { background: var(--ok); } .badge.no { background: var(--bad); }
+.reveal h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 28px; line-height: 1.05; }
+.rule small { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
+.lando { display: flex; gap: 10px; align-items: center; background: #101b30; border-radius: 10px; padding: 10px 12px; font-weight: 600; color: #ffd38c; }
+.lando img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: 50% 30%; flex: 0 0 44px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { border: 0; border-radius: 10px; padding: 12px 16px; font-family: var(--mono); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn.primary { background: var(--amber); color: #121a2a; } .btn.ghost { background: transparent; color: var(--text); border: 1.5px solid var(--line); }
+.toast { font-size: 14px; color: var(--ok); min-height: 1.2em; }
+.sharebox { width: 100%; min-height: 90px; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px; font: 14px/1.4 var(--body); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.stat { background: var(--band); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.stat b { display: block; font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1; color: var(--amber); font-variant-numeric: tabular-nums; }
+.stat span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+.more { background: var(--band); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; gap: 6px; }
+.more h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 22px; }
+.more p { margin: 0; color: var(--muted); font-size: 15px; }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+@keyframes rise { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+.reveal { animation: rise .35s ease both; }
+@media (prefers-reduced-motion: reduce) { .reveal { animation: none; } .choice { transition: none; } }
+@media (max-width: 380px) { .status { grid-template-columns: repeat(2, minmax(0,1fr)); } .sname { font-size: 22px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./">← When It Goes Dark</a><a href="game.html">Story game →</a></div>
+  <h1 class="title"><span class="s">STAY</span><span class="o">or</span><span class="l">LEAVE</span></h1>
+  <div class="meta"><b id="dayLabel">Daily</b><span id="dateLabel"></span></div>
+  <article class="card" aria-live="polite">
+    <div class="scene"><img id="sceneImg" src="img/game/s14_flood.webp" alt=""><div class="status" id="status"></div><div class="sname" id="sname"></div></div>
+    <p class="prompt" id="prompt"></p>
+    <div class="ask" id="ask">What do you do?</div>
+    <div class="choices">
+      <button class="choice" id="choiceA" data-side="a" type="button"><span class="k" id="kA"></span><span class="d" id="dA"></span></button>
+      <button class="choice" id="choiceB" data-side="b" type="button"><span class="k" id="kB"></span><span class="d" id="dB"></span></button>
+    </div>
+    <section class="reveal" id="reveal" hidden>
+      <span class="badge" id="badge"></span>
+      <h2 id="verdictH"></h2>
+      <div class="rule" id="rule"></div>
+      <div class="lando"><img src="img/game/s04_mug.webp" alt="Lando the cat"><span id="landoLine"></span></div>
+      <div class="row"><button class="btn primary" id="shareBtn" type="button">Copy my result</button></div>
+      <div class="toast" id="toast" role="status"></div>
+      <textarea class="sharebox" id="shareBox" readonly hidden aria-label="Your result to copy"></textarea>
+    </section>
+  </article>
+  <section class="stats" aria-label="Your record">
+    <div class="stat"><b id="stStreak">0</b><span>Day streak</span></div>
+    <div class="stat"><b id="stPlayed">0</b><span>Days played</span></div>
+    <div class="stat"><b id="stRule">0</b><span>Matched the rule</span></div>
+  </section>
+  <section class="more" id="after" hidden>
+    <h3 id="nextLine"></h3>
+    <p>Want more tonight? Play <a href="game.html">The 14th Floor</a>, the choose-your-path story with 7 endings.</p>
+  </section>
+  <footer>
+    <div>A new storm decision every day at midnight, your time. Every answer comes from an official source, linked under the rule. General information, not professional advice: in a real emergency, follow your local officials and call 911.</div>
+    <div>Watch the series and vote what happens next: <b>@whenitgoesdarktv</b></div>
+  </footer>
+</div>
+<script>
+(() => {
+  "use strict";
+  const S = [
+    { id: "s01", name: "The order comes in", img: "s06_radio", pos: "50% 55%",
+      status: [["POWER","ON"],["WATER","6 GAL"],["GAS","HALF","low"],["PHONE","64%"]],
+      prompt: "Hurricane warning. Officials just ordered Zone A to evacuate. You live in Zone A, on the 2nd floor. The storm isn't here yet and the street is dry.",
+      a: ["STAY", "Ride it out at home"], b: ["LEAVE", "Go now"], right: "b",
+      head: "Leave right away.",
+      rule: "If officials order your zone to evacuate, leave immediately. Flooding from storm surge is a major killer. Your safest option is often friends or family outside the evacuation zone.",
+      src: ["National Weather Service: Hurricane Safety", "https://www.weather.gov/media/safety/hurricane-safety_flyer.pdf"],
+      src2: ["Florida Division of Emergency Management: Know Your Zone", "https://www.floridadisaster.org/knowyourzone/"],
+      lando: "Lando is already in the carrier. (He is not. He is under the bed.)" },
+    { id: "s02", name: "Five hours in the dark", img: "s08_fridge", pos: "50% 45%",
+      status: [["POWER","OFF","off"],["WATER","6 GAL"],["FOOD","4 DAYS"],["PHONE","58%"]],
+      prompt: "The power went out 5 hours ago. Nobody opened the fridge. The chicken you were saving for dinner is still inside.",
+      a: ["KEEP", "Cook it tonight"], b: ["TOSS", "Throw it out"], right: "b",
+      head: "Toss it.",
+      rule: "A closed fridge keeps food cold for about 4 hours. After that, throw out meat, poultry, fish, eggs and milk. Never taste food to check it.",
+      src: ["FoodSafety.gov (USDA): Keep food safe when you lose power", "https://www.foodsafety.gov/blog/three-ways-keep-food-safe-when-you-lose-power"],
+      lando: "Lando volunteers to dispose of the chicken. Request denied." },
+    { id: "s03", name: "Raining on the generator", img: "s01_face", pos: "50% 40%",
+      status: [["POWER","OFF","off"],["WATER","5 GAL"],["FOOD","3 DAYS"],["PHONE","31%","low"]],
+      prompt: "It's pouring. Your generator would stay dry in the garage if you leave the big door open all the way.",
+      a: ["GARAGE", "Door wide open"], b: ["OUTSIDE", "20 feet from the house"], right: "b",
+      head: "Outside, 20 feet away.",
+      rule: "Never run a generator inside a home or garage, even if the doors and windows are open. Carbon monoxide builds up and you can't see or smell it. Run it outdoors, at least 20 feet from windows and doors.",
+      src: ["CDC: Carbon monoxide hazard", "https://www.cdc.gov/nceh/multimedia/infographics/carbon_monoxide_danger.html"],
+      src2: ["CPSC: What to know about generators", "https://www.cpsc.gov/s3fs-public/468_WhattoKnowGenerators_2022_v5.pdf"],
+      lando: "Lando supports any plan that keeps the garage quiet for napping." },
+    { id: "s04", name: "The street is a river", img: "s14_flood", pos: "50% 62%",
+      status: [["POWER","OFF","off"],["WATER","4 GAL"],["CAR","SUV"],["PHONE","40%"]],
+      prompt: "You need to get to your sister's place inland. The water across your street looks about a foot deep, and it's moving. You drive an SUV.",
+      a: ["DRIVE", "The SUV can handle it"], b: ["TURN AROUND", "Find another way"], right: "b",
+      head: "Turn around. Don't drown.",
+      rule: "12 inches of rushing water can carry away most cars, and 2 feet can carry away SUVs and trucks. You can't tell how deep it is or whether the road under it is gone. Never drive or walk into flood water.",
+      src: ["National Weather Service: Turn Around Don't Drown", "https://www.weather.gov/safety/flood-turn-around-dont-drown"],
+      lando: "Lando has never once entered water voluntarily. Be like Lando." },
+    { id: "s05", name: "The sudden calm", img: "s02_window", pos: "50% 40%",
+      status: [["POWER","OFF","off"],["WATER","6 GAL"],["WIND","CALM"],["PHONE","52%"]],
+      prompt: "Halfway through the hurricane, the wind suddenly stops. The sky looks almost clear. You want to check the damage outside.",
+      a: ["GO OUT", "Take a quick look"], b: ["STAY IN", "Wait it out"], right: "b",
+      head: "Stay inside. That's the eye.",
+      rule: "When the eye passes over, it can feel like the storm is over. Then the wind comes back fast from the other direction. Stay inside until officials say the storm has passed.",
+      src: ["National Weather Service: Hurricane Safety", "https://www.weather.gov/media/safety/hurricane-safety_flyer.pdf"],
+      lando: "Lando stays in. Lando always stays in." },
+    { id: "s06", name: "Fourteen floors up", img: "s11_cutaway", pos: "50% 40%",
+      status: [["POWER","OFF","off"],["WATER","6 GAL"],["FLOOR","14"],["PHONE","31%","low"]],
+      prompt: "You live on the 14th floor of a sturdy building far from the water. There's no evacuation order. The wind is getting stronger.",
+      a: ["STAY ON 14", "It's your apartment"], b: ["GO DOWN", "A lower interior room"], right: "b",
+      head: "Go down to the 1st or 2nd floor.",
+      rule: "In a multi-story building away from water, ride out the wind on the 1st or 2nd floor, in an interior room or hallway away from windows.",
+      src: ["National Weather Service: Hurricane Safety", "https://www.weather.gov/media/safety/hurricane-safety_flyer.pdf"],
+      lando: "Lando would like it noted that he has to be carried down 13 flights." },
+    { id: "s07", name: "The mobile home", img: "s13_neighbor", pos: "50% 35%",
+      status: [["POWER","ON"],["WATER","4 GAL"],["ORDER","NONE"],["PHONE","88%"]],
+      prompt: "You live in a mobile home inland. Your zone hasn't been ordered to evacuate, but a hurricane will hit tonight. It's tied down well.",
+      a: ["STAY", "It's tied down"], b: ["LEAVE", "Somewhere sturdier"], right: "b",
+      head: "Leave.",
+      rule: "Mobile homes are unsafe in high winds no matter how well they're fastened to the ground. Don't ride out a hurricane in one. Go to a sturdy building or a shelter.",
+      src: ["National Weather Service: Hurricane Safety", "https://www.weather.gov/media/safety/hurricane-safety_flyer.pdf"],
+      lando: "Lando packed. Lando packed nothing. Lando is a cat." },
+    { id: "s08", name: "Lights out", img: "s01_face", pos: "50% 25%",
+      status: [["POWER","OFF","off"],["WATER","6 GAL"],["LIGHT","?","low"],["PHONE","27%","low"]],
+      prompt: "It's 9 p.m. and pitch black. You have a drawer of candles and one flashlight with old batteries.",
+      a: ["CANDLES", "Plenty of them"], b: ["FLASHLIGHT", "Swap in new batteries"], right: "b",
+      head: "Flashlights, not candles.",
+      rule: "Use flashlights in the dark, not candles: the Red Cross warns candles are a fire risk during outages. Keep a flashlight or headlamp for each person, plus extra batteries.",
+      src: ["American Red Cross: Hurricane Safety Checklist", "https://doa.la.gov/media/2rgdjww2/american-red-cross-hurricane-preparedness-checklist.pdf"],
+      lando: "Lando and open flames: a known bad combination." },
+    { id: "s09", name: "The full freezer", img: "s08_fridge", pos: "50% 60%",
+      status: [["POWER","OFF","off"],["WATER","5 GAL"],["FREEZER","30 HRS"],["PHONE","19%","low"]],
+      prompt: "Power's been out 30 hours. The freezer was packed full and nobody opened it. The meat inside still has ice crystals.",
+      a: ["REFREEZE", "Keep it"], b: ["TOSS", "Throw it all out"], right: "a",
+      head: "You can refreeze it.",
+      rule: "A full freezer holds its temperature for about 48 hours (24 if half full) with the door closed. Food that still has ice crystals or is at 40°F or below can be refrozen.",
+      src: ["FoodSafety.gov (USDA): Keep food safe when you lose power", "https://www.foodsafety.gov/blog/three-ways-keep-food-safe-when-you-lose-power"],
+      lando: "Lando requests a full audit of the freezer. Personally." },
+    { id: "s10", name: "Can't get through", img: "s06_radio", pos: "50% 45%",
+      status: [["POWER","OFF","off"],["WATER","5 GAL"],["SIGNAL","1 BAR","low"],["PHONE","22%","low"]],
+      prompt: "You need to tell your family you're OK. Calls keep failing with a busy signal.",
+      a: ["KEEP CALLING", "Until it connects"], b: ["SEND A TEXT", "And save battery"], right: "b",
+      head: "Send a text.",
+      rule: "When networks are jammed, a text often gets through when a call won't. Pick one out-of-town contact everyone checks in with.",
+      src: ["FEMA: Family communication plan tips", "https://www.fema.gov/print/txt/node/331794"],
+      lando: "Lando's message to the family: \"Feed me.\"" },
+    { id: "s11", name: "The boil notice", img: "s10_sink", pos: "50% 45%",
+      status: [["POWER","ON"],["WATER","BOIL","low"],["FOOD","3 DAYS"],["PHONE","70%"]],
+      prompt: "The storm passed and the power's back, but the city issued a boil-water notice. You need water for coffee and cooking.",
+      a: ["1 MINUTE", "At a rolling boil"], b: ["UNTIL IT STEAMS", "Then it's fine"], right: "a",
+      head: "A rolling boil for 1 minute.",
+      rule: "Bring clear water to a rolling boil for 1 minute (3 minutes above 6,500 feet), then let it cool. Boiling doesn't remove chemicals, so follow your local authorities.",
+      src: ["CDC: Boil water advisory", "https://www.cdc.gov/natural-disasters/psa-toolkit/boil-water-advisory.html"],
+      lando: "Lando only drinks from the faucet. Lando will be inconvenienced." },
+    { id: "s12", name: "Ninety-five inside", img: "s03_kitchen", pos: "50% 50%",
+      status: [["POWER","OFF","off"],["TEMP","95°F","off"],["WATER","4 GAL"],["PHONE","45%"]],
+      prompt: "Day 3 with no power in August. It's 95°F in your apartment. The county opened a cooling center 10 minutes away.",
+      a: ["STAY", "Fans and cold showers"], b: ["LEAVE", "Go somewhere cool"], right: "b",
+      head: "Leave for somewhere with air conditioning.",
+      rule: "Access to air conditioning prevents heat illness and saves lives. If your home gets too hot, going somewhere with power is the smart move, not giving up.",
+      src: ["CDC: Use of cooling centers to prevent heat-related illness", "https://www.cdc.gov/climate-health/media/pdfs/useofcoolingcenters.pdf"],
+      lando: "Lando has located the coolest tile in the apartment and will not be moving." },
+  ];
+
+  const START = new Date(2026, 9, 31);
+  const today = new Date(); today.setHours(0,0,0,0);
+  const dayNum = Math.max(1, Math.round((today - START) / 86400000) + 1);
+  const s = S[(dayNum - 1) % S.length];
+  const key = (d) => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+  const todayKey = key(today);
+  const LS = "wigd-daily-v1";
+  let rec = { days: {} };
+  try { const v = JSON.parse(localStorage.getItem(LS) || "null"); if (v && v.days) rec = v; } catch (e) {}
+  const save = () => { try { localStorage.setItem(LS, JSON.stringify(rec)); } catch (e) {} };
+  const $ = (id) => document.getElementById(id);
+
+  function stats() {
+    let streak = 0; const d = new Date(today);
+    if (!rec.days[key(d)]) d.setDate(d.getDate() - 1);
+    while (rec.days[key(d)]) { streak++; d.setDate(d.getDate() - 1); }
+    const all = Object.values(rec.days);
+    $("stStreak").textContent = streak; $("stPlayed").textContent = all.length; $("stRule").textContent = all.filter(x => x.ok).length;
+  }
+  function nextLine() {
+    const now = new Date(); const mid = new Date(today); mid.setDate(mid.getDate() + 1);
+    const mins = Math.max(0, Math.round((mid - now) / 60000));
+    $("nextLine").textContent = "Next decision in " + Math.floor(mins / 60) + "h " + String(mins % 60).padStart(2, "0") + "m";
+  }
+  function render() {
+    $("dayLabel").textContent = "Daily #" + dayNum;
+    $("dateLabel").textContent = today.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+    $("sceneImg").src = "img/game/" + s.img + ".webp"; $("sceneImg").style.objectPosition = s.pos;
+    $("sname").textContent = s.name;
+    $("status").replaceChildren(...s.status.map(([k, v, c]) => { const d = document.createElement("div"); d.className = "chip"; const a = document.createElement("span"); a.textContent = k; const b = document.createElement("b"); b.textContent = v; if (c) b.className = c; d.append(a, b); return d; }));
+    $("prompt").textContent = s.prompt;
+    $("kA").textContent = s.a[0]; $("dA").textContent = s.a[1]; $("kB").textContent = s.b[0]; $("dB").textContent = s.b[1];
+    const mine = rec.days[todayKey] && rec.days[todayKey].id === s.id ? rec.days[todayKey].pick : null;
+    for (const side of ["a", "b"]) { const btn = $(side === "a" ? "choiceA" : "choiceB"); btn.disabled = !!mine; btn.classList.toggle("picked", mine === side); btn.classList.toggle("dim", !!mine && mine !== side); }
+    $("ask").hidden = !!mine; $("reveal").hidden = !mine; $("after").hidden = !mine;
+    if (mine) {
+      const ok = mine === s.right;
+      $("badge").textContent = ok ? "Matches the rule" : "The rule says"; $("badge").className = "badge " + (ok ? "yes" : "no");
+      $("verdictH").textContent = s.head;
+      const r = $("rule"); r.replaceChildren(); const p = document.createElement("div"); p.textContent = s.rule;
+      const sm = document.createElement("small"); sm.append("Source: ");
+      for (const [i, src] of [s.src, s.src2].filter(Boolean).entries()) { if (i) sm.append(" · "); const a = document.createElement("a"); a.href = src[1]; a.target = "_blank"; a.rel = "noopener"; a.textContent = src[0]; sm.append(a); }
+      r.append(p, sm); $("landoLine").textContent = s.lando;
+    }
+    stats(); nextLine();
+  }
+  function pick(side) {
+    if (rec.days[todayKey]) return;
+    rec.days[todayKey] = { id: s.id, pick: side, ok: side === s.right }; save(); render();
+  }
+  $("choiceA").addEventListener("click", () => pick("a"));
+  $("choiceB").addEventListener("click", () => pick("b"));
+  $("shareBtn").addEventListener("click", () => {
+    const r = rec.days[todayKey]; if (!r) return;
+    const label = r.pick === "a" ? s.a[0] : s.b[0];
+    const streak = $("stStreak").textContent;
+    const t = "STAY or LEAVE Daily #" + dayNum + " 🔦\nI picked " + label + ". " + (r.ok ? "The rule agrees." : "The rule doesn't.") + "\nStreak: " + streak + "\nwhenitgoesdarktv.github.io/whenitgoesdark/daily.html";
+    const box = $("shareBox");
+    const fallback = () => { box.value = t; box.hidden = false; box.select(); $("toast").textContent = "Select the text and copy it."; };
+    try { navigator.clipboard.writeText(t).then(() => { $("toast").textContent = "Copied. Paste it in the comments."; }, fallback); } catch (e) { fallback(); }
+  });
+  setInterval(nextLine, 30000);
+  render();
+})();
+</script>
+</body>
+</html>
