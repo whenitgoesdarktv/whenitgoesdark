@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The 14th Floor: Choose Your Path · When It Goes Dark</title>
+<meta name="description" content="A free choose-your-path survival story. The power dies on the 14th floor in a hurricane. Every choice is yours, and every rule is real.">
+<meta property="og:title" content="The 14th Floor: Choose Your Path">
+<meta property="og:description" content="The power dies on the 14th floor in a hurricane. Every choice is yours. Can you find all 7 endings?">
+<meta property="og:image" content="https://whenitgoesdarktv.github.io/whenitgoesdark/img/ep01-cover.jpg">
+<meta name="theme-color" content="#090e18">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root {
+  --night: #090e18; --band: #0f1726; --panel: #141e31; --line: #24324c;
+  --text: #ece6d9; --muted: #a3acbf; --amber: #ffb547; --amber-deep: #f08a24;
+  --danger: #ff7a66; --ok: #86d69a; --leave: #8ec5ff;
+  --display: "Anton", "Oswald", "Arial Narrow", Impact, sans-serif;
+  --body: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: var(--night); color: var(--text); }
+body { font-family: var(--body); font-size: 17px; line-height: 1.5;
+  padding: max(14px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+a { color: var(--amber); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 560px; margin: 0 auto; display: grid; gap: 14px; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.top a.home { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+.top .found { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); }
+.title { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 9vw, 48px); line-height: .98; margin: 0; letter-spacing: .01em; }
+.title span { color: var(--amber); }
+.status { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.chip { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 5px 6px; text-align: center; min-width: 0; }
+.chip span { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--muted); }
+.chip b { display: block; font-family: var(--display); font-weight: 400; font-size: 18px; letter-spacing: .02em; white-space: nowrap; }
+.chip b.bad { color: var(--danger); } .chip b.low { color: var(--amber); } .chip b.changed { animation: pop .5s ease; }
+@keyframes pop { 0% { transform: scale(1.25); color: var(--amber); } 100% { transform: none; } }
+.card { background: var(--band); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.scene { position: relative; aspect-ratio: 16 / 11; max-width: 100%; overflow: hidden; background: #060a12; }
+.scene img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,14,24,0) 50%, rgba(15,23,38,.95) 100%), radial-gradient(110% 70% at 15% -10%, rgba(255,181,71,.22), rgba(255,181,71,0) 55%); }
+.when { position: absolute; left: 14px; bottom: 10px; z-index: 1; font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--amber); text-transform: uppercase; }
+.text { padding: 14px 18px 4px; }
+.text p { margin: 0 0 12px; }
+.text p.say { border-left: 3px solid var(--leave); padding-left: 12px; color: #dce9ff; }
+.rule { margin: 4px 18px 12px; background: #1b2740; border: 1px solid #33466b; border-radius: 10px; padding: 11px 13px; }
+.rule .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.rule.good .tag { color: var(--ok); } .rule.hard .tag { color: var(--danger); }
+.rule p { margin: 4px 0 6px; font-size: 15.5px; line-height: 1.45; }
+.rule small { font-size: 12.5px; color: var(--muted); }
+.choices { display: grid; gap: 10px; padding: 6px 18px 18px; }
+.choice { width: 100%; text-align: left; background: var(--panel); border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px; cursor: pointer; display: grid; gap: 2px; transition: border-color .12s ease, transform .12s ease; }
+.choice b { font-family: var(--display); font-weight: 400; font-size: 21px; letter-spacing: .02em; line-height: 1.1; }
+.choice span { font-size: 14.5px; color: var(--muted); }
+.choice:hover { border-color: var(--amber); transform: translateY(-1px); }
+.choice.stay b { color: var(--amber); } .choice.leave b { color: var(--leave); }
+.choice.next { background: var(--amber); border-color: var(--amber); color: #121a2a; }
+.choice.next b { color: #121a2a; }
+.ending { padding: 4px 18px 6px; }
+.ending .kind { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+.ending .kind.good { color: var(--ok); } .ending .kind.close { color: var(--amber); } .ending .kind.bad { color: var(--danger); }
+.ending h2 { font-family: var(--display); font-weight: 400; font-size: 34px; line-height: 1; margin: 4px 0 8px; letter-spacing: .01em; }
+.tally { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 10px 0 4px; }
+.tally div { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.tally b { display: block; font-family: var(--display); font-weight: 400; font-size: 26px; color: var(--amber); line-height: 1; font-variant-numeric: tabular-nums; }
+.tally span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+.learned { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
+.learned li { font-size: 14.5px; padding: 7px 10px; border-radius: 8px; background: var(--panel); border-left: 4px solid var(--ok); }
+.learned li.hard { border-left-color: var(--danger); }
+.row { display: flex; flex-wrap: wrap; gap: 10px; padding: 8px 18px 18px; }
+.btn { border: 0; border-radius: 10px; padding: 12px 16px; font-family: var(--mono); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn.primary { background: var(--amber); color: #121a2a; }
+.btn.ghost { background: transparent; color: var(--text); border: 1.5px solid var(--line); }
+.toast { padding: 0 18px 14px; font-size: 14px; color: var(--ok); min-height: 1em; }
+.endings { display: flex; flex-wrap: wrap; gap: 6px; }
+.endings i { font-style: normal; font-family: var(--mono); font-size: 11px; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.endings i.got { border-color: var(--amber); color: var(--amber); }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+@media (prefers-reduced-motion: reduce) { .chip b.changed { animation: none; } .choice { transition: none; } }
+@media (max-width: 380px) { .status { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a class="home" href="./">← When It Goes Dark</a><span class="found" id="found"></span></div>
+  <h1 class="title">THE 14TH FLOOR: <span>CHOOSE YOUR PATH</span></h1>
+  <div class="status" id="status" aria-label="Your supplies"></div>
+  <main class="card" id="card" aria-live="polite"></main>
+  <section aria-label="Endings found"><div class="endings" id="endings"></div></section>
+  <footer>
+    <div>Every rule in this story is real and links to its official source. It's a story, not professional advice: in a real emergency, follow your local officials and call 911.</div>
+    <div>Watch the series and vote what happens next: <b>@whenitgoesdarktv</b> on YouTube, TikTok, Instagram and Facebook.</div>
+  </footer>
+</div>
+<script>
+(() => {
+  "use strict";
+  const SRC = {
+    fridge: ["FoodSafety.gov (USDA)", "https://www.foodsafety.gov/blog/three-ways-keep-food-safe-when-you-lose-power"],
+    water: ["Ready.gov (FEMA): Water", "https://www.ready.gov/water"],
+    text: ["FEMA: Family communication plan tips", "https://www.fema.gov/print/txt/node/331794"],
+    candle: ["American Red Cross: Hurricane Safety Checklist", "https://doa.la.gov/media/2rgdjww2/american-red-cross-hurricane-preparedness-checklist.pdf"],
+    flood: ["National Weather Service: Turn Around Don't Drown", "https://www.weather.gov/safety/flood-turn-around-dont-drown"],
+    wind: ["National Weather Service: Hurricane Safety", "https://www.weather.gov/media/safety/hurricane-safety_flyer.pdf"],
+    co: ["CDC: Carbon monoxide hazard", "https://www.cdc.gov/nceh/multimedia/infographics/carbon_monoxide_danger.html"],
+    heat: ["CDC: Use of cooling centers", "https://www.cdc.gov/climate-health/media/pdfs/useofcoolingcenters.pdf"],
+    pumps: ["Habitat Magazine (2012)", "https://www.habitatmag.com/Archive2/295-December-2012/The-Power-Went-Out-and-the-Waters-Rose"],
+  };
+  const RULE = {
+    fridge: ["Keep the fridge closed", "A closed fridge keeps food cold for about 4 hours. Keep the door shut and you buy yourself time.", "fridge"],
+    water: ["Ration the water", "Plan on at least 1 gallon per person, per day, for drinking and sanitation. Six gallons goes fast.", "water"],
+    text: ["Text, don't scroll", "When networks are jammed, a text often gets through when a call won't. Save battery for what matters.", "text"],
+    candle: ["Flashlights, not candles", "The Red Cross says to use flashlights in the dark, never candles. Add a cat with a tail and you see why.", "candle"],
+    flood: ["Turn around, don't drown", "12 inches of rushing water can carry away most cars. 2 feet can carry away SUVs and trucks.", "flood"],
+    wind: ["Go low, go inside", "In a multi-story building away from water, ride out the wind on the 1st or 2nd floor, in an interior room or hallway away from windows.", "wind"],
+    eye: ["The eye is a trap", "When the eye passes, the wind comes back fast from the other direction. Stay inside until officials say it's over.", "wind"],
+    toss: ["When in doubt, throw it out", "After about 4 hours without power, toss meat, poultry, fish, eggs and milk. Never taste food to check it.", "fridge"],
+    co: ["The quiet killer", "Never run a generator indoors or in a garage. Headache, dizziness and confusion can mean carbon monoxide: get to fresh air and call 911.", "co"],
+    heat: ["Heat is a reason to leave", "Access to air conditioning prevents heat illness. Leaving for somewhere cool is the smart move, not giving up.", "heat"],
+  };
+  const NODES = {
+    start: { img: "s01_face", when: "Day 1 · 2:14 a.m.",
+      text: ["The fan stops. The fridge stops humming. Fourteen floors down, the whole city goes black.", "The hurricane isn't done. You have a headlamp, six gallons of water, four days of food, a phone at 31%, and Lando."],
+      choices: [
+        { b: "Open the fridge", s: "See what food you've got", to: "fridge_open", hard: "fridge", fx: { food: -1 } },
+        { b: "Leave it shut", s: "Find the headlamp first", to: "water", good: "fridge" } ] },
+    fridge_open: { img: "s08_fridge", when: "Day 1 · 2:20 a.m.",
+      text: ["Cold air spills out. You stand there deciding between yogurt and leftover chicken for a full minute.", "Lando gets halfway in before you shut the door."], rule: "fridge", ruleKind: "hard",
+      choices: [{ b: "Continue", to: "water", next: true }] },
+    water: { img: "s10_sink", when: "Day 1 · 8:00 a.m.",
+      text: ["You turn the faucet. It coughs, spits, and stops.", "Buildings this tall use electric pumps to push water up to the high floors. No power, no water. The six gallons in the closet is all you have."],
+      choices: [
+        { b: "Take a quick shower", s: "It's hot and sticky. Two gallons, tops.", to: "phone", hard: "water", fx: { water: -2 } },
+        { b: "Ration it", s: "Drinking and washing up only", to: "phone", good: "water" } ] },
+    phone: { img: "s06_radio", when: "Day 1 · noon",
+      text: ["Your phone buzzes. 31%. The family group chat is going nonstop and everyone is posting storm videos.", "The battery radio on the shelf still works."],
+      choices: [
+        { b: "Scroll for news", s: "Videos, updates, the chat", to: "candles", hard: "text", fx: { phone: -21 } },
+        { b: "Text once, then radio", s: "\"We're OK, 14th floor, power out.\" Low power mode.", to: "candles", good: "text", fx: { phone: -3 } } ] },
+    candles: { img: "s03_kitchen", when: "Day 1 · 7:30 p.m.",
+      text: ["It's dark by 7:30. Your headlamp makes a small circle of light.", "In the junk drawer: a whole box of candles. Lando is watching the drawer with interest."],
+      choices: [
+        { b: "Light the candles", s: "The place could use some light", to: "candle_fire", hard: "candle" },
+        { b: "Stick with the headlamp", s: "And the flashlight with fresh batteries", to: "knock", good: "candle" } ] },
+    candle_fire: { img: "s04_mug", when: "Day 1 · 8:10 p.m.",
+      text: ["Lando jumps on the counter. His tail sweeps a candle onto the dish towel.", "You smother it with a pot lid before it spreads. The towel is ruined. Lando is offended you raised your voice."], rule: "candle", ruleKind: "hard",
+      choices: [{ b: "Continue", to: "knock", next: true }] },
+    knock: { img: "s13_neighbor", when: "Day 1 · 9:00 p.m.",
+      text: ["A knock. It's your neighbor from 1402 in a yellow raincoat, car keys in her hand."],
+      say: "\"My sister's place inland still has power. I'm leaving now. Come with me?\"",
+      choices: [
+        { b: "STAY", s: "Six gallons, 14 floors up, and a plan", to: "stay1", cls: "stay" },
+        { b: "LEAVE", s: "Grab Lando and go with her", to: "leave1", cls: "leave" } ] },
+    leave1: { img: "s14_flood", when: "Day 1 · 9:40 p.m.",
+      text: ["Fourteen flights down in the dark, Lando yelling in his carrier the whole way.", "Out front, the street is a river: about a foot of brown water moving fast across the road. Her car is parked on the other side."],
+      choices: [
+        { b: "Drive through it", s: "It doesn't look that deep", to: "end_river", hard: "flood" },
+        { b: "Turn around", s: "Find another way out", to: "leave2", good: "flood" } ] },
+    leave2: { img: "s11_cutaway", when: "Day 1 · 10:00 p.m.",
+      text: ["You back up. Your neighbor pulls up the map: the ridge road on the other side of the building is high and dry, just slow.", "It means walking around the block in the rain to reach the car from the back lot."],
+      choices: [
+        { b: "Go the long way now", s: "Slow, wet, and dry pavement the whole way", to: "end_inland" },
+        { b: "Wait for first light", s: "Sleep in the lobby, leave at dawn", to: "end_inland" } ] },
+    stay1: { img: "s02_window", when: "Day 1 · midnight",
+      text: ["After midnight the wind gets louder. The windows flex. Up here you can feel the whole building sway.", "You're on the 14th floor."],
+      choices: [
+        { b: "Stay in bed", s: "It's your apartment. You'll be fine.", to: "stay_window", hard: "wind" },
+        { b: "Go down to the 2nd floor", s: "Interior hallway, blankets, Lando, radio", to: "eye", good: "wind" } ] },
+    stay_window: { img: "s02_window", when: "Day 1 · 2:40 a.m.",
+      text: ["A crack like a gunshot. Something hit the bedroom window and a line runs across the glass.", "You grab Lando and the blankets and head for the stairs at 3 a.m."], rule: "wind", ruleKind: "hard",
+      choices: [{ b: "Continue", to: "eye", next: true }] },
+    eye: { img: "s02_window", when: "Day 2 · 11:00 a.m.", fx: { water: -1 },
+      text: ["The wind just stops. The sky goes blue. People start coming out onto their balconies.", "Your car is parked by the pool. You'd love to know if it's still there."],
+      choices: [
+        { b: "Go check the car", s: "Five minutes, tops", to: "end_eye", hard: "eye" },
+        { b: "Stay inside", s: "Wait for the all-clear on the radio", to: "food", good: "eye" } ] },
+    food: { img: "s08_fridge", when: "Day 2 · 4:00 p.m.",
+      text: ["The power has been out for 38 hours. It's 90°F inside.", "The chicken in the fridge smells... fine? The gas stove still lights."],
+      choices: [
+        { b: "Cook the chicken", s: "It smells fine", to: "sick", hard: "toss", fx: { food: -1 } },
+        { b: "Toss it", s: "Canned beans and crackers again", to: "co", good: "toss", fx: { food: -1 } } ] },
+    sick: { img: "s01_face", when: "Day 2 · night",
+      text: ["By midnight you're on the bathroom floor. You spend the night sick, and you use a gallon of water you didn't plan on.", "Lando sits outside the door, judging."], rule: "toss", ruleKind: "hard", fx: { water: -1 },
+      choices: [{ b: "Continue", to: "co", next: true }] },
+    co: { img: "s01_face", when: "Night 2 · 1:00 a.m.",
+      text: ["Someone down the hall is running a gas generator just inside their apartment door. You can hear it through the wall.", "Your head is pounding. Lando won't get up. Then the carbon monoxide alarm starts beeping."],
+      choices: [
+        { b: "Pull the battery", s: "It's probably a low battery. Back to sleep.", to: "end_co", hard: "co" },
+        { b: "Get out now", s: "Grab Lando, fresh air, call 911", to: "day3", good: "co" } ] },
+    day3: { img: "s03_kitchen", when: "Day 3 · 2:00 p.m.", fx: { water: -1 },
+      text: ["The firefighters found the generator. Everyone on your floor is OK.", "Day 3. It's 95°F inside. The radio says the county opened a cooling center ten minutes away."],
+      choices: [
+        { b: "STAY", s: "Cold towels, no exertion, ride it out", to: "stay_end", cls: "stay" },
+        { b: "LEAVE", s: "Go to the cooling center with Lando", to: "end_cooling", cls: "leave", good: "heat" } ] },
+  };
+  const ENDINGS = {
+    end_inland: { kind: "good", label: "Made it out", title: "Inland", img: "s06_radio", days: 5,
+      text: ["Two hours on the ridge road at 20 mph. Her sister's porch light is on. There's power, a fan, and a cold shower.", "Lando hides under the guest bed for a full day out of spite. The power on your floor comes back on Day 5."] },
+    end_river: { kind: "bad", label: "Lesson learned the hard way", title: "The River Road", img: "s14_flood", days: 1,
+      text: ["Halfway across, the water lifts the back of the car and turns it sideways. You get the window down, grab Lando's carrier and wade to the median with your neighbor.", "You're soaked, shaking and alive. The car is gone. Rescue crews pick you up an hour later."] },
+    end_eye: { kind: "close", label: "Close call", title: "The Eye", img: "s02_window", days: 2,
+      text: ["You're in the parking lot when the wind comes back, from the other direction and harder than before.", "You make it to the stairwell door with a cut on your arm from flying siding. Lando stares at you from the window like he told you so."] },
+    end_co: { kind: "close", label: "Close call", title: "The Quiet Killer", img: "s01_face", days: 2,
+      text: ["You pull the battery and lie down. At 4 a.m. you wake up dizzy and sick, with Lando meowing in your face.", "You crawl to the door and the hallway air hits you. The paramedics say the alarm was right. So was Lando."] },
+    end_cooling: { kind: "good", label: "Made it", title: "The Cooling Center", img: "s12_bowl", days: 5,
+      text: ["Cots, cold water, phone chargers, and a volunteer who is extremely into Lando.", "You go home on Day 5 when the power comes back. The fridge needs a deep clean. Everyone's fine."] },
+    end_rideout: { kind: "good", label: "Made it", title: "Riding It Out", img: "s04_mug", days: 5,
+      text: ["Cold towels, slow afternoons in the stairwell where it's cooler, and the water you saved on Day 1.", "The power comes back on Day 5. You're tired, your apartment smells like canned beans, and Lando has claimed the coolest tile in the place."] },
+    end_dry: { kind: "close", label: "Close call", title: "Running Dry", img: "s10_sink", days: 3,
+      text: ["By Day 3 night the last jug is empty and you feel dizzy in the heat.", "You walk to the cooling center after dark with Lando and a headache. You should have left that afternoon."] },
+  };
+  const ORDER = ["end_inland", "end_cooling", "end_rideout", "end_river", "end_eye", "end_co", "end_dry"];
+
+  const LS = "wigd-14th-floor-v1";
+  let found = {};
+  try { const v = JSON.parse(localStorage.getItem(LS) || "{}"); if (v && v.found) found = v.found; } catch (e) {}
+  const saveFound = () => { try { localStorage.setItem(LS, JSON.stringify({ found })); } catch (e) {} };
+
+  let st, prev = {};
+  function reset() { st = { water: 6, food: 4, phone: 31, day: 1, good: [], hard: [] }; prev = {}; }
+
+  const $ = (id) => document.getElementById(id);
+  function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function renderStatus(when) {
+    const day = when ? when.split(" ")[1] : "1";
+    const items = [["POWER", "OFF", "bad"], ["WATER", st.water + " GAL", st.water <= 2 ? "bad" : st.water <= 3 ? "low" : ""],
+      ["FOOD", st.food + " DAYS", st.food <= 1 ? "bad" : st.food <= 2 ? "low" : ""], ["PHONE", st.phone + "%", st.phone <= 10 ? "bad" : st.phone <= 20 ? "low" : ""], ["DAY", day, ""]];
+    const cur = { water: st.water, food: st.food, phone: st.phone };
+    $("status").replaceChildren(...items.map(([k, v, c], i) => {
+      const d = el("div", "chip"); d.append(el("span", null, k));
+      const b = el("b", c, v); const key = ["", "water", "food", "phone", ""][i];
+      if (key && prev[key] !== undefined && prev[key] !== cur[key]) b.classList.add("changed");
+      d.append(b); return d;
+    }));
+    prev = cur;
+  }
+  function renderFound() {
+    const n = ORDER.filter(k => found[k]).length;
+    $("found").textContent = n + " of " + ORDER.length + " endings found";
+    $("endings").replaceChildren(...ORDER.map(k => { const i = el("i", found[k] ? "got" : "", found[k] ? ENDINGS[k].title : "???"); return i; }));
+  }
+  function ruleBox(key, kind) {
+    const r = RULE[key]; const box = el("div", "rule " + (kind === "hard" ? "hard" : "good"));
+    box.append(el("div", "tag", kind === "hard" ? "Rule learned the hard way" : "Rule followed"), el("p", null, r[1]));
+    const sm = el("small", null, "Source: "); const a = el("a", null, SRC[r[2]][0]); a.href = SRC[r[2]][1]; a.target = "_blank"; a.rel = "noopener"; sm.append(a); box.append(sm);
+    return box;
+  }
+  function scene(img, when) {
+    const s = el("div", "scene"); const im = el("img"); im.src = "img/game/" + img + ".webp"; im.alt = ""; s.append(im, el("div", "when", when)); return s;
+  }
+  function apply(fx) { if (!fx) return; for (const k of Object.keys(fx)) st[k] = Math.max(0, st[k] + fx[k]); }
+
+  function go(id) {
+    if (id === "stay_end") id = st.water >= 3 ? "end_rideout" : "end_dry";
+    if (ENDINGS[id]) return ending(id);
+    const n = NODES[id]; apply(n.fx);
+    const card = $("card"); card.replaceChildren();
+    card.append(scene(n.img, n.when));
+    const t = el("div", "text"); n.text.forEach(p => t.append(el("p", null, p))); if (n.say) t.append(el("p", "say", n.say)); card.append(t);
+    if (n.rule) card.append(ruleBox(n.rule, n.ruleKind));
+    const ch = el("div", "choices");
+    n.choices.forEach(c => {
+      const btn = el("button", "choice" + (c.cls ? " " + c.cls : "") + (c.next ? " next" : "")); btn.type = "button";
+      btn.append(el("b", null, c.b)); if (c.s) btn.append(el("span", null, c.s));
+      btn.addEventListener("click", () => {
+        apply(c.fx);
+        if (c.good && !st.good.includes(c.good)) st.good.push(c.good);
+        if (c.hard && !st.hard.includes(c.hard)) st.hard.push(c.hard);
+        go(c.to); window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      });
+      ch.append(btn);
+    });
+    card.append(ch);
+    renderStatus(n.when);
+    const first = ch.querySelector("button"); if (first && id !== "start") first.focus({ preventScroll: true });
+  }
+
+  function ending(id) {
+    const e = ENDINGS[id]; const isNew = !found[id]; found[id] = true; saveFound();
+    const card = $("card"); card.replaceChildren();
+    card.append(scene(e.img, "The end · Day " + e.days));
+    const box = el("div", "ending");
+    box.append(el("div", "kind " + e.kind, e.label + (isNew ? " · new ending" : "")), el("h2", null, e.title));
+    e.text.forEach(p => box.append(el("p", null, p)));
+    const tally = el("div", "tally");
+    [[st.good.length, "Rules followed"], [st.hard.length, "Learned the hard way"], [ORDER.filter(k => found[k]).length + "/" + ORDER.length, "Endings found"]]
+      .forEach(([v, l]) => { const d = el("div"); d.append(el("b", null, String(v)), el("span", null, l)); tally.append(d); });
+    box.append(tally);
+    if (st.good.length || st.hard.length) {
+      const ul = el("ul", "learned");
+      st.good.forEach(k => ul.append(el("li", null, "✓ " + RULE[k][0])));
+      st.hard.forEach(k => { const li = el("li", "hard", "✗ " + RULE[k][0] + ": " + RULE[k][1]); ul.append(li); });
+      box.append(ul);
+    }
+    card.append(box);
+    const row = el("div", "row");
+    const again = el("button", "btn primary", "Play again"); again.type = "button"; again.addEventListener("click", () => { reset(); go("start"); });
+    const share = el("button", "btn ghost", "Copy my ending"); share.type = "button";
+    const toast = el("div", "toast"); toast.setAttribute("role", "status");
+    share.addEventListener("click", () => {
+      const t = "The 14th Floor 🔦 I got the \"" + e.title + "\" ending (" + ORDER.filter(k => found[k]).length + "/" + ORDER.length + " found). Can you find them all? whenitgoesdarktv.github.io/whenitgoesdark/game.html";
+      try { navigator.clipboard.writeText(t).then(() => { toast.textContent = "Copied. Paste it anywhere."; }, () => { toast.textContent = t; }); } catch (err) { toast.textContent = t; }
+    });
+    const cl = el("a", "btn ghost", "Free blackout checklist"); cl.href = "./#checklist";
+    row.append(again, share, cl);
+    card.append(row, toast);
+    renderStatus("Day " + e.days); renderFound();
+    again.focus({ preventScroll: true });
+  }
+
+  reset(); renderFound(); go("start");
+})();
+</script>
+</body>
+</html>
