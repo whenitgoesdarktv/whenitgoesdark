@@ -86,9 +86,8 @@ def load_bg(name):
             x0 = (iw - tw) // 2; im = im[:, x0:x0 + tw]
         else:
             th = int(iw * 9 / 16); y0 = (ih - th) // 2; im = im[y0:y0 + th]
-        if im.shape[0] < BGH:
-            im = upscale(im, BGH)
-        im = cv2.resize(im, (BGW, BGH), interpolation=cv2.INTER_AREA if im.shape[0] > BGH else cv2.INTER_CUBIC)
+        # 1080 -> 1440 is a mild 1.33x step: Lanczos is clean enough and avoids the ~2 GB peak of a 4x super-resolution pass
+        im = cv2.resize(im, (BGW, BGH), interpolation=cv2.INTER_AREA if im.shape[0] > BGH else cv2.INTER_LANCZOS4)
     else:
         # placeholder: dark gradient with label
         im = np.zeros((BGH, BGW, 3), np.uint8)
@@ -332,8 +331,10 @@ def draw_chapter(fr, t):
     # small label top-right always
     lab = text_rgba(f'CHAPTER {n}  ·  {title}', F_OSW(22, 'SemiBold'), (215, 220, 230), shadow=True)
     put(fr, lab, W - 40 - lab.shape[1], 30, 0.9, 'tl')
-    if 0 <= dt < 2.6:
-        a = ease(dt / 0.35) * (1 - ease((dt - 2.15) / 0.45))
+    # shorter card when the chapter opens on a full-screen card (split/choice/stat), so the two never overlap
+    dur = 1.45 if shot_at(ct + 1.46)['bg'] in ('SPLIT', 'CHOICE', 'STAT') else 2.6
+    if 0 <= dt < dur:
+        a = ease(dt / 0.35) * (1 - ease((dt - (dur - 0.4)) / 0.4))
         fr[:] = (fr.astype(np.float32) * (1 - 0.45 * a)).astype(np.uint8)
         put(fr, text_rgba(f'CHAPTER {n}', F_OSW(36), AMBER), W / 2, H / 2 - 70, a)
         put(fr, text_rgba(title, F_ANTON(120), WHITE, stroke=2), W / 2, H / 2 + 30, a)
@@ -632,7 +633,7 @@ def apply_fx(fr, shot, t):
     if 'no_battery' in fx and t >= t_of(150) - 0.1:
         put(fr, panel_rgba(560, 90, 18, (200, 40, 40, 235)), W / 2, H * 0.74)
         put(fr, text_rgba('NO BATTERY BACKUP', F_ANTON(56), WHITE, shadow=False), W / 2, H * 0.74)
-    if 'diagram_20ft' in fx and t >= t_of(154) - 0.2:
+    if 'diagram_20ft' in fx and t_of(154) - 0.2 <= t < t_of(155) - 1.5:
         k = ease((t - t_of(154) + 0.2) / 0.4)
         y = int(H * 0.7)
         cv2.arrowedLine(fr, (int(W * 0.25), y), (int(W * 0.72), y), (71, 181, 255), 8, cv2.LINE_AA, tipLength=0.04)
@@ -669,7 +670,13 @@ def open_frame(t):
         fi = min(int(t * fps), n - 1)
         _open_cap.set(cv2.CAP_PROP_POS_FRAMES, fi); ok, f = _open_cap.read()
         if ok:
-            return cv2.resize(f, (W, H), interpolation=cv2.INTER_CUBIC)
+            f = cv2.resize(f, (W, H), interpolation=cv2.INTER_CUBIC)
+            extra = t - (n - 1) / fps
+            if extra > 0:   # clip has ended: keep pushing in slowly on the empty carrier instead of freezing
+                z = 1 + 0.035 * extra
+                M = cv2.getRotationMatrix2D((W * 0.62, H * 0.6), 0, z)
+                f = cv2.warpAffine(f, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            return f
     return None
 
 # ------------------------------------------------------------------ frame
@@ -682,6 +689,8 @@ def camera(layer, cam, u):
     px = min(max(cx * BGW, hw), BGW - hw); py = min(max(cy * BGH, hh), BGH - hh)
     M = np.float32([[s, 0, W / 2 - s * px], [0, s, H / 2 - s * py]])
     return cv2.warpAffine(layer, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+
+CLEAN = False
 
 def frame_at(t):
     shot = shot_at(t)
@@ -711,6 +720,8 @@ def frame_at(t):
         k = 1 - (t - shot['start']) / 0.25
         M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, 1 + 0.08 * k)
         fr = cv2.warpAffine(fr, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+    if CLEAN:   # picture only, for re-framing into vertical Shorts
+        return fr
     # title card after the cold open
     title_card(fr, t, LINES[17]['end'] + 0.25)
     if bg != 'END':
@@ -759,5 +770,8 @@ if __name__ == '__main__':
         open(lst, 'w').write(''.join(f"file 'seg_{i:03d}.mp4'\n" for i in range(nseg)))
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', os.path.join(OUT, 'video_noaudio.mp4')], check=True)
         print('joined')
+    elif mode == 'clean':   # clean picture for a time range: clean T0 T1 OUT.mp4
+        CLEAN = True
+        render_range(float(sys.argv[2]), float(sys.argv[3]), sys.argv[4])
     elif mode == 'info':
         print('total', TOTAL, 'captions', len(CAPS), 'shots', len(SHOTS))
