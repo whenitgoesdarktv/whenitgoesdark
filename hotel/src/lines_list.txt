@@ -1,0 +1,233 @@
+  0    0.04  1.63 A Two forty-seven in the morning.
+  1    2.16  2.23 A The power has been out for six hours.
+  2    4.79  1.56 A Your cat's carrier is open.
+  3    6.77  0.72 A And empty.
+  4    8.01  3.04 A Somewhere inside the wall, something is scratching.
+  5   11.50  0.77 A It moves.
+  6   12.67  0.79 A Down the hallway.
+  7   13.81  1.13 A Past the ice machine.
+  8   15.26  1.18 A Past room fourteen.
+  9   16.89  1.23 A Then it stops.
+ 10   18.45  1.15 A Right behind your head.
+ 11   20.07  3.56 A The man at the front desk told you nobody else is staying on this floor.
+ 12   24.06  3.14 A And downstairs, something has been running all night.
+ 13   27.60  1.50 A You can feel it through the floor.
+ 14   29.49  1.58 A A low, steady hum.
+ 15   31.51  1.88 A So what's inside the walls?
+ 16   33.74  1.30 A And what is that hum?
+ 17   35.52  4.69 A Before the sun comes up, one of them is going to try to kill everyone in this ho
+ 18   41.01  1.26 A Twelve hours earlier.
+ 19   42.65  0.81 A Six p.m.
+ 20   44.08  2.82 A The Pinecrest Lodge sits halfway up a mountain road.
+ 21   47.29  2.56 A The sign on the front door says, no pets.
+ 22   50.24  1.91 A The bag on your shoulder says nothing.
+ 23   52.41  1.96 A Because Lando is asleep inside it.
+ 24   54.75  1.06 A Lando is your cat.
+ 25   56.21  2.03 A Lando has opinions about bags.
+ 26   58.70  1.49 A The storm got here first.
+ 27   60.56  7.18 A The radio says a nor'easter is wrapping around the mountains, the plows have sto
+ 28   68.16  3.00 A The manager, Dale, slides a key across the desk.
+ 29   71.57  0.84 A Room twenty-two.
+ 30   72.79  0.63 A The last one.
+ 31   73.87  0.91 A He looks at your bag.
+ 32   75.20  0.93 A The bag meows.
+ 33   76.53  1.07 A Dale says nothing.
+ 34   77.99  2.04 A Dale has had a very long day.
+ 35   80.82  0.85 A Seven p.m.
+ 36   82.16  2.79 A The snow is coming down an inch every half hour.
+ 37   85.34  1.93 A Your car is a white hump in the lot.
+ 38   87.66  3.37 A The only way off this mountain is a road you can't see anymore.
+ 39   91.76  1.10 A Eight twelve p.m.
+ 40   93.36  0.86 A The lights flicker.
+ 41   94.62  0.45 A Once.
+ 42   95.49  0.50 A Twice.
+ 43   96.36  2.09 A Then the whole mountain goes dark.
+ 44   98.85  0.57 A No heat.
+ 45   99.70  0.86 A No elevator.
+ 46  100.75  0.79 A No Wi-Fi.
+ 47  101.92  1.90 A Your phone says sixty-four percent.
+ 48  104.27  2.96 A Then, from downstairs, a motor coughs to life.
+ 49  107.76  1.10 A You look over the railing.
+ 50  109.25  2.44 A Dale is dragging a generator in from the snow.
+ 51  112.04  0.80 A Into the lobby.
+ 52  113.19  1.49 A Right next to the fireplace.
+ 53  115.11  1.95 A He props the front door open with a boot.
+ 54  117.42  2.38 A "It's just for the coffee and the phones," he says.
+ 55  120.14  0.57 A "Door's open.
+ 56  120.96  2.29 A It's fine."  Remember that open door.
+ 57  123.64  3.80 A A guest in a red hat is lighting candles all along the front desk.
+ 58  127.80  0.56 A Ten of them.
+ 59  128.78  0.57 A Fifteen.
+ 60  129.74  3.10 A When the power is out, use flashlights, not candles.
+ 61  133.17  3.72 A And in a storm like this, a fire truck is not getting up that road.
+ 62  137.30  1.59 A You hand her your spare flashlight.
+ 63  139.25  1.18 A She blows the candles out.
+ 64  140.79  2.44 A Lando watches the smoke like it owes him money.
+ 65  144.38  2.78 B By ten, your room is fifty-eight degrees.
+ 66  147.54  1.59 B By midnight, fifty-one.
+ 67  149.58  1.50 B Loose, warm layers.
+ 68  151.40  1.23 B Towels under the door.
+ 69  153.02  0.85 B Curtains shut.
+ 70  154.21  2.15 B Close off every room you're not using.
+ 71  156.82  1.52 B Lando ignores the rule.
+ 72  158.78  1.60 B Lando sleeps on your face.
+ 73  160.92  0.74 B Twelve forty.
+ 74  162.08  0.46 B A knock.
+ 75  162.96  1.40 B It's the woman from room twelve.
+ 76  164.82  0.42 B Rosa.
+ 77  165.63  2.79 B Two scarves, and a hotel bathrobe over her coat.
+ 78  168.87  2.38 B "Everybody's going down to the lobby," she says.
+ 79  171.63  2.62 B "It's warm down there."  It is warm down there.
+ 80  174.65  2.13 B Six guests asleep on the couches.
+ 81  177.06  2.05 B The generator humming beside the fire.
+ 82  179.38  1.87 B The front door open to the snow.
+ 83  181.69  2.77 B On the stairs, a headache starts behind your eyes.
+ 84  184.75  1.28 B You figure it's the altitude.
+ 85  186.45  0.61 B Or the day.
+ 86  187.55  2.43 B Rosa takes the couch closest to the generator.
+ 87  190.30  4.89 B You carry Lando back upstairs, because Lando will not stop yowling in that lobby
+ 88  195.51  2.82 B Every time you set him down, he pulls toward the door.
+ 89  198.70  1.70 B Cats hate loud machines.
+ 90  200.79  0.94 B That's what you tell yourself.
+ 91  202.39  1.41 B Two forty-seven a.m.
+ 92  204.25  2.14 B You wake up, and the room is turning.
+ 93  206.74  1.39 B The carrier door is open.
+ 94  208.55  1.22 B Lando is gone.
+ 95  210.24  0.83 B Then you hear it.
+ 96  211.46  0.71 B Scratching.
+ 97  212.55  2.22 B Inside the wall, right behind the bed.
+ 98  215.21  1.71 B You press your ear to the wallpaper.
+ 99  217.35  0.70 B Claws.
+100  218.39  0.49 B Moving.
+101  219.32  0.50 B Fast.
+102  220.12  0.87 B Toward the hallway.
+103  221.38  1.42 B You follow it with your headlamp.
+104  223.13  0.99 B Twenty doors.
+105  224.39  1.42 B Every one of them dark.
+106  226.16  4.61 B The scratching runs ahead of you, past the ice machine, all the way to the end o
+107  231.12  2.63 B And it stops under a metal grate in the floor.
+108  234.11  0.55 B A vent.
+109  235.01  1.72 B Warm air is rising out of it.
+110  237.09  0.66 B From the lobby.
+111  238.18  0.80 B You kneel down.
+112  239.30  2.03 B Two green eyes look back up at you.
+113  241.75  0.58 B Lando.
+114  242.74  1.26 B He isn't trying to get to you.
+115  244.35  2.14 B He's trying to get away from that warm air.
+116  246.88  1.30 B You stand up too fast.
+117  248.42  1.05 B The hallway tilts.
+118  249.70  1.30 B Your stomach turns over.
+119  251.26  1.59 B Your fingers can't work the grate.
+120  253.27  3.10 B For a second, someone is standing at the far end of the hall.
+121  256.73  1.17 B Your headlamp flickers.
+122  258.25  0.82 B There's no one there.
+123  259.45  1.28 B The scratching was Lando.
+124  261.13  1.50 B The dizziness is not.
+125  263.77  3.05 C Carbon monoxide has no color and no smell.
+126  267.44  0.41 C Headache.
+127  268.27  0.66 C Dizziness.
+128  269.30  0.67 C Weakness.
+129  270.35  0.54 C Nausea.
+130  271.24  0.82 C Sleepiness.
+131  272.37  0.76 C Confusion.
+132  273.61  1.21 C It feels like the flu.
+133  275.29  3.98 C And people who are asleep can die from it before they ever feel sick.
+134  279.73  2.20 C Six people are asleep in that lobby.
+135  282.53  6.24 C Every year in the United States, more than a hundred people die from carbon mono
+136  289.32  3.68 C You go down the stairs with Lando in one arm and the railing in the other.
+137  293.41  2.32 C Every step is heavier than the last.
+138  296.16  1.11 C The lobby is warm.
+139  297.69  0.72 C Too warm.
+140  298.84  1.68 C The fire is down to coals.
+141  300.88  1.70 C The generator is still humming.
+142  303.11  1.74 C "Rosa." She doesn't wake.
+143  305.23  1.01 C You shake her shoulder.
+144  306.63  2.86 C She opens her eyes, and she doesn't know who you are.
+145  309.96  2.35 C Dale is slumped in the chair behind the desk.
+146  312.67  0.90 C You can't wake him.
+147  314.02  2.40 C On the ceiling, there's a carbon monoxide alarm.
+148  316.80  0.91 C Its light is off.
+149  318.25  1.59 C It runs on the hotel's power.
+150  320.22  1.13 C No battery backup.
+151  321.84  2.13 C Never run a generator indoors.
+152  324.31  3.50 C Not in a house, a garage, a basement, or a lobby.
+153  328.08  1.58 C Not even with the door open.
+154  329.98  4.32 C Outside only, at least twenty feet from doors, windows and vents.
+155  334.88  1.68 C Now you have two choices.
+156  336.89  3.38 C Stay inside, where it's warm, and the air is poison.
+157  340.59  4.34 C Or go out into a blizzard at three in the morning, where it's nine degrees.
+158  345.32  0.66 C What would you do?
+159  346.56  0.51 C You go.
+160  347.45  4.04 C If you think it's carbon monoxide, get outside to fresh air immediately.
+161  351.76  1.58 C Then call nine-one-one.
+162  354.50  1.28 D You shut the generator off.
+163  356.44  1.87 D The silence is enormous.
+164  358.77  2.09 D Rosa leans on you like you're the railing.
+165  361.29  4.60 D The others wake up dizzy and confused, and you herd them out under the porch roo
+166  366.45  1.97 D The snow is blowing sideways.
+167  368.74  1.79 D Dale is too heavy to carry.
+168  370.94  3.34 D You grab him under the arms and drag him across the lobby floor.
+169  374.73  1.09 D Inch by inch.
+170  376.24  1.04 D Through the open door.
+171  377.67  0.84 D Into the cold.
+172  379.00  2.61 D Lando walks ahead of you like he's leading a parade.
+173  382.05  1.81 D Your phone says nine percent.
+174  384.30  0.70 D One bar.
+175  385.41  1.14 D You call nine-one-one.
+176  386.99  0.73 D It rings.
+177  388.18  0.77 D And rings.
+178  389.36  1.17 D Then a voice.
+179  390.95  1.02 D The road is closed.
+180  392.23  1.69 D They'll get to you as fast as they can.
+181  394.37  1.50 D And now there's a new problem.
+182  396.23  1.03 D Nine degrees.
+183  397.56  1.70 D Seven people in pajamas.
+184  399.58  0.73 D One cat.
+185  400.74  0.65 D Shivering.
+186  401.82  0.82 D Exhaustion.
+187  402.96  0.77 D Confusion.
+188  404.16  0.97 D Fumbling hands.
+189  405.36  1.11 D Slurred speech.
+190  406.76  0.87 D Drowsiness.
+191  408.01  2.76 D Half of those look exactly like carbon monoxide.
+192  411.13  2.02 D You can't tell which one is hurting Rosa.
+193  413.59  2.08 D Your car is a white hump in the lot.
+194  416.06  2.35 D You dig with your hands until you can't feel them.
+195  418.82  1.01 D The door opens.
+196  420.07  1.69 D The engine catches.
+197  421.93  0.76 D Heat pours out.
+198  423.12  1.26 D Four people pile in.
+199  424.68  1.79 D And Lando starts yowling again.
+200  426.70  1.12 D The same yowl.
+201  428.23  1.49 D He claws at the back window.
+202  430.09  1.15 D You look behind the car.
+203  431.50  2.45 D The snow has drifted right over the tailpipe.
+204  434.37  1.44 D Stuck with your car in snow?
+205  436.09  1.80 D Clear the snow off the exhaust pipe.
+206  438.14  2.91 D Run the engine about ten minutes an hour, and crack a window.
+207  441.49  0.71 D You dig it out.
+208  442.62  0.88 D Lando was right.
+209  443.88  0.49 D Again.
+210  444.97  1.18 D Five fifty a.m.
+211  446.53  1.40 D Headlights on the mountain road.
+212  448.34  0.56 D A plow.
+213  449.27  1.61 D Behind it, an ambulance.
+214  451.23  2.33 D They give Dale oxygen right there in the snow.
+215  453.97  1.05 D He opens his eyes.
+216  455.41  0.64 D He looks at you.
+217  456.38  1.03 D Then at the cat.
+218  457.94  1.84 D "No pets," he whispers.
+219  460.14  0.38 D Then.
+220  460.98  0.75 D "He stays.
+221  462.16  0.30 D Free.
+222  462.97  2.03 D Forever."  Everyone made it.
+223  465.34  2.15 D Lando slept through the whole ambulance ride.
+224  467.87  0.70 D On Rosa.
+225  469.01  1.20 D So be honest.
+226  470.67  0.82 D Three in the morning.
+227  471.82  1.30 D Nine degrees outside.
+228  473.48  1.17 D Poison inside.
+229  475.04  2.31 D Would you have dragged everyone out into that blizzard?
+230  477.61  1.24 D Or stayed where it was warm?
+231  479.21  1.00 D Tell me in the comments.
+232  480.58  2.58 D Next Monday, the lights go out somewhere new.

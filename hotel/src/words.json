@@ -1,0 +1,7700 @@
+[
+{
+"text": "Two",
+"start": 0.04,
+"end": 0.221,
+"chunk": "A"
+},
+{
+"text": "forty-seven",
+"start": 0.221,
+"end": 0.946,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 0.946,
+"end": 1.127,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 1.127,
+"end": 1.308,
+"chunk": "A"
+},
+{
+"text": "morning.",
+"start": 1.308,
+"end": 1.67,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 2.16,
+"end": 2.408,
+"chunk": "A"
+},
+{
+"text": "power",
+"start": 2.408,
+"end": 2.903,
+"chunk": "A"
+},
+{
+"text": "has",
+"start": 2.903,
+"end": 3.151,
+"chunk": "A"
+},
+{
+"text": "been",
+"start": 3.151,
+"end": 3.399,
+"chunk": "A"
+},
+{
+"text": "out",
+"start": 3.399,
+"end": 3.647,
+"chunk": "A"
+},
+{
+"text": "for",
+"start": 3.647,
+"end": 3.894,
+"chunk": "A"
+},
+{
+"text": "six",
+"start": 3.894,
+"end": 4.142,
+"chunk": "A"
+},
+{
+"text": "hours.",
+"start": 4.142,
+"end": 4.39,
+"chunk": "A"
+},
+{
+"text": "Your",
+"start": 4.79,
+"end": 5.013,
+"chunk": "A"
+},
+{
+"text": "cat's",
+"start": 5.013,
+"end": 5.236,
+"chunk": "A"
+},
+{
+"text": "carrier",
+"start": 5.236,
+"end": 5.681,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 5.681,
+"end": 5.904,
+"chunk": "A"
+},
+{
+"text": "open.",
+"start": 5.904,
+"end": 6.35,
+"chunk": "A"
+},
+{
+"text": "And",
+"start": 6.77,
+"end": 7.01,
+"chunk": "A"
+},
+{
+"text": "empty.",
+"start": 7.01,
+"end": 7.49,
+"chunk": "A"
+},
+{
+"text": "Somewhere",
+"start": 8.01,
+"end": 8.639,
+"chunk": "A"
+},
+{
+"text": "inside",
+"start": 8.639,
+"end": 9.058,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 9.058,
+"end": 9.268,
+"chunk": "A"
+},
+{
+"text": "wall,",
+"start": 9.268,
+"end": 9.792,
+"chunk": "A"
+},
+{
+"text": "something",
+"start": 9.792,
+"end": 10.421,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 10.421,
+"end": 10.631,
+"chunk": "A"
+},
+{
+"text": "scratching.",
+"start": 10.631,
+"end": 11.05,
+"chunk": "A"
+},
+{
+"text": "It",
+"start": 11.5,
+"end": 11.757,
+"chunk": "A"
+},
+{
+"text": "moves.",
+"start": 11.757,
+"end": 12.27,
+"chunk": "A"
+},
+{
+"text": "Down",
+"start": 12.67,
+"end": 12.867,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 12.867,
+"end": 13.065,
+"chunk": "A"
+},
+{
+"text": "hallway.",
+"start": 13.065,
+"end": 13.46,
+"chunk": "A"
+},
+{
+"text": "Past",
+"start": 13.81,
+"end": 14.036,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 14.036,
+"end": 14.262,
+"chunk": "A"
+},
+{
+"text": "ice",
+"start": 14.262,
+"end": 14.488,
+"chunk": "A"
+},
+{
+"text": "machine.",
+"start": 14.488,
+"end": 14.94,
+"chunk": "A"
+},
+{
+"text": "Past",
+"start": 15.26,
+"end": 15.555,
+"chunk": "A"
+},
+{
+"text": "room",
+"start": 15.555,
+"end": 15.85,
+"chunk": "A"
+},
+{
+"text": "fourteen.",
+"start": 15.85,
+"end": 16.44,
+"chunk": "A"
+},
+{
+"text": "Then",
+"start": 16.89,
+"end": 17.3,
+"chunk": "A"
+},
+{
+"text": "it",
+"start": 17.3,
+"end": 17.71,
+"chunk": "A"
+},
+{
+"text": "stops.",
+"start": 17.71,
+"end": 18.12,
+"chunk": "A"
+},
+{
+"text": "Right",
+"start": 18.45,
+"end": 18.68,
+"chunk": "A"
+},
+{
+"text": "behind",
+"start": 18.68,
+"end": 19.14,
+"chunk": "A"
+},
+{
+"text": "your",
+"start": 19.14,
+"end": 19.37,
+"chunk": "A"
+},
+{
+"text": "head.",
+"start": 19.37,
+"end": 19.6,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 20.07,
+"end": 20.279,
+"chunk": "A"
+},
+{
+"text": "man",
+"start": 20.279,
+"end": 20.489,
+"chunk": "A"
+},
+{
+"text": "at",
+"start": 20.489,
+"end": 20.698,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 20.698,
+"end": 20.908,
+"chunk": "A"
+},
+{
+"text": "front",
+"start": 20.908,
+"end": 21.117,
+"chunk": "A"
+},
+{
+"text": "desk",
+"start": 21.117,
+"end": 21.326,
+"chunk": "A"
+},
+{
+"text": "told",
+"start": 21.326,
+"end": 21.536,
+"chunk": "A"
+},
+{
+"text": "you",
+"start": 21.536,
+"end": 21.745,
+"chunk": "A"
+},
+{
+"text": "nobody",
+"start": 21.745,
+"end": 22.374,
+"chunk": "A"
+},
+{
+"text": "else",
+"start": 22.374,
+"end": 22.583,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 22.583,
+"end": 22.792,
+"chunk": "A"
+},
+{
+"text": "staying",
+"start": 22.792,
+"end": 23.002,
+"chunk": "A"
+},
+{
+"text": "on",
+"start": 23.002,
+"end": 23.211,
+"chunk": "A"
+},
+{
+"text": "this",
+"start": 23.211,
+"end": 23.421,
+"chunk": "A"
+},
+{
+"text": "floor.",
+"start": 23.421,
+"end": 23.63,
+"chunk": "A"
+},
+{
+"text": "And",
+"start": 24.06,
+"end": 24.294,
+"chunk": "A"
+},
+{
+"text": "downstairs,",
+"start": 24.294,
+"end": 24.88,
+"chunk": "A"
+},
+{
+"text": "something",
+"start": 24.88,
+"end": 25.794,
+"chunk": "A"
+},
+{
+"text": "has",
+"start": 25.794,
+"end": 26.028,
+"chunk": "A"
+},
+{
+"text": "been",
+"start": 26.028,
+"end": 26.262,
+"chunk": "A"
+},
+{
+"text": "running",
+"start": 26.262,
+"end": 26.731,
+"chunk": "A"
+},
+{
+"text": "all",
+"start": 26.731,
+"end": 26.966,
+"chunk": "A"
+},
+{
+"text": "night.",
+"start": 26.966,
+"end": 27.2,
+"chunk": "A"
+},
+{
+"text": "You",
+"start": 27.6,
+"end": 27.79,
+"chunk": "A"
+},
+{
+"text": "can",
+"start": 27.79,
+"end": 28.15,
+"chunk": "A"
+},
+{
+"text": "feel",
+"start": 28.15,
+"end": 28.34,
+"chunk": "A"
+},
+{
+"text": "it",
+"start": 28.34,
+"end": 28.53,
+"chunk": "A"
+},
+{
+"text": "through",
+"start": 28.53,
+"end": 28.72,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 28.72,
+"end": 28.91,
+"chunk": "A"
+},
+{
+"text": "floor.",
+"start": 28.91,
+"end": 29.1,
+"chunk": "A"
+},
+{
+"text": "A",
+"start": 29.49,
+"end": 29.777,
+"chunk": "A"
+},
+{
+"text": "low,",
+"start": 29.777,
+"end": 30.208,
+"chunk": "A"
+},
+{
+"text": "steady",
+"start": 30.208,
+"end": 30.783,
+"chunk": "A"
+},
+{
+"text": "hum.",
+"start": 30.783,
+"end": 31.07,
+"chunk": "A"
+},
+{
+"text": "So",
+"start": 31.51,
+"end": 31.823,
+"chunk": "A"
+},
+{
+"text": "what's",
+"start": 31.823,
+"end": 32.137,
+"chunk": "A"
+},
+{
+"text": "inside",
+"start": 32.137,
+"end": 32.763,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 32.763,
+"end": 33.077,
+"chunk": "A"
+},
+{
+"text": "walls?",
+"start": 33.077,
+"end": 33.39,
+"chunk": "A"
+},
+{
+"text": "And",
+"start": 33.74,
+"end": 34.0,
+"chunk": "A"
+},
+{
+"text": "what",
+"start": 34.0,
+"end": 34.26,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 34.26,
+"end": 34.52,
+"chunk": "A"
+},
+{
+"text": "that",
+"start": 34.52,
+"end": 34.78,
+"chunk": "A"
+},
+{
+"text": "hum?",
+"start": 34.78,
+"end": 35.04,
+"chunk": "A"
+},
+{
+"text": "Before",
+"start": 35.52,
+"end": 35.898,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 35.898,
+"end": 36.087,
+"chunk": "A"
+},
+{
+"text": "sun",
+"start": 36.087,
+"end": 36.276,
+"chunk": "A"
+},
+{
+"text": "comes",
+"start": 36.276,
+"end": 36.654,
+"chunk": "A"
+},
+{
+"text": "up,",
+"start": 36.654,
+"end": 37.187,
+"chunk": "A"
+},
+{
+"text": "one",
+"start": 37.187,
+"end": 37.376,
+"chunk": "A"
+},
+{
+"text": "of",
+"start": 37.376,
+"end": 37.565,
+"chunk": "A"
+},
+{
+"text": "them",
+"start": 37.565,
+"end": 37.754,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 37.754,
+"end": 37.943,
+"chunk": "A"
+},
+{
+"text": "going",
+"start": 37.943,
+"end": 38.132,
+"chunk": "A"
+},
+{
+"text": "to",
+"start": 38.132,
+"end": 38.321,
+"chunk": "A"
+},
+{
+"text": "try",
+"start": 38.321,
+"end": 38.51,
+"chunk": "A"
+},
+{
+"text": "to",
+"start": 38.51,
+"end": 38.699,
+"chunk": "A"
+},
+{
+"text": "kill",
+"start": 38.699,
+"end": 38.887,
+"chunk": "A"
+},
+{
+"text": "everyone",
+"start": 38.887,
+"end": 39.454,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 39.454,
+"end": 39.643,
+"chunk": "A"
+},
+{
+"text": "this",
+"start": 39.643,
+"end": 39.832,
+"chunk": "A"
+},
+{
+"text": "hotel.",
+"start": 39.832,
+"end": 40.21,
+"chunk": "A"
+},
+{
+"text": "Twelve",
+"start": 41.01,
+"end": 41.325,
+"chunk": "A"
+},
+{
+"text": "hours",
+"start": 41.325,
+"end": 41.64,
+"chunk": "A"
+},
+{
+"text": "earlier.",
+"start": 41.64,
+"end": 42.27,
+"chunk": "A"
+},
+{
+"text": "Six",
+"start": 42.65,
+"end": 43.055,
+"chunk": "A"
+},
+{
+"text": "p.m.",
+"start": 43.055,
+"end": 43.46,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 44.08,
+"end": 44.297,
+"chunk": "A"
+},
+{
+"text": "Pinecrest",
+"start": 44.297,
+"end": 44.948,
+"chunk": "A"
+},
+{
+"text": "Lodge",
+"start": 44.948,
+"end": 45.165,
+"chunk": "A"
+},
+{
+"text": "sits",
+"start": 45.165,
+"end": 45.382,
+"chunk": "A"
+},
+{
+"text": "halfway",
+"start": 45.382,
+"end": 45.815,
+"chunk": "A"
+},
+{
+"text": "up",
+"start": 45.815,
+"end": 46.032,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 46.032,
+"end": 46.249,
+"chunk": "A"
+},
+{
+"text": "mountain",
+"start": 46.249,
+"end": 46.683,
+"chunk": "A"
+},
+{
+"text": "road.",
+"start": 46.683,
+"end": 46.9,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 47.29,
+"end": 47.539,
+"chunk": "A"
+},
+{
+"text": "sign",
+"start": 47.539,
+"end": 47.789,
+"chunk": "A"
+},
+{
+"text": "on",
+"start": 47.789,
+"end": 48.038,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 48.038,
+"end": 48.288,
+"chunk": "A"
+},
+{
+"text": "front",
+"start": 48.288,
+"end": 48.537,
+"chunk": "A"
+},
+{
+"text": "door",
+"start": 48.537,
+"end": 48.787,
+"chunk": "A"
+},
+{
+"text": "says,",
+"start": 48.787,
+"end": 49.351,
+"chunk": "A"
+},
+{
+"text": "no",
+"start": 49.351,
+"end": 49.601,
+"chunk": "A"
+},
+{
+"text": "pets.",
+"start": 49.601,
+"end": 49.85,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 50.24,
+"end": 50.452,
+"chunk": "A"
+},
+{
+"text": "bag",
+"start": 50.452,
+"end": 50.664,
+"chunk": "A"
+},
+{
+"text": "on",
+"start": 50.664,
+"end": 50.877,
+"chunk": "A"
+},
+{
+"text": "your",
+"start": 50.877,
+"end": 51.089,
+"chunk": "A"
+},
+{
+"text": "shoulder",
+"start": 51.089,
+"end": 51.513,
+"chunk": "A"
+},
+{
+"text": "says",
+"start": 51.513,
+"end": 51.726,
+"chunk": "A"
+},
+{
+"text": "nothing.",
+"start": 51.726,
+"end": 52.15,
+"chunk": "A"
+},
+{
+"text": "Because",
+"start": 52.41,
+"end": 52.802,
+"chunk": "A"
+},
+{
+"text": "Lando",
+"start": 52.802,
+"end": 53.194,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 53.194,
+"end": 53.39,
+"chunk": "A"
+},
+{
+"text": "asleep",
+"start": 53.39,
+"end": 53.782,
+"chunk": "A"
+},
+{
+"text": "inside",
+"start": 53.782,
+"end": 54.174,
+"chunk": "A"
+},
+{
+"text": "it.",
+"start": 54.174,
+"end": 54.37,
+"chunk": "A"
+},
+{
+"text": "Lando",
+"start": 54.75,
+"end": 55.174,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 55.174,
+"end": 55.386,
+"chunk": "A"
+},
+{
+"text": "your",
+"start": 55.386,
+"end": 55.598,
+"chunk": "A"
+},
+{
+"text": "cat.",
+"start": 55.598,
+"end": 55.81,
+"chunk": "A"
+},
+{
+"text": "Lando",
+"start": 56.21,
+"end": 56.661,
+"chunk": "A"
+},
+{
+"text": "has",
+"start": 56.661,
+"end": 56.887,
+"chunk": "A"
+},
+{
+"text": "opinions",
+"start": 56.887,
+"end": 57.563,
+"chunk": "A"
+},
+{
+"text": "about",
+"start": 57.563,
+"end": 58.014,
+"chunk": "A"
+},
+{
+"text": "bags.",
+"start": 58.014,
+"end": 58.24,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 58.7,
+"end": 58.998,
+"chunk": "A"
+},
+{
+"text": "storm",
+"start": 58.998,
+"end": 59.296,
+"chunk": "A"
+},
+{
+"text": "got",
+"start": 59.296,
+"end": 59.594,
+"chunk": "A"
+},
+{
+"text": "here",
+"start": 59.594,
+"end": 59.892,
+"chunk": "A"
+},
+{
+"text": "first.",
+"start": 59.892,
+"end": 60.19,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 60.56,
+"end": 60.746,
+"chunk": "A"
+},
+{
+"text": "radio",
+"start": 60.746,
+"end": 61.118,
+"chunk": "A"
+},
+{
+"text": "says",
+"start": 61.118,
+"end": 61.304,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 61.304,
+"end": 61.491,
+"chunk": "A"
+},
+{
+"text": "nor'easter",
+"start": 61.491,
+"end": 62.049,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 62.049,
+"end": 62.235,
+"chunk": "A"
+},
+{
+"text": "wrapping",
+"start": 62.235,
+"end": 62.607,
+"chunk": "A"
+},
+{
+"text": "around",
+"start": 62.607,
+"end": 62.979,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 62.979,
+"end": 63.166,
+"chunk": "A"
+},
+{
+"text": "mountains,",
+"start": 63.166,
+"end": 63.631,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 63.631,
+"end": 64.057,
+"chunk": "A"
+},
+{
+"text": "plows",
+"start": 64.057,
+"end": 64.243,
+"chunk": "A"
+},
+{
+"text": "have",
+"start": 64.243,
+"end": 64.429,
+"chunk": "A"
+},
+{
+"text": "stopped",
+"start": 64.429,
+"end": 64.801,
+"chunk": "A"
+},
+{
+"text": "for",
+"start": 64.801,
+"end": 64.987,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 64.987,
+"end": 65.174,
+"chunk": "A"
+},
+{
+"text": "night,",
+"start": 65.174,
+"end": 65.693,
+"chunk": "A"
+},
+{
+"text": "and",
+"start": 65.693,
+"end": 65.879,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 65.879,
+"end": 66.065,
+"chunk": "A"
+},
+{
+"text": "road",
+"start": 66.065,
+"end": 66.251,
+"chunk": "A"
+},
+{
+"text": "behind",
+"start": 66.251,
+"end": 66.623,
+"chunk": "A"
+},
+{
+"text": "you",
+"start": 66.623,
+"end": 66.809,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 66.809,
+"end": 66.996,
+"chunk": "A"
+},
+{
+"text": "already",
+"start": 66.996,
+"end": 67.554,
+"chunk": "A"
+},
+{
+"text": "gone.",
+"start": 67.554,
+"end": 67.74,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 68.16,
+"end": 68.36,
+"chunk": "A"
+},
+{
+"text": "manager,",
+"start": 68.36,
+"end": 69.06,
+"chunk": "A"
+},
+{
+"text": "Dale,",
+"start": 69.06,
+"end": 69.56,
+"chunk": "A"
+},
+{
+"text": "slides",
+"start": 69.56,
+"end": 69.96,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 69.96,
+"end": 70.16,
+"chunk": "A"
+},
+{
+"text": "key",
+"start": 70.16,
+"end": 70.36,
+"chunk": "A"
+},
+{
+"text": "across",
+"start": 70.36,
+"end": 70.76,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 70.76,
+"end": 70.96,
+"chunk": "A"
+},
+{
+"text": "desk.",
+"start": 70.96,
+"end": 71.16,
+"chunk": "A"
+},
+{
+"text": "Room",
+"start": 71.57,
+"end": 71.78,
+"chunk": "A"
+},
+{
+"text": "twenty-two.",
+"start": 71.78,
+"end": 72.41,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 72.79,
+"end": 73.0,
+"chunk": "A"
+},
+{
+"text": "last",
+"start": 73.0,
+"end": 73.21,
+"chunk": "A"
+},
+{
+"text": "one.",
+"start": 73.21,
+"end": 73.42,
+"chunk": "A"
+},
+{
+"text": "He",
+"start": 73.87,
+"end": 74.052,
+"chunk": "A"
+},
+{
+"text": "looks",
+"start": 74.052,
+"end": 74.234,
+"chunk": "A"
+},
+{
+"text": "at",
+"start": 74.234,
+"end": 74.416,
+"chunk": "A"
+},
+{
+"text": "your",
+"start": 74.416,
+"end": 74.598,
+"chunk": "A"
+},
+{
+"text": "bag.",
+"start": 74.598,
+"end": 74.78,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 75.2,
+"end": 75.51,
+"chunk": "A"
+},
+{
+"text": "bag",
+"start": 75.51,
+"end": 75.82,
+"chunk": "A"
+},
+{
+"text": "meows.",
+"start": 75.82,
+"end": 76.13,
+"chunk": "A"
+},
+{
+"text": "Dale",
+"start": 76.53,
+"end": 76.958,
+"chunk": "A"
+},
+{
+"text": "says",
+"start": 76.958,
+"end": 77.172,
+"chunk": "A"
+},
+{
+"text": "nothing.",
+"start": 77.172,
+"end": 77.6,
+"chunk": "A"
+},
+{
+"text": "Dale",
+"start": 77.99,
+"end": 78.443,
+"chunk": "A"
+},
+{
+"text": "has",
+"start": 78.443,
+"end": 78.67,
+"chunk": "A"
+},
+{
+"text": "had",
+"start": 78.67,
+"end": 78.897,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 78.897,
+"end": 79.123,
+"chunk": "A"
+},
+{
+"text": "very",
+"start": 79.123,
+"end": 79.577,
+"chunk": "A"
+},
+{
+"text": "long",
+"start": 79.577,
+"end": 79.803,
+"chunk": "A"
+},
+{
+"text": "day.",
+"start": 79.803,
+"end": 80.03,
+"chunk": "A"
+},
+{
+"text": "Seven",
+"start": 80.82,
+"end": 81.387,
+"chunk": "A"
+},
+{
+"text": "p.m.",
+"start": 81.387,
+"end": 81.67,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 82.16,
+"end": 82.375,
+"chunk": "A"
+},
+{
+"text": "snow",
+"start": 82.375,
+"end": 82.589,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 82.589,
+"end": 82.804,
+"chunk": "A"
+},
+{
+"text": "coming",
+"start": 82.804,
+"end": 83.233,
+"chunk": "A"
+},
+{
+"text": "down",
+"start": 83.233,
+"end": 83.448,
+"chunk": "A"
+},
+{
+"text": "an",
+"start": 83.448,
+"end": 83.662,
+"chunk": "A"
+},
+{
+"text": "inch",
+"start": 83.662,
+"end": 83.877,
+"chunk": "A"
+},
+{
+"text": "every",
+"start": 83.877,
+"end": 84.521,
+"chunk": "A"
+},
+{
+"text": "half",
+"start": 84.521,
+"end": 84.735,
+"chunk": "A"
+},
+{
+"text": "hour.",
+"start": 84.735,
+"end": 84.95,
+"chunk": "A"
+},
+{
+"text": "Your",
+"start": 85.34,
+"end": 85.554,
+"chunk": "A"
+},
+{
+"text": "car",
+"start": 85.554,
+"end": 85.769,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 85.769,
+"end": 85.983,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 85.983,
+"end": 86.198,
+"chunk": "A"
+},
+{
+"text": "white",
+"start": 86.198,
+"end": 86.412,
+"chunk": "A"
+},
+{
+"text": "hump",
+"start": 86.412,
+"end": 86.627,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 86.627,
+"end": 86.841,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 86.841,
+"end": 87.056,
+"chunk": "A"
+},
+{
+"text": "lot.",
+"start": 87.056,
+"end": 87.27,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 87.66,
+"end": 87.858,
+"chunk": "A"
+},
+{
+"text": "only",
+"start": 87.858,
+"end": 88.255,
+"chunk": "A"
+},
+{
+"text": "way",
+"start": 88.255,
+"end": 88.453,
+"chunk": "A"
+},
+{
+"text": "off",
+"start": 88.453,
+"end": 88.651,
+"chunk": "A"
+},
+{
+"text": "this",
+"start": 88.651,
+"end": 88.849,
+"chunk": "A"
+},
+{
+"text": "mountain",
+"start": 88.849,
+"end": 89.246,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 89.246,
+"end": 89.444,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 89.444,
+"end": 89.642,
+"chunk": "A"
+},
+{
+"text": "road",
+"start": 89.642,
+"end": 89.841,
+"chunk": "A"
+},
+{
+"text": "you",
+"start": 89.841,
+"end": 90.039,
+"chunk": "A"
+},
+{
+"text": "can't",
+"start": 90.039,
+"end": 90.237,
+"chunk": "A"
+},
+{
+"text": "see",
+"start": 90.237,
+"end": 90.435,
+"chunk": "A"
+},
+{
+"text": "anymore.",
+"start": 90.435,
+"end": 91.03,
+"chunk": "A"
+},
+{
+"text": "Eight",
+"start": 91.76,
+"end": 92.127,
+"chunk": "A"
+},
+{
+"text": "twelve",
+"start": 92.127,
+"end": 92.493,
+"chunk": "A"
+},
+{
+"text": "p.m.",
+"start": 92.493,
+"end": 92.86,
+"chunk": "A"
+},
+{
+"text": "The",
+"start": 93.36,
+"end": 93.575,
+"chunk": "A"
+},
+{
+"text": "lights",
+"start": 93.575,
+"end": 93.79,
+"chunk": "A"
+},
+{
+"text": "flicker.",
+"start": 93.79,
+"end": 94.22,
+"chunk": "A"
+},
+{
+"text": "Once.",
+"start": 94.62,
+"end": 95.07,
+"chunk": "A"
+},
+{
+"text": "Twice.",
+"start": 95.49,
+"end": 95.99,
+"chunk": "A"
+},
+{
+"text": "Then",
+"start": 96.36,
+"end": 96.621,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 96.621,
+"end": 96.882,
+"chunk": "A"
+},
+{
+"text": "whole",
+"start": 96.882,
+"end": 97.405,
+"chunk": "A"
+},
+{
+"text": "mountain",
+"start": 97.405,
+"end": 97.928,
+"chunk": "A"
+},
+{
+"text": "goes",
+"start": 97.928,
+"end": 98.189,
+"chunk": "A"
+},
+{
+"text": "dark.",
+"start": 98.189,
+"end": 98.45,
+"chunk": "A"
+},
+{
+"text": "No",
+"start": 98.85,
+"end": 99.135,
+"chunk": "A"
+},
+{
+"text": "heat.",
+"start": 99.135,
+"end": 99.42,
+"chunk": "A"
+},
+{
+"text": "No",
+"start": 99.7,
+"end": 99.872,
+"chunk": "A"
+},
+{
+"text": "elevator.",
+"start": 99.872,
+"end": 100.56,
+"chunk": "A"
+},
+{
+"text": "No",
+"start": 100.75,
+"end": 101.013,
+"chunk": "A"
+},
+{
+"text": "Wi-Fi.",
+"start": 101.013,
+"end": 101.54,
+"chunk": "A"
+},
+{
+"text": "Your",
+"start": 101.92,
+"end": 102.157,
+"chunk": "A"
+},
+{
+"text": "phone",
+"start": 102.157,
+"end": 102.395,
+"chunk": "A"
+},
+{
+"text": "says",
+"start": 102.395,
+"end": 102.633,
+"chunk": "A"
+},
+{
+"text": "sixty-four",
+"start": 102.633,
+"end": 103.345,
+"chunk": "A"
+},
+{
+"text": "percent.",
+"start": 103.345,
+"end": 103.82,
+"chunk": "A"
+},
+{
+"text": "Then,",
+"start": 104.27,
+"end": 104.648,
+"chunk": "A"
+},
+{
+"text": "from",
+"start": 104.648,
+"end": 104.9,
+"chunk": "A"
+},
+{
+"text": "downstairs,",
+"start": 104.9,
+"end": 105.529,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 105.529,
+"end": 105.971,
+"chunk": "A"
+},
+{
+"text": "motor",
+"start": 105.971,
+"end": 106.475,
+"chunk": "A"
+},
+{
+"text": "coughs",
+"start": 106.475,
+"end": 106.726,
+"chunk": "A"
+},
+{
+"text": "to",
+"start": 106.726,
+"end": 106.978,
+"chunk": "A"
+},
+{
+"text": "life.",
+"start": 106.978,
+"end": 107.23,
+"chunk": "A"
+},
+{
+"text": "You",
+"start": 107.76,
+"end": 107.917,
+"chunk": "A"
+},
+{
+"text": "look",
+"start": 107.917,
+"end": 108.074,
+"chunk": "A"
+},
+{
+"text": "over",
+"start": 108.074,
+"end": 108.389,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 108.389,
+"end": 108.546,
+"chunk": "A"
+},
+{
+"text": "railing.",
+"start": 108.546,
+"end": 108.86,
+"chunk": "A"
+},
+{
+"text": "Dale",
+"start": 109.25,
+"end": 109.599,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 109.599,
+"end": 109.773,
+"chunk": "A"
+},
+{
+"text": "dragging",
+"start": 109.773,
+"end": 110.121,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 110.121,
+"end": 110.296,
+"chunk": "A"
+},
+{
+"text": "generator",
+"start": 110.296,
+"end": 110.993,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 110.993,
+"end": 111.167,
+"chunk": "A"
+},
+{
+"text": "from",
+"start": 111.167,
+"end": 111.341,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 111.341,
+"end": 111.516,
+"chunk": "A"
+},
+{
+"text": "snow.",
+"start": 111.516,
+"end": 111.69,
+"chunk": "A"
+},
+{
+"text": "Into",
+"start": 112.04,
+"end": 112.36,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 112.36,
+"end": 112.52,
+"chunk": "A"
+},
+{
+"text": "lobby.",
+"start": 112.52,
+"end": 112.84,
+"chunk": "A"
+},
+{
+"text": "Right",
+"start": 113.19,
+"end": 113.403,
+"chunk": "A"
+},
+{
+"text": "next",
+"start": 113.403,
+"end": 113.616,
+"chunk": "A"
+},
+{
+"text": "to",
+"start": 113.616,
+"end": 113.829,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 113.829,
+"end": 114.041,
+"chunk": "A"
+},
+{
+"text": "fireplace.",
+"start": 114.041,
+"end": 114.68,
+"chunk": "A"
+},
+{
+"text": "He",
+"start": 115.11,
+"end": 115.305,
+"chunk": "A"
+},
+{
+"text": "props",
+"start": 115.305,
+"end": 115.5,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 115.5,
+"end": 115.695,
+"chunk": "A"
+},
+{
+"text": "front",
+"start": 115.695,
+"end": 115.89,
+"chunk": "A"
+},
+{
+"text": "door",
+"start": 115.89,
+"end": 116.085,
+"chunk": "A"
+},
+{
+"text": "open",
+"start": 116.085,
+"end": 116.475,
+"chunk": "A"
+},
+{
+"text": "with",
+"start": 116.475,
+"end": 116.67,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 116.67,
+"end": 116.865,
+"chunk": "A"
+},
+{
+"text": "boot.",
+"start": 116.865,
+"end": 117.06,
+"chunk": "A"
+},
+{
+"text": "\"It's",
+"start": 117.42,
+"end": 117.614,
+"chunk": "A"
+},
+{
+"text": "just",
+"start": 117.614,
+"end": 117.807,
+"chunk": "A"
+},
+{
+"text": "for",
+"start": 117.807,
+"end": 118.001,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 118.001,
+"end": 118.195,
+"chunk": "A"
+},
+{
+"text": "coffee",
+"start": 118.195,
+"end": 118.388,
+"chunk": "A"
+},
+{
+"text": "and",
+"start": 118.388,
+"end": 118.582,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 118.582,
+"end": 118.775,
+"chunk": "A"
+},
+{
+"text": "phones,\"",
+"start": 118.775,
+"end": 119.413,
+"chunk": "A"
+},
+{
+"text": "he",
+"start": 119.413,
+"end": 119.606,
+"chunk": "A"
+},
+{
+"text": "says.",
+"start": 119.606,
+"end": 119.8,
+"chunk": "A"
+},
+{
+"text": "\"Door's",
+"start": 120.14,
+"end": 120.33,
+"chunk": "A"
+},
+{
+"text": "open.",
+"start": 120.33,
+"end": 120.71,
+"chunk": "A"
+},
+{
+"text": "It's",
+"start": 120.96,
+"end": 121.166,
+"chunk": "A"
+},
+{
+"text": "fine.\"",
+"start": 121.166,
+"end": 121.371,
+"chunk": "A"
+},
+{
+"text": "Remember",
+"start": 121.371,
+"end": 122.428,
+"chunk": "A"
+},
+{
+"text": "that",
+"start": 122.428,
+"end": 122.633,
+"chunk": "A"
+},
+{
+"text": "open",
+"start": 122.633,
+"end": 123.044,
+"chunk": "A"
+},
+{
+"text": "door.",
+"start": 123.044,
+"end": 123.25,
+"chunk": "A"
+},
+{
+"text": "A",
+"start": 123.64,
+"end": 123.864,
+"chunk": "A"
+},
+{
+"text": "guest",
+"start": 123.864,
+"end": 124.087,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 124.087,
+"end": 124.311,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 124.311,
+"end": 124.534,
+"chunk": "A"
+},
+{
+"text": "red",
+"start": 124.534,
+"end": 124.758,
+"chunk": "A"
+},
+{
+"text": "hat",
+"start": 124.758,
+"end": 124.981,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 124.981,
+"end": 125.205,
+"chunk": "A"
+},
+{
+"text": "lighting",
+"start": 125.205,
+"end": 125.652,
+"chunk": "A"
+},
+{
+"text": "candles",
+"start": 125.652,
+"end": 126.099,
+"chunk": "A"
+},
+{
+"text": "all",
+"start": 126.099,
+"end": 126.322,
+"chunk": "A"
+},
+{
+"text": "along",
+"start": 126.322,
+"end": 126.769,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 126.769,
+"end": 126.993,
+"chunk": "A"
+},
+{
+"text": "front",
+"start": 126.993,
+"end": 127.216,
+"chunk": "A"
+},
+{
+"text": "desk.",
+"start": 127.216,
+"end": 127.44,
+"chunk": "A"
+},
+{
+"text": "Ten",
+"start": 127.8,
+"end": 127.987,
+"chunk": "A"
+},
+{
+"text": "of",
+"start": 127.987,
+"end": 128.173,
+"chunk": "A"
+},
+{
+"text": "them.",
+"start": 128.173,
+"end": 128.36,
+"chunk": "A"
+},
+{
+"text": "Fifteen.",
+"start": 128.78,
+"end": 129.35,
+"chunk": "A"
+},
+{
+"text": "When",
+"start": 129.74,
+"end": 129.96,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 129.96,
+"end": 130.18,
+"chunk": "A"
+},
+{
+"text": "power",
+"start": 130.18,
+"end": 130.62,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 130.62,
+"end": 131.08,
+"chunk": "A"
+},
+{
+"text": "out,",
+"start": 131.08,
+"end": 131.41,
+"chunk": "A"
+},
+{
+"text": "use",
+"start": 131.41,
+"end": 131.63,
+"chunk": "A"
+},
+{
+"text": "flashlights,",
+"start": 131.63,
+"end": 132.18,
+"chunk": "A"
+},
+{
+"text": "not",
+"start": 132.18,
+"end": 132.4,
+"chunk": "A"
+},
+{
+"text": "candles.",
+"start": 132.4,
+"end": 132.84,
+"chunk": "A"
+},
+{
+"text": "And",
+"start": 133.17,
+"end": 133.385,
+"chunk": "A"
+},
+{
+"text": "in",
+"start": 133.385,
+"end": 133.6,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 133.6,
+"end": 133.815,
+"chunk": "A"
+},
+{
+"text": "storm",
+"start": 133.815,
+"end": 134.031,
+"chunk": "A"
+},
+{
+"text": "like",
+"start": 134.031,
+"end": 134.246,
+"chunk": "A"
+},
+{
+"text": "this,",
+"start": 134.246,
+"end": 134.568,
+"chunk": "A"
+},
+{
+"text": "a",
+"start": 134.568,
+"end": 134.954,
+"chunk": "A"
+},
+{
+"text": "fire",
+"start": 134.954,
+"end": 135.169,
+"chunk": "A"
+},
+{
+"text": "truck",
+"start": 135.169,
+"end": 135.384,
+"chunk": "A"
+},
+{
+"text": "is",
+"start": 135.384,
+"end": 135.599,
+"chunk": "A"
+},
+{
+"text": "not",
+"start": 135.599,
+"end": 135.814,
+"chunk": "A"
+},
+{
+"text": "getting",
+"start": 135.814,
+"end": 136.245,
+"chunk": "A"
+},
+{
+"text": "up",
+"start": 136.245,
+"end": 136.46,
+"chunk": "A"
+},
+{
+"text": "that",
+"start": 136.46,
+"end": 136.675,
+"chunk": "A"
+},
+{
+"text": "road.",
+"start": 136.675,
+"end": 136.89,
+"chunk": "A"
+},
+{
+"text": "You",
+"start": 137.3,
+"end": 137.527,
+"chunk": "A"
+},
+{
+"text": "hand",
+"start": 137.527,
+"end": 137.754,
+"chunk": "A"
+},
+{
+"text": "her",
+"start": 137.754,
+"end": 137.981,
+"chunk": "A"
+},
+{
+"text": "your",
+"start": 137.981,
+"end": 138.209,
+"chunk": "A"
+},
+{
+"text": "spare",
+"start": 138.209,
+"end": 138.436,
+"chunk": "A"
+},
+{
+"text": "flashlight.",
+"start": 138.436,
+"end": 138.89,
+"chunk": "A"
+},
+{
+"text": "She",
+"start": 139.25,
+"end": 139.447,
+"chunk": "A"
+},
+{
+"text": "blows",
+"start": 139.447,
+"end": 139.643,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 139.643,
+"end": 139.84,
+"chunk": "A"
+},
+{
+"text": "candles",
+"start": 139.84,
+"end": 140.233,
+"chunk": "A"
+},
+{
+"text": "out.",
+"start": 140.233,
+"end": 140.43,
+"chunk": "A"
+},
+{
+"text": "Lando",
+"start": 140.79,
+"end": 141.165,
+"chunk": "A"
+},
+{
+"text": "watches",
+"start": 141.165,
+"end": 141.541,
+"chunk": "A"
+},
+{
+"text": "the",
+"start": 141.541,
+"end": 141.728,
+"chunk": "A"
+},
+{
+"text": "smoke",
+"start": 141.728,
+"end": 141.916,
+"chunk": "A"
+},
+{
+"text": "like",
+"start": 141.916,
+"end": 142.104,
+"chunk": "A"
+},
+{
+"text": "it",
+"start": 142.104,
+"end": 142.292,
+"chunk": "A"
+},
+{
+"text": "owes",
+"start": 142.292,
+"end": 142.667,
+"chunk": "A"
+},
+{
+"text": "him",
+"start": 142.667,
+"end": 142.855,
+"chunk": "A"
+},
+{
+"text": "money.",
+"start": 142.855,
+"end": 143.23,
+"chunk": "A"
+},
+{
+"text": "By",
+"start": 144.38,
+"end": 144.641,
+"chunk": "B"
+},
+{
+"text": "ten,",
+"start": 144.641,
+"end": 145.03300000000002,
+"chunk": "B"
+},
+{
+"text": "your",
+"start": 145.03300000000002,
+"end": 145.594,
+"chunk": "B"
+},
+{
+"text": "room",
+"start": 145.594,
+"end": 145.855,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 145.855,
+"end": 146.116,
+"chunk": "B"
+},
+{
+"text": "fifty-eight",
+"start": 146.116,
+"end": 146.638,
+"chunk": "B"
+},
+{
+"text": "degrees.",
+"start": 146.638,
+"end": 147.16,
+"chunk": "B"
+},
+{
+"text": "By",
+"start": 147.54,
+"end": 147.751,
+"chunk": "B"
+},
+{
+"text": "midnight,",
+"start": 147.751,
+"end": 148.708,
+"chunk": "B"
+},
+{
+"text": "fifty-one.",
+"start": 148.708,
+"end": 149.13,
+"chunk": "B"
+},
+{
+"text": "Loose,",
+"start": 149.58,
+"end": 150.223,
+"chunk": "B"
+},
+{
+"text": "warm",
+"start": 150.223,
+"end": 150.651,
+"chunk": "B"
+},
+{
+"text": "layers.",
+"start": 150.651,
+"end": 151.08,
+"chunk": "B"
+},
+{
+"text": "Towels",
+"start": 151.4,
+"end": 151.81,
+"chunk": "B"
+},
+{
+"text": "under",
+"start": 151.81,
+"end": 152.22,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 152.22,
+"end": 152.425,
+"chunk": "B"
+},
+{
+"text": "door.",
+"start": 152.425,
+"end": 152.63,
+"chunk": "B"
+},
+{
+"text": "Curtains",
+"start": 153.02,
+"end": 153.587,
+"chunk": "B"
+},
+{
+"text": "shut.",
+"start": 153.587,
+"end": 153.87,
+"chunk": "B"
+},
+{
+"text": "Close",
+"start": 154.21,
+"end": 154.425,
+"chunk": "B"
+},
+{
+"text": "off",
+"start": 154.425,
+"end": 154.64000000000001,
+"chunk": "B"
+},
+{
+"text": "every",
+"start": 154.64000000000001,
+"end": 155.285,
+"chunk": "B"
+},
+{
+"text": "room",
+"start": 155.285,
+"end": 155.5,
+"chunk": "B"
+},
+{
+"text": "you're",
+"start": 155.5,
+"end": 155.715,
+"chunk": "B"
+},
+{
+"text": "not",
+"start": 155.715,
+"end": 155.93,
+"chunk": "B"
+},
+{
+"text": "using.",
+"start": 155.93,
+"end": 156.36,
+"chunk": "B"
+},
+{
+"text": "Lando",
+"start": 156.82,
+"end": 157.2,
+"chunk": "B"
+},
+{
+"text": "ignores",
+"start": 157.2,
+"end": 157.77,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 157.77,
+"end": 157.96,
+"chunk": "B"
+},
+{
+"text": "rule.",
+"start": 157.96,
+"end": 158.34,
+"chunk": "B"
+},
+{
+"text": "Lando",
+"start": 158.78,
+"end": 159.257,
+"chunk": "B"
+},
+{
+"text": "sleeps",
+"start": 159.257,
+"end": 159.495,
+"chunk": "B"
+},
+{
+"text": "on",
+"start": 159.495,
+"end": 159.733,
+"chunk": "B"
+},
+{
+"text": "your",
+"start": 159.733,
+"end": 160.142,
+"chunk": "B"
+},
+{
+"text": "face.",
+"start": 160.142,
+"end": 160.38,
+"chunk": "B"
+},
+{
+"text": "Twelve",
+"start": 160.92000000000002,
+"end": 161.167,
+"chunk": "B"
+},
+{
+"text": "forty.",
+"start": 161.167,
+"end": 161.66,
+"chunk": "B"
+},
+{
+"text": "A",
+"start": 162.08,
+"end": 162.31,
+"chunk": "B"
+},
+{
+"text": "knock.",
+"start": 162.31,
+"end": 162.54,
+"chunk": "B"
+},
+{
+"text": "It's",
+"start": 162.96,
+"end": 163.16,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 163.16,
+"end": 163.36,
+"chunk": "B"
+},
+{
+"text": "woman",
+"start": 163.36,
+"end": 163.76,
+"chunk": "B"
+},
+{
+"text": "from",
+"start": 163.76,
+"end": 163.96,
+"chunk": "B"
+},
+{
+"text": "room",
+"start": 163.96,
+"end": 164.16,
+"chunk": "B"
+},
+{
+"text": "twelve.",
+"start": 164.16,
+"end": 164.36,
+"chunk": "B"
+},
+{
+"text": "Rosa.",
+"start": 164.82,
+"end": 165.24,
+"chunk": "B"
+},
+{
+"text": "Two",
+"start": 165.63,
+"end": 165.837,
+"chunk": "B"
+},
+{
+"text": "scarves,",
+"start": 165.837,
+"end": 166.353,
+"chunk": "B"
+},
+{
+"text": "and",
+"start": 166.353,
+"end": 166.56,
+"chunk": "B"
+},
+{
+"text": "a",
+"start": 166.56,
+"end": 166.767,
+"chunk": "B"
+},
+{
+"text": "hotel",
+"start": 166.767,
+"end": 167.18,
+"chunk": "B"
+},
+{
+"text": "bathrobe",
+"start": 167.18,
+"end": 167.59300000000002,
+"chunk": "B"
+},
+{
+"text": "over",
+"start": 167.59300000000002,
+"end": 168.007,
+"chunk": "B"
+},
+{
+"text": "her",
+"start": 168.007,
+"end": 168.213,
+"chunk": "B"
+},
+{
+"text": "coat.",
+"start": 168.213,
+"end": 168.42000000000002,
+"chunk": "B"
+},
+{
+"text": "\"Everybody's",
+"start": 168.87,
+"end": 169.697,
+"chunk": "B"
+},
+{
+"text": "going",
+"start": 169.697,
+"end": 169.862,
+"chunk": "B"
+},
+{
+"text": "down",
+"start": 169.862,
+"end": 170.028,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 170.028,
+"end": 170.193,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 170.193,
+"end": 170.358,
+"chunk": "B"
+},
+{
+"text": "lobby,\"",
+"start": 170.358,
+"end": 170.919,
+"chunk": "B"
+},
+{
+"text": "she",
+"start": 170.919,
+"end": 171.085,
+"chunk": "B"
+},
+{
+"text": "says.",
+"start": 171.085,
+"end": 171.25,
+"chunk": "B"
+},
+{
+"text": "\"It's",
+"start": 171.63,
+"end": 171.86700000000002,
+"chunk": "B"
+},
+{
+"text": "warm",
+"start": 171.86700000000002,
+"end": 172.103,
+"chunk": "B"
+},
+{
+"text": "down",
+"start": 172.103,
+"end": 172.34,
+"chunk": "B"
+},
+{
+"text": "there.\"",
+"start": 172.34,
+"end": 173.067,
+"chunk": "B"
+},
+{
+"text": "It",
+"start": 173.067,
+"end": 173.303,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 173.303,
+"end": 173.54,
+"chunk": "B"
+},
+{
+"text": "warm",
+"start": 173.54,
+"end": 173.77700000000002,
+"chunk": "B"
+},
+{
+"text": "down",
+"start": 173.77700000000002,
+"end": 174.013,
+"chunk": "B"
+},
+{
+"text": "there.",
+"start": 174.013,
+"end": 174.25,
+"chunk": "B"
+},
+{
+"text": "Six",
+"start": 174.65,
+"end": 174.916,
+"chunk": "B"
+},
+{
+"text": "guests",
+"start": 174.916,
+"end": 175.183,
+"chunk": "B"
+},
+{
+"text": "asleep",
+"start": 175.183,
+"end": 175.715,
+"chunk": "B"
+},
+{
+"text": "on",
+"start": 175.715,
+"end": 175.981,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 175.981,
+"end": 176.247,
+"chunk": "B"
+},
+{
+"text": "couches.",
+"start": 176.247,
+"end": 176.78,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 177.06,
+"end": 177.246,
+"chunk": "B"
+},
+{
+"text": "generator",
+"start": 177.246,
+"end": 177.99200000000002,
+"chunk": "B"
+},
+{
+"text": "humming",
+"start": 177.99200000000002,
+"end": 178.365,
+"chunk": "B"
+},
+{
+"text": "beside",
+"start": 178.365,
+"end": 178.737,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 178.737,
+"end": 178.924,
+"chunk": "B"
+},
+{
+"text": "fire.",
+"start": 178.924,
+"end": 179.11,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 179.38,
+"end": 179.614,
+"chunk": "B"
+},
+{
+"text": "front",
+"start": 179.614,
+"end": 179.848,
+"chunk": "B"
+},
+{
+"text": "door",
+"start": 179.848,
+"end": 180.08100000000002,
+"chunk": "B"
+},
+{
+"text": "open",
+"start": 180.08100000000002,
+"end": 180.549,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 180.549,
+"end": 180.78300000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 180.78300000000002,
+"end": 181.01600000000002,
+"chunk": "B"
+},
+{
+"text": "snow.",
+"start": 181.01600000000002,
+"end": 181.25,
+"chunk": "B"
+},
+{
+"text": "On",
+"start": 181.69,
+"end": 181.91500000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 181.91500000000002,
+"end": 182.14,
+"chunk": "B"
+},
+{
+"text": "stairs,",
+"start": 182.14,
+"end": 182.478,
+"chunk": "B"
+},
+{
+"text": "a",
+"start": 182.478,
+"end": 182.883,
+"chunk": "B"
+},
+{
+"text": "headache",
+"start": 182.883,
+"end": 183.334,
+"chunk": "B"
+},
+{
+"text": "starts",
+"start": 183.334,
+"end": 183.559,
+"chunk": "B"
+},
+{
+"text": "behind",
+"start": 183.559,
+"end": 184.01,
+"chunk": "B"
+},
+{
+"text": "your",
+"start": 184.01,
+"end": 184.235,
+"chunk": "B"
+},
+{
+"text": "eyes.",
+"start": 184.235,
+"end": 184.46,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 184.75,
+"end": 184.91,
+"chunk": "B"
+},
+{
+"text": "figure",
+"start": 184.91,
+"end": 185.23000000000002,
+"chunk": "B"
+},
+{
+"text": "it's",
+"start": 185.23000000000002,
+"end": 185.39,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 185.39,
+"end": 185.55,
+"chunk": "B"
+},
+{
+"text": "altitude.",
+"start": 185.55,
+"end": 186.03,
+"chunk": "B"
+},
+{
+"text": "Or",
+"start": 186.45,
+"end": 186.65300000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 186.65300000000002,
+"end": 186.857,
+"chunk": "B"
+},
+{
+"text": "day.",
+"start": 186.857,
+"end": 187.06,
+"chunk": "B"
+},
+{
+"text": "Rosa",
+"start": 187.55,
+"end": 187.897,
+"chunk": "B"
+},
+{
+"text": "takes",
+"start": 187.897,
+"end": 188.244,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 188.244,
+"end": 188.418,
+"chunk": "B"
+},
+{
+"text": "couch",
+"start": 188.418,
+"end": 188.591,
+"chunk": "B"
+},
+{
+"text": "closest",
+"start": 188.591,
+"end": 188.939,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 188.939,
+"end": 189.112,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 189.112,
+"end": 189.286,
+"chunk": "B"
+},
+{
+"text": "generator.",
+"start": 189.286,
+"end": 189.98000000000002,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 190.3,
+"end": 190.517,
+"chunk": "B"
+},
+{
+"text": "carry",
+"start": 190.517,
+"end": 190.952,
+"chunk": "B"
+},
+{
+"text": "Lando",
+"start": 190.952,
+"end": 191.386,
+"chunk": "B"
+},
+{
+"text": "back",
+"start": 191.386,
+"end": 191.603,
+"chunk": "B"
+},
+{
+"text": "upstairs,",
+"start": 191.603,
+"end": 192.366,
+"chunk": "B"
+},
+{
+"text": "because",
+"start": 192.366,
+"end": 192.801,
+"chunk": "B"
+},
+{
+"text": "Lando",
+"start": 192.801,
+"end": 193.235,
+"chunk": "B"
+},
+{
+"text": "will",
+"start": 193.235,
+"end": 193.452,
+"chunk": "B"
+},
+{
+"text": "not",
+"start": 193.452,
+"end": 193.67000000000002,
+"chunk": "B"
+},
+{
+"text": "stop",
+"start": 193.67000000000002,
+"end": 193.887,
+"chunk": "B"
+},
+{
+"text": "yowling",
+"start": 193.887,
+"end": 194.321,
+"chunk": "B"
+},
+{
+"text": "in",
+"start": 194.321,
+"end": 194.538,
+"chunk": "B"
+},
+{
+"text": "that",
+"start": 194.538,
+"end": 194.756,
+"chunk": "B"
+},
+{
+"text": "lobby.",
+"start": 194.756,
+"end": 195.19,
+"chunk": "B"
+},
+{
+"text": "Every",
+"start": 195.51,
+"end": 196.056,
+"chunk": "B"
+},
+{
+"text": "time",
+"start": 196.056,
+"end": 196.238,
+"chunk": "B"
+},
+{
+"text": "you",
+"start": 196.238,
+"end": 196.42000000000002,
+"chunk": "B"
+},
+{
+"text": "set",
+"start": 196.42000000000002,
+"end": 196.602,
+"chunk": "B"
+},
+{
+"text": "him",
+"start": 196.602,
+"end": 196.784,
+"chunk": "B"
+},
+{
+"text": "down,",
+"start": 196.784,
+"end": 197.238,
+"chunk": "B"
+},
+{
+"text": "he",
+"start": 197.238,
+"end": 197.42000000000002,
+"chunk": "B"
+},
+{
+"text": "pulls",
+"start": 197.42000000000002,
+"end": 197.602,
+"chunk": "B"
+},
+{
+"text": "toward",
+"start": 197.602,
+"end": 197.966,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 197.966,
+"end": 198.148,
+"chunk": "B"
+},
+{
+"text": "door.",
+"start": 198.148,
+"end": 198.33,
+"chunk": "B"
+},
+{
+"text": "Cats",
+"start": 198.7,
+"end": 198.983,
+"chunk": "B"
+},
+{
+"text": "hate",
+"start": 198.983,
+"end": 199.267,
+"chunk": "B"
+},
+{
+"text": "loud",
+"start": 199.267,
+"end": 199.55,
+"chunk": "B"
+},
+{
+"text": "machines.",
+"start": 199.55,
+"end": 200.4,
+"chunk": "B"
+},
+{
+"text": "That's",
+"start": 200.79000000000002,
+"end": 200.947,
+"chunk": "B"
+},
+{
+"text": "what",
+"start": 200.947,
+"end": 201.103,
+"chunk": "B"
+},
+{
+"text": "you",
+"start": 201.103,
+"end": 201.26,
+"chunk": "B"
+},
+{
+"text": "tell",
+"start": 201.26,
+"end": 201.417,
+"chunk": "B"
+},
+{
+"text": "yourself.",
+"start": 201.417,
+"end": 201.73000000000002,
+"chunk": "B"
+},
+{
+"text": "Two",
+"start": 202.39,
+"end": 202.625,
+"chunk": "B"
+},
+{
+"text": "forty-seven",
+"start": 202.625,
+"end": 203.565,
+"chunk": "B"
+},
+{
+"text": "a.m.",
+"start": 203.565,
+"end": 203.8,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 204.25,
+"end": 204.448,
+"chunk": "B"
+},
+{
+"text": "wake",
+"start": 204.448,
+"end": 204.64600000000002,
+"chunk": "B"
+},
+{
+"text": "up,",
+"start": 204.64600000000002,
+"end": 205.203,
+"chunk": "B"
+},
+{
+"text": "and",
+"start": 205.203,
+"end": 205.401,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 205.401,
+"end": 205.598,
+"chunk": "B"
+},
+{
+"text": "room",
+"start": 205.598,
+"end": 205.796,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 205.796,
+"end": 205.994,
+"chunk": "B"
+},
+{
+"text": "turning.",
+"start": 205.994,
+"end": 206.39,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 206.74,
+"end": 206.939,
+"chunk": "B"
+},
+{
+"text": "carrier",
+"start": 206.939,
+"end": 207.336,
+"chunk": "B"
+},
+{
+"text": "door",
+"start": 207.336,
+"end": 207.534,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 207.534,
+"end": 207.733,
+"chunk": "B"
+},
+{
+"text": "open.",
+"start": 207.733,
+"end": 208.13,
+"chunk": "B"
+},
+{
+"text": "Lando",
+"start": 208.55,
+"end": 209.16,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 209.16,
+"end": 209.465,
+"chunk": "B"
+},
+{
+"text": "gone.",
+"start": 209.465,
+"end": 209.77,
+"chunk": "B"
+},
+{
+"text": "Then",
+"start": 210.24,
+"end": 210.448,
+"chunk": "B"
+},
+{
+"text": "you",
+"start": 210.448,
+"end": 210.655,
+"chunk": "B"
+},
+{
+"text": "hear",
+"start": 210.655,
+"end": 210.863,
+"chunk": "B"
+},
+{
+"text": "it.",
+"start": 210.863,
+"end": 211.07,
+"chunk": "B"
+},
+{
+"text": "Scratching.",
+"start": 211.46,
+"end": 212.17000000000002,
+"chunk": "B"
+},
+{
+"text": "Inside",
+"start": 212.55,
+"end": 212.96300000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 212.96300000000002,
+"end": 213.16899999999998,
+"chunk": "B"
+},
+{
+"text": "wall,",
+"start": 213.16899999999998,
+"end": 213.738,
+"chunk": "B"
+},
+{
+"text": "right",
+"start": 213.738,
+"end": 213.945,
+"chunk": "B"
+},
+{
+"text": "behind",
+"start": 213.945,
+"end": 214.357,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 214.357,
+"end": 214.56400000000002,
+"chunk": "B"
+},
+{
+"text": "bed.",
+"start": 214.56400000000002,
+"end": 214.77,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 215.21,
+"end": 215.4,
+"chunk": "B"
+},
+{
+"text": "press",
+"start": 215.4,
+"end": 215.59,
+"chunk": "B"
+},
+{
+"text": "your",
+"start": 215.59,
+"end": 215.78,
+"chunk": "B"
+},
+{
+"text": "ear",
+"start": 215.78,
+"end": 215.97,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 215.97,
+"end": 216.16,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 216.16,
+"end": 216.35000000000002,
+"chunk": "B"
+},
+{
+"text": "wallpaper.",
+"start": 216.35000000000002,
+"end": 216.92000000000002,
+"chunk": "B"
+},
+{
+"text": "Claws.",
+"start": 217.35000000000002,
+"end": 218.05,
+"chunk": "B"
+},
+{
+"text": "Moving.",
+"start": 218.39,
+"end": 218.88,
+"chunk": "B"
+},
+{
+"text": "Fast.",
+"start": 219.32,
+"end": 219.82,
+"chunk": "B"
+},
+{
+"text": "Toward",
+"start": 220.12,
+"end": 220.46800000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 220.46800000000002,
+"end": 220.642,
+"chunk": "B"
+},
+{
+"text": "hallway.",
+"start": 220.642,
+"end": 220.99,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 221.38,
+"end": 221.558,
+"chunk": "B"
+},
+{
+"text": "follow",
+"start": 221.558,
+"end": 221.913,
+"chunk": "B"
+},
+{
+"text": "it",
+"start": 221.913,
+"end": 222.09,
+"chunk": "B"
+},
+{
+"text": "with",
+"start": 222.09,
+"end": 222.268,
+"chunk": "B"
+},
+{
+"text": "your",
+"start": 222.268,
+"end": 222.445,
+"chunk": "B"
+},
+{
+"text": "headlamp.",
+"start": 222.445,
+"end": 222.8,
+"chunk": "B"
+},
+{
+"text": "Twenty",
+"start": 223.13,
+"end": 223.79000000000002,
+"chunk": "B"
+},
+{
+"text": "doors.",
+"start": 223.79000000000002,
+"end": 224.12,
+"chunk": "B"
+},
+{
+"text": "Every",
+"start": 224.39,
+"end": 224.99900000000002,
+"chunk": "B"
+},
+{
+"text": "one",
+"start": 224.99900000000002,
+"end": 225.20100000000002,
+"chunk": "B"
+},
+{
+"text": "of",
+"start": 225.20100000000002,
+"end": 225.404,
+"chunk": "B"
+},
+{
+"text": "them",
+"start": 225.404,
+"end": 225.607,
+"chunk": "B"
+},
+{
+"text": "dark.",
+"start": 225.607,
+"end": 225.81,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 226.16,
+"end": 226.341,
+"chunk": "B"
+},
+{
+"text": "scratching",
+"start": 226.341,
+"end": 226.704,
+"chunk": "B"
+},
+{
+"text": "runs",
+"start": 226.704,
+"end": 226.885,
+"chunk": "B"
+},
+{
+"text": "ahead",
+"start": 226.885,
+"end": 227.248,
+"chunk": "B"
+},
+{
+"text": "of",
+"start": 227.248,
+"end": 227.429,
+"chunk": "B"
+},
+{
+"text": "you,",
+"start": 227.429,
+"end": 227.941,
+"chunk": "B"
+},
+{
+"text": "past",
+"start": 227.941,
+"end": 228.122,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 228.122,
+"end": 228.304,
+"chunk": "B"
+},
+{
+"text": "ice",
+"start": 228.304,
+"end": 228.485,
+"chunk": "B"
+},
+{
+"text": "machine,",
+"start": 228.485,
+"end": 228.938,
+"chunk": "B"
+},
+{
+"text": "all",
+"start": 228.938,
+"end": 229.32,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 229.32,
+"end": 229.501,
+"chunk": "B"
+},
+{
+"text": "way",
+"start": 229.501,
+"end": 229.68200000000002,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 229.68200000000002,
+"end": 229.863,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 229.863,
+"end": 230.04500000000002,
+"chunk": "B"
+},
+{
+"text": "end",
+"start": 230.04500000000002,
+"end": 230.226,
+"chunk": "B"
+},
+{
+"text": "of",
+"start": 230.226,
+"end": 230.40699999999998,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 230.40699999999998,
+"end": 230.589,
+"chunk": "B"
+},
+{
+"text": "hall.",
+"start": 230.589,
+"end": 230.77,
+"chunk": "B"
+},
+{
+"text": "And",
+"start": 231.12,
+"end": 231.325,
+"chunk": "B"
+},
+{
+"text": "it",
+"start": 231.325,
+"end": 231.53,
+"chunk": "B"
+},
+{
+"text": "stops",
+"start": 231.53,
+"end": 231.735,
+"chunk": "B"
+},
+{
+"text": "under",
+"start": 231.735,
+"end": 232.315,
+"chunk": "B"
+},
+{
+"text": "a",
+"start": 232.315,
+"end": 232.52,
+"chunk": "B"
+},
+{
+"text": "metal",
+"start": 232.52,
+"end": 232.93,
+"chunk": "B"
+},
+{
+"text": "grate",
+"start": 232.93,
+"end": 233.135,
+"chunk": "B"
+},
+{
+"text": "in",
+"start": 233.135,
+"end": 233.34,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 233.34,
+"end": 233.54500000000002,
+"chunk": "B"
+},
+{
+"text": "floor.",
+"start": 233.54500000000002,
+"end": 233.75,
+"chunk": "B"
+},
+{
+"text": "A",
+"start": 234.11,
+"end": 234.385,
+"chunk": "B"
+},
+{
+"text": "vent.",
+"start": 234.385,
+"end": 234.66,
+"chunk": "B"
+},
+{
+"text": "Warm",
+"start": 235.01,
+"end": 235.22500000000002,
+"chunk": "B"
+},
+{
+"text": "air",
+"start": 235.22500000000002,
+"end": 235.44,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 235.44,
+"end": 235.655,
+"chunk": "B"
+},
+{
+"text": "rising",
+"start": 235.655,
+"end": 236.085,
+"chunk": "B"
+},
+{
+"text": "out",
+"start": 236.085,
+"end": 236.3,
+"chunk": "B"
+},
+{
+"text": "of",
+"start": 236.3,
+"end": 236.515,
+"chunk": "B"
+},
+{
+"text": "it.",
+"start": 236.515,
+"end": 236.73000000000002,
+"chunk": "B"
+},
+{
+"text": "From",
+"start": 237.09,
+"end": 237.255,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 237.255,
+"end": 237.42000000000002,
+"chunk": "B"
+},
+{
+"text": "lobby.",
+"start": 237.42000000000002,
+"end": 237.75,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 238.18,
+"end": 238.447,
+"chunk": "B"
+},
+{
+"text": "kneel",
+"start": 238.447,
+"end": 238.71300000000002,
+"chunk": "B"
+},
+{
+"text": "down.",
+"start": 238.71300000000002,
+"end": 238.98000000000002,
+"chunk": "B"
+},
+{
+"text": "Two",
+"start": 239.3,
+"end": 239.554,
+"chunk": "B"
+},
+{
+"text": "green",
+"start": 239.554,
+"end": 239.808,
+"chunk": "B"
+},
+{
+"text": "eyes",
+"start": 239.808,
+"end": 240.061,
+"chunk": "B"
+},
+{
+"text": "look",
+"start": 240.061,
+"end": 240.315,
+"chunk": "B"
+},
+{
+"text": "back",
+"start": 240.315,
+"end": 240.56900000000002,
+"chunk": "B"
+},
+{
+"text": "up",
+"start": 240.56900000000002,
+"end": 240.823,
+"chunk": "B"
+},
+{
+"text": "at",
+"start": 240.823,
+"end": 241.07600000000002,
+"chunk": "B"
+},
+{
+"text": "you.",
+"start": 241.07600000000002,
+"end": 241.32999999999998,
+"chunk": "B"
+},
+{
+"text": "Lando.",
+"start": 241.75,
+"end": 242.32999999999998,
+"chunk": "B"
+},
+{
+"text": "He",
+"start": 242.74,
+"end": 242.92000000000002,
+"chunk": "B"
+},
+{
+"text": "isn't",
+"start": 242.92000000000002,
+"end": 243.10000000000002,
+"chunk": "B"
+},
+{
+"text": "trying",
+"start": 243.10000000000002,
+"end": 243.28,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 243.28,
+"end": 243.46,
+"chunk": "B"
+},
+{
+"text": "get",
+"start": 243.46,
+"end": 243.64,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 243.64,
+"end": 243.82,
+"chunk": "B"
+},
+{
+"text": "you.",
+"start": 243.82,
+"end": 244.0,
+"chunk": "B"
+},
+{
+"text": "He's",
+"start": 244.35000000000002,
+"end": 244.56400000000002,
+"chunk": "B"
+},
+{
+"text": "trying",
+"start": 244.56400000000002,
+"end": 244.77800000000002,
+"chunk": "B"
+},
+{
+"text": "to",
+"start": 244.77800000000002,
+"end": 244.99200000000002,
+"chunk": "B"
+},
+{
+"text": "get",
+"start": 244.99200000000002,
+"end": 245.20600000000002,
+"chunk": "B"
+},
+{
+"text": "away",
+"start": 245.20600000000002,
+"end": 245.63400000000001,
+"chunk": "B"
+},
+{
+"text": "from",
+"start": 245.63400000000001,
+"end": 245.848,
+"chunk": "B"
+},
+{
+"text": "that",
+"start": 245.848,
+"end": 246.062,
+"chunk": "B"
+},
+{
+"text": "warm",
+"start": 246.062,
+"end": 246.276,
+"chunk": "B"
+},
+{
+"text": "air.",
+"start": 246.276,
+"end": 246.49,
+"chunk": "B"
+},
+{
+"text": "You",
+"start": 246.88,
+"end": 247.14,
+"chunk": "B"
+},
+{
+"text": "stand",
+"start": 247.14,
+"end": 247.4,
+"chunk": "B"
+},
+{
+"text": "up",
+"start": 247.4,
+"end": 247.66,
+"chunk": "B"
+},
+{
+"text": "too",
+"start": 247.66,
+"end": 247.92000000000002,
+"chunk": "B"
+},
+{
+"text": "fast.",
+"start": 247.92000000000002,
+"end": 248.18,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 248.42000000000002,
+"end": 248.683,
+"chunk": "B"
+},
+{
+"text": "hallway",
+"start": 248.683,
+"end": 249.207,
+"chunk": "B"
+},
+{
+"text": "tilts.",
+"start": 249.207,
+"end": 249.47,
+"chunk": "B"
+},
+{
+"text": "Your",
+"start": 249.7,
+"end": 249.917,
+"chunk": "B"
+},
+{
+"text": "stomach",
+"start": 249.917,
+"end": 250.35000000000002,
+"chunk": "B"
+},
+{
+"text": "turns",
+"start": 250.35000000000002,
+"end": 250.567,
+"chunk": "B"
+},
+{
+"text": "over.",
+"start": 250.567,
+"end": 251.0,
+"chunk": "B"
+},
+{
+"text": "Your",
+"start": 251.26,
+"end": 251.48700000000002,
+"chunk": "B"
+},
+{
+"text": "fingers",
+"start": 251.48700000000002,
+"end": 251.941,
+"chunk": "B"
+},
+{
+"text": "can't",
+"start": 251.941,
+"end": 252.16899999999998,
+"chunk": "B"
+},
+{
+"text": "work",
+"start": 252.16899999999998,
+"end": 252.39600000000002,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 252.39600000000002,
+"end": 252.623,
+"chunk": "B"
+},
+{
+"text": "grate.",
+"start": 252.623,
+"end": 252.85000000000002,
+"chunk": "B"
+},
+{
+"text": "For",
+"start": 253.27,
+"end": 253.445,
+"chunk": "B"
+},
+{
+"text": "a",
+"start": 253.445,
+"end": 253.619,
+"chunk": "B"
+},
+{
+"text": "second,",
+"start": 253.619,
+"end": 254.275,
+"chunk": "B"
+},
+{
+"text": "someone",
+"start": 254.275,
+"end": 254.625,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 254.625,
+"end": 254.799,
+"chunk": "B"
+},
+{
+"text": "standing",
+"start": 254.799,
+"end": 255.14800000000002,
+"chunk": "B"
+},
+{
+"text": "at",
+"start": 255.14800000000002,
+"end": 255.323,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 255.323,
+"end": 255.497,
+"chunk": "B"
+},
+{
+"text": "far",
+"start": 255.497,
+"end": 255.672,
+"chunk": "B"
+},
+{
+"text": "end",
+"start": 255.672,
+"end": 255.846,
+"chunk": "B"
+},
+{
+"text": "of",
+"start": 255.846,
+"end": 256.021,
+"chunk": "B"
+},
+{
+"text": "the",
+"start": 256.021,
+"end": 256.195,
+"chunk": "B"
+},
+{
+"text": "hall.",
+"start": 256.195,
+"end": 256.37,
+"chunk": "B"
+},
+{
+"text": "Your",
+"start": 256.73,
+"end": 256.964,
+"chunk": "B"
+},
+{
+"text": "headlamp",
+"start": 256.964,
+"end": 257.432,
+"chunk": "B"
+},
+{
+"text": "flickers.",
+"start": 257.432,
+"end": 257.9,
+"chunk": "B"
+},
+{
+"text": "There's",
+"start": 258.25,
+"end": 258.578,
+"chunk": "B"
+},
+{
+"text": "no",
+"start": 258.578,
+"end": 258.742,
+"chunk": "B"
+},
+{
+"text": "one",
+"start": 258.742,
+"end": 258.906,
+"chunk": "B"
+},
+{
+"text": "there.",
+"start": 258.906,
+"end": 259.07,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 259.45,
+"end": 259.663,
+"chunk": "B"
+},
+{
+"text": "scratching",
+"start": 259.663,
+"end": 260.09000000000003,
+"chunk": "B"
+},
+{
+"text": "was",
+"start": 260.09000000000003,
+"end": 260.303,
+"chunk": "B"
+},
+{
+"text": "Lando.",
+"start": 260.303,
+"end": 260.73,
+"chunk": "B"
+},
+{
+"text": "The",
+"start": 261.13,
+"end": 261.38,
+"chunk": "B"
+},
+{
+"text": "dizziness",
+"start": 261.38,
+"end": 262.13,
+"chunk": "B"
+},
+{
+"text": "is",
+"start": 262.13,
+"end": 262.38,
+"chunk": "B"
+},
+{
+"text": "not.",
+"start": 262.38,
+"end": 262.63,
+"chunk": "B"
+},
+{
+"text": "Carbon",
+"start": 263.77,
+"end": 264.27799999999996,
+"chunk": "C"
+},
+{
+"text": "monoxide",
+"start": 264.27799999999996,
+"end": 265.041,
+"chunk": "C"
+},
+{
+"text": "has",
+"start": 265.041,
+"end": 265.29499999999996,
+"chunk": "C"
+},
+{
+"text": "no",
+"start": 265.29499999999996,
+"end": 265.549,
+"chunk": "C"
+},
+{
+"text": "color",
+"start": 265.549,
+"end": 266.05699999999996,
+"chunk": "C"
+},
+{
+"text": "and",
+"start": 266.05699999999996,
+"end": 266.31199999999995,
+"chunk": "C"
+},
+{
+"text": "no",
+"start": 266.31199999999995,
+"end": 266.566,
+"chunk": "C"
+},
+{
+"text": "smell.",
+"start": 266.566,
+"end": 266.82,
+"chunk": "C"
+},
+{
+"text": "Headache.",
+"start": 267.44,
+"end": 267.84999999999997,
+"chunk": "C"
+},
+{
+"text": "Dizziness.",
+"start": 268.27,
+"end": 268.92999999999995,
+"chunk": "C"
+},
+{
+"text": "Weakness.",
+"start": 269.29999999999995,
+"end": 269.96999999999997,
+"chunk": "C"
+},
+{
+"text": "Nausea.",
+"start": 270.34999999999997,
+"end": 270.89,
+"chunk": "C"
+},
+{
+"text": "Sleepiness.",
+"start": 271.23999999999995,
+"end": 272.05999999999995,
+"chunk": "C"
+},
+{
+"text": "Confusion.",
+"start": 272.36999999999995,
+"end": 273.13,
+"chunk": "C"
+},
+{
+"text": "It",
+"start": 273.60999999999996,
+"end": 273.81399999999996,
+"chunk": "C"
+},
+{
+"text": "feels",
+"start": 273.81399999999996,
+"end": 274.018,
+"chunk": "C"
+},
+{
+"text": "like",
+"start": 274.018,
+"end": 274.222,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 274.222,
+"end": 274.616,
+"chunk": "C"
+},
+{
+"text": "flu.",
+"start": 274.616,
+"end": 274.82,
+"chunk": "C"
+},
+{
+"text": "And",
+"start": 275.28999999999996,
+"end": 275.51099999999997,
+"chunk": "C"
+},
+{
+"text": "people",
+"start": 275.51099999999997,
+"end": 275.953,
+"chunk": "C"
+},
+{
+"text": "who",
+"start": 275.953,
+"end": 276.174,
+"chunk": "C"
+},
+{
+"text": "are",
+"start": 276.174,
+"end": 276.39599999999996,
+"chunk": "C"
+},
+{
+"text": "asleep",
+"start": 276.39599999999996,
+"end": 276.83799999999997,
+"chunk": "C"
+},
+{
+"text": "can",
+"start": 276.83799999999997,
+"end": 277.05899999999997,
+"chunk": "C"
+},
+{
+"text": "die",
+"start": 277.05899999999997,
+"end": 277.28,
+"chunk": "C"
+},
+{
+"text": "from",
+"start": 277.28,
+"end": 277.501,
+"chunk": "C"
+},
+{
+"text": "it",
+"start": 277.501,
+"end": 277.722,
+"chunk": "C"
+},
+{
+"text": "before",
+"start": 277.722,
+"end": 278.164,
+"chunk": "C"
+},
+{
+"text": "they",
+"start": 278.164,
+"end": 278.38599999999997,
+"chunk": "C"
+},
+{
+"text": "ever",
+"start": 278.38599999999997,
+"end": 278.828,
+"chunk": "C"
+},
+{
+"text": "feel",
+"start": 278.828,
+"end": 279.049,
+"chunk": "C"
+},
+{
+"text": "sick.",
+"start": 279.049,
+"end": 279.27,
+"chunk": "C"
+},
+{
+"text": "Six",
+"start": 279.72999999999996,
+"end": 279.95,
+"chunk": "C"
+},
+{
+"text": "people",
+"start": 279.95,
+"end": 280.39,
+"chunk": "C"
+},
+{
+"text": "are",
+"start": 280.39,
+"end": 280.60999999999996,
+"chunk": "C"
+},
+{
+"text": "asleep",
+"start": 280.60999999999996,
+"end": 281.04999999999995,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 281.04999999999995,
+"end": 281.27,
+"chunk": "C"
+},
+{
+"text": "that",
+"start": 281.27,
+"end": 281.48999999999995,
+"chunk": "C"
+},
+{
+"text": "lobby.",
+"start": 281.48999999999995,
+"end": 281.92999999999995,
+"chunk": "C"
+},
+{
+"text": "Every",
+"start": 282.53,
+"end": 283.07399999999996,
+"chunk": "C"
+},
+{
+"text": "year",
+"start": 283.07399999999996,
+"end": 283.256,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 283.256,
+"end": 283.43699999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 283.43699999999995,
+"end": 283.61899999999997,
+"chunk": "C"
+},
+{
+"text": "United",
+"start": 283.61899999999997,
+"end": 284.16299999999995,
+"chunk": "C"
+},
+{
+"text": "States,",
+"start": 284.16299999999995,
+"end": 284.777,
+"chunk": "C"
+},
+{
+"text": "more",
+"start": 284.777,
+"end": 284.95899999999995,
+"chunk": "C"
+},
+{
+"text": "than",
+"start": 284.95899999999995,
+"end": 285.14,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 285.14,
+"end": 285.32199999999995,
+"chunk": "C"
+},
+{
+"text": "hundred",
+"start": 285.32199999999995,
+"end": 285.68499999999995,
+"chunk": "C"
+},
+{
+"text": "people",
+"start": 285.68499999999995,
+"end": 286.04799999999994,
+"chunk": "C"
+},
+{
+"text": "die",
+"start": 286.04799999999994,
+"end": 286.229,
+"chunk": "C"
+},
+{
+"text": "from",
+"start": 286.229,
+"end": 286.41099999999994,
+"chunk": "C"
+},
+{
+"text": "carbon",
+"start": 286.41099999999994,
+"end": 286.77399999999994,
+"chunk": "C"
+},
+{
+"text": "monoxide",
+"start": 286.77399999999994,
+"end": 287.318,
+"chunk": "C"
+},
+{
+"text": "from",
+"start": 287.318,
+"end": 287.5,
+"chunk": "C"
+},
+{
+"text": "portable",
+"start": 287.5,
+"end": 288.044,
+"chunk": "C"
+},
+{
+"text": "generators.",
+"start": 288.044,
+"end": 288.77,
+"chunk": "C"
+},
+{
+"text": "You",
+"start": 289.32,
+"end": 289.51399999999995,
+"chunk": "C"
+},
+{
+"text": "go",
+"start": 289.51399999999995,
+"end": 289.707,
+"chunk": "C"
+},
+{
+"text": "down",
+"start": 289.707,
+"end": 289.90099999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 289.90099999999995,
+"end": 290.09499999999997,
+"chunk": "C"
+},
+{
+"text": "stairs",
+"start": 290.09499999999997,
+"end": 290.28799999999995,
+"chunk": "C"
+},
+{
+"text": "with",
+"start": 290.28799999999995,
+"end": 290.48199999999997,
+"chunk": "C"
+},
+{
+"text": "Lando",
+"start": 290.48199999999997,
+"end": 290.86899999999997,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 290.86899999999997,
+"end": 291.063,
+"chunk": "C"
+},
+{
+"text": "one",
+"start": 291.063,
+"end": 291.25699999999995,
+"chunk": "C"
+},
+{
+"text": "arm",
+"start": 291.25699999999995,
+"end": 291.45099999999996,
+"chunk": "C"
+},
+{
+"text": "and",
+"start": 291.45099999999996,
+"end": 291.64399999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 291.64399999999995,
+"end": 291.83799999999997,
+"chunk": "C"
+},
+{
+"text": "railing",
+"start": 291.83799999999997,
+"end": 292.22499999999997,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 292.22499999999997,
+"end": 292.419,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 292.419,
+"end": 292.61299999999994,
+"chunk": "C"
+},
+{
+"text": "other.",
+"start": 292.61299999999994,
+"end": 293.0,
+"chunk": "C"
+},
+{
+"text": "Every",
+"start": 293.40999999999997,
+"end": 294.106,
+"chunk": "C"
+},
+{
+"text": "step",
+"start": 294.106,
+"end": 294.33799999999997,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 294.33799999999997,
+"end": 294.57,
+"chunk": "C"
+},
+{
+"text": "heavier",
+"start": 294.57,
+"end": 295.034,
+"chunk": "C"
+},
+{
+"text": "than",
+"start": 295.034,
+"end": 295.26599999999996,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 295.26599999999996,
+"end": 295.498,
+"chunk": "C"
+},
+{
+"text": "last.",
+"start": 295.498,
+"end": 295.72999999999996,
+"chunk": "C"
+},
+{
+"text": "The",
+"start": 296.15999999999997,
+"end": 296.38199999999995,
+"chunk": "C"
+},
+{
+"text": "lobby",
+"start": 296.38199999999995,
+"end": 296.82599999999996,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 296.82599999999996,
+"end": 297.048,
+"chunk": "C"
+},
+{
+"text": "warm.",
+"start": 297.048,
+"end": 297.27,
+"chunk": "C"
+},
+{
+"text": "Too",
+"start": 297.68999999999994,
+"end": 298.04999999999995,
+"chunk": "C"
+},
+{
+"text": "warm.",
+"start": 298.04999999999995,
+"end": 298.40999999999997,
+"chunk": "C"
+},
+{
+"text": "The",
+"start": 298.84,
+"end": 299.11999999999995,
+"chunk": "C"
+},
+{
+"text": "fire",
+"start": 299.11999999999995,
+"end": 299.4,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 299.4,
+"end": 299.67999999999995,
+"chunk": "C"
+},
+{
+"text": "down",
+"start": 299.67999999999995,
+"end": 299.96,
+"chunk": "C"
+},
+{
+"text": "to",
+"start": 299.96,
+"end": 300.23999999999995,
+"chunk": "C"
+},
+{
+"text": "coals.",
+"start": 300.23999999999995,
+"end": 300.52,
+"chunk": "C"
+},
+{
+"text": "The",
+"start": 300.88,
+"end": 301.06899999999996,
+"chunk": "C"
+},
+{
+"text": "generator",
+"start": 301.06899999999996,
+"end": 301.82399999999996,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 301.82399999999996,
+"end": 302.013,
+"chunk": "C"
+},
+{
+"text": "still",
+"start": 302.013,
+"end": 302.202,
+"chunk": "C"
+},
+{
+"text": "humming.",
+"start": 302.202,
+"end": 302.58,
+"chunk": "C"
+},
+{
+"text": "\"Rosa.\"",
+"start": 303.10999999999996,
+"end": 304.09999999999997,
+"chunk": "C"
+},
+{
+"text": "She",
+"start": 304.09999999999997,
+"end": 304.34999999999997,
+"chunk": "C"
+},
+{
+"text": "doesn't",
+"start": 304.34999999999997,
+"end": 304.59999999999997,
+"chunk": "C"
+},
+{
+"text": "wake.",
+"start": 304.59999999999997,
+"end": 304.84999999999997,
+"chunk": "C"
+},
+{
+"text": "You",
+"start": 305.22999999999996,
+"end": 305.43199999999996,
+"chunk": "C"
+},
+{
+"text": "shake",
+"start": 305.43199999999996,
+"end": 305.63399999999996,
+"chunk": "C"
+},
+{
+"text": "her",
+"start": 305.63399999999996,
+"end": 305.83599999999996,
+"chunk": "C"
+},
+{
+"text": "shoulder.",
+"start": 305.83599999999996,
+"end": 306.23999999999995,
+"chunk": "C"
+},
+{
+"text": "She",
+"start": 306.63,
+"end": 306.844,
+"chunk": "C"
+},
+{
+"text": "opens",
+"start": 306.844,
+"end": 307.27099999999996,
+"chunk": "C"
+},
+{
+"text": "her",
+"start": 307.27099999999996,
+"end": 307.484,
+"chunk": "C"
+},
+{
+"text": "eyes,",
+"start": 307.484,
+"end": 307.99499999999995,
+"chunk": "C"
+},
+{
+"text": "and",
+"start": 307.99499999999995,
+"end": 308.20799999999997,
+"chunk": "C"
+},
+{
+"text": "she",
+"start": 308.20799999999997,
+"end": 308.42199999999997,
+"chunk": "C"
+},
+{
+"text": "doesn't",
+"start": 308.42199999999997,
+"end": 308.63599999999997,
+"chunk": "C"
+},
+{
+"text": "know",
+"start": 308.63599999999997,
+"end": 308.849,
+"chunk": "C"
+},
+{
+"text": "who",
+"start": 308.849,
+"end": 309.063,
+"chunk": "C"
+},
+{
+"text": "you",
+"start": 309.063,
+"end": 309.27599999999995,
+"chunk": "C"
+},
+{
+"text": "are.",
+"start": 309.27599999999995,
+"end": 309.48999999999995,
+"chunk": "C"
+},
+{
+"text": "Dale",
+"start": 309.96,
+"end": 310.352,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 310.352,
+"end": 310.548,
+"chunk": "C"
+},
+{
+"text": "slumped",
+"start": 310.548,
+"end": 310.93899999999996,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 310.93899999999996,
+"end": 311.135,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 311.135,
+"end": 311.33099999999996,
+"chunk": "C"
+},
+{
+"text": "chair",
+"start": 311.33099999999996,
+"end": 311.527,
+"chunk": "C"
+},
+{
+"text": "behind",
+"start": 311.527,
+"end": 311.91799999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 311.91799999999995,
+"end": 312.114,
+"chunk": "C"
+},
+{
+"text": "desk.",
+"start": 312.114,
+"end": 312.30999999999995,
+"chunk": "C"
+},
+{
+"text": "You",
+"start": 312.66999999999996,
+"end": 312.895,
+"chunk": "C"
+},
+{
+"text": "can't",
+"start": 312.895,
+"end": 313.11999999999995,
+"chunk": "C"
+},
+{
+"text": "wake",
+"start": 313.11999999999995,
+"end": 313.34499999999997,
+"chunk": "C"
+},
+{
+"text": "him.",
+"start": 313.34499999999997,
+"end": 313.57,
+"chunk": "C"
+},
+{
+"text": "On",
+"start": 314.02,
+"end": 314.186,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 314.186,
+"end": 314.351,
+"chunk": "C"
+},
+{
+"text": "ceiling,",
+"start": 314.351,
+"end": 314.765,
+"chunk": "C"
+},
+{
+"text": "there's",
+"start": 314.765,
+"end": 315.09599999999995,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 315.09599999999995,
+"end": 315.26099999999997,
+"chunk": "C"
+},
+{
+"text": "carbon",
+"start": 315.26099999999997,
+"end": 315.592,
+"chunk": "C"
+},
+{
+"text": "monoxide",
+"start": 315.592,
+"end": 316.08899999999994,
+"chunk": "C"
+},
+{
+"text": "alarm.",
+"start": 316.08899999999994,
+"end": 316.41999999999996,
+"chunk": "C"
+},
+{
+"text": "Its",
+"start": 316.79999999999995,
+"end": 317.027,
+"chunk": "C"
+},
+{
+"text": "light",
+"start": 317.027,
+"end": 317.255,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 317.255,
+"end": 317.48299999999995,
+"chunk": "C"
+},
+{
+"text": "off.",
+"start": 317.48299999999995,
+"end": 317.71,
+"chunk": "C"
+},
+{
+"text": "It",
+"start": 318.25,
+"end": 318.44899999999996,
+"chunk": "C"
+},
+{
+"text": "runs",
+"start": 318.44899999999996,
+"end": 318.64799999999997,
+"chunk": "C"
+},
+{
+"text": "on",
+"start": 318.64799999999997,
+"end": 318.84599999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 318.84599999999995,
+"end": 319.04499999999996,
+"chunk": "C"
+},
+{
+"text": "hotel's",
+"start": 319.04499999999996,
+"end": 319.443,
+"chunk": "C"
+},
+{
+"text": "power.",
+"start": 319.443,
+"end": 319.84,
+"chunk": "C"
+},
+{
+"text": "No",
+"start": 320.21999999999997,
+"end": 320.40799999999996,
+"chunk": "C"
+},
+{
+"text": "battery",
+"start": 320.40799999999996,
+"end": 320.97299999999996,
+"chunk": "C"
+},
+{
+"text": "backup.",
+"start": 320.97299999999996,
+"end": 321.34999999999997,
+"chunk": "C"
+},
+{
+"text": "Never",
+"start": 321.84,
+"end": 322.26599999999996,
+"chunk": "C"
+},
+{
+"text": "run",
+"start": 322.26599999999996,
+"end": 322.479,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 322.479,
+"end": 322.69199999999995,
+"chunk": "C"
+},
+{
+"text": "generator",
+"start": 322.69199999999995,
+"end": 323.544,
+"chunk": "C"
+},
+{
+"text": "indoors.",
+"start": 323.544,
+"end": 323.96999999999997,
+"chunk": "C"
+},
+{
+"text": "Not",
+"start": 324.30999999999995,
+"end": 324.50199999999995,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 324.50199999999995,
+"end": 324.693,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 324.693,
+"end": 324.885,
+"chunk": "C"
+},
+{
+"text": "house,",
+"start": 324.885,
+"end": 325.17199999999997,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 325.17199999999997,
+"end": 325.53299999999996,
+"chunk": "C"
+},
+{
+"text": "garage,",
+"start": 325.53299999999996,
+"end": 326.01199999999994,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 326.01199999999994,
+"end": 326.20399999999995,
+"chunk": "C"
+},
+{
+"text": "basement,",
+"start": 326.20399999999995,
+"end": 327.044,
+"chunk": "C"
+},
+{
+"text": "or",
+"start": 327.044,
+"end": 327.23499999999996,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 327.23499999999996,
+"end": 327.42699999999996,
+"chunk": "C"
+},
+{
+"text": "lobby.",
+"start": 327.42699999999996,
+"end": 327.80999999999995,
+"chunk": "C"
+},
+{
+"text": "Not",
+"start": 328.08,
+"end": 328.27799999999996,
+"chunk": "C"
+},
+{
+"text": "even",
+"start": 328.27799999999996,
+"end": 328.673,
+"chunk": "C"
+},
+{
+"text": "with",
+"start": 328.673,
+"end": 328.87,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 328.87,
+"end": 329.06699999999995,
+"chunk": "C"
+},
+{
+"text": "door",
+"start": 329.06699999999995,
+"end": 329.265,
+"chunk": "C"
+},
+{
+"text": "open.",
+"start": 329.265,
+"end": 329.65999999999997,
+"chunk": "C"
+},
+{
+"text": "Outside",
+"start": 329.97999999999996,
+"end": 330.491,
+"chunk": "C"
+},
+{
+"text": "only,",
+"start": 330.491,
+"end": 331.35999999999996,
+"chunk": "C"
+},
+{
+"text": "at",
+"start": 331.35999999999996,
+"end": 331.616,
+"chunk": "C"
+},
+{
+"text": "least",
+"start": 331.616,
+"end": 331.87199999999996,
+"chunk": "C"
+},
+{
+"text": "twenty",
+"start": 331.87199999999996,
+"end": 332.383,
+"chunk": "C"
+},
+{
+"text": "feet",
+"start": 332.383,
+"end": 332.638,
+"chunk": "C"
+},
+{
+"text": "from",
+"start": 332.638,
+"end": 332.894,
+"chunk": "C"
+},
+{
+"text": "doors,",
+"start": 332.894,
+"end": 333.27799999999996,
+"chunk": "C"
+},
+{
+"text": "windows",
+"start": 333.27799999999996,
+"end": 333.789,
+"chunk": "C"
+},
+{
+"text": "and",
+"start": 333.789,
+"end": 334.044,
+"chunk": "C"
+},
+{
+"text": "vents.",
+"start": 334.044,
+"end": 334.29999999999995,
+"chunk": "C"
+},
+{
+"text": "Now",
+"start": 334.88,
+"end": 335.15999999999997,
+"chunk": "C"
+},
+{
+"text": "you",
+"start": 335.15999999999997,
+"end": 335.43999999999994,
+"chunk": "C"
+},
+{
+"text": "have",
+"start": 335.43999999999994,
+"end": 335.71999999999997,
+"chunk": "C"
+},
+{
+"text": "two",
+"start": 335.71999999999997,
+"end": 336.0,
+"chunk": "C"
+},
+{
+"text": "choices.",
+"start": 336.0,
+"end": 336.55999999999995,
+"chunk": "C"
+},
+{
+"text": "Stay",
+"start": 336.89,
+"end": 337.133,
+"chunk": "C"
+},
+{
+"text": "inside,",
+"start": 337.133,
+"end": 337.741,
+"chunk": "C"
+},
+{
+"text": "where",
+"start": 337.741,
+"end": 337.984,
+"chunk": "C"
+},
+{
+"text": "it's",
+"start": 337.984,
+"end": 338.227,
+"chunk": "C"
+},
+{
+"text": "warm,",
+"start": 338.227,
+"end": 338.592,
+"chunk": "C"
+},
+{
+"text": "and",
+"start": 338.592,
+"end": 339.05499999999995,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 339.05499999999995,
+"end": 339.298,
+"chunk": "C"
+},
+{
+"text": "air",
+"start": 339.298,
+"end": 339.54099999999994,
+"chunk": "C"
+},
+{
+"text": "is",
+"start": 339.54099999999994,
+"end": 339.784,
+"chunk": "C"
+},
+{
+"text": "poison.",
+"start": 339.784,
+"end": 340.27,
+"chunk": "C"
+},
+{
+"text": "Or",
+"start": 340.59,
+"end": 340.80199999999996,
+"chunk": "C"
+},
+{
+"text": "go",
+"start": 340.80199999999996,
+"end": 341.215,
+"chunk": "C"
+},
+{
+"text": "out",
+"start": 341.215,
+"end": 341.42699999999996,
+"chunk": "C"
+},
+{
+"text": "into",
+"start": 341.42699999999996,
+"end": 341.852,
+"chunk": "C"
+},
+{
+"text": "a",
+"start": 341.852,
+"end": 342.06399999999996,
+"chunk": "C"
+},
+{
+"text": "blizzard",
+"start": 342.06399999999996,
+"end": 342.48799999999994,
+"chunk": "C"
+},
+{
+"text": "at",
+"start": 342.48799999999994,
+"end": 342.70099999999996,
+"chunk": "C"
+},
+{
+"text": "three",
+"start": 342.70099999999996,
+"end": 342.91299999999995,
+"chunk": "C"
+},
+{
+"text": "in",
+"start": 342.91299999999995,
+"end": 343.125,
+"chunk": "C"
+},
+{
+"text": "the",
+"start": 343.125,
+"end": 343.33799999999997,
+"chunk": "C"
+},
+{
+"text": "morning,",
+"start": 343.33799999999997,
+"end": 343.86799999999994,
+"chunk": "C"
+},
+{
+"text": "where",
+"start": 343.86799999999994,
+"end": 344.08099999999996,
+"chunk": "C"
+},
+{
+"text": "it's",
+"start": 344.08099999999996,
+"end": 344.29299999999995,
+"chunk": "C"
+},
+{
+"text": "nine",
+"start": 344.29299999999995,
+"end": 344.505,
+"chunk": "C"
+},
+{
+"text": "degrees.",
+"start": 344.505,
+"end": 344.92999999999995,
+"chunk": "C"
+},
+{
+"text": "What",
+"start": 345.31999999999994,
+"end": 345.48499999999996,
+"chunk": "C"
+},
+{
+"text": "would",
+"start": 345.48499999999996,
+"end": 345.65,
+"chunk": "C"
+},
+{
+"text": "you",
+"start": 345.65,
+"end": 345.81499999999994,
+"chunk": "C"
+},
+{
+"text": "do?",
+"start": 345.81499999999994,
+"end": 345.97999999999996,
+"chunk": "C"
+},
+{
+"text": "You",
+"start": 346.55999999999995,
+"end": 346.81499999999994,
+"chunk": "C"
+},
+{
+"text": "go.",
+"start": 346.81499999999994,
+"end": 347.06999999999994,
+"chunk": "C"
+},
+{
+"text": "If",
+"start": 347.45,
+"end": 347.63599999999997,
+"chunk": "C"
+},
+{
+"text": "you",
+"start": 347.63599999999997,
+"end": 347.823,
+"chunk": "C"
+},
+{
+"text": "think",
+"start": 347.823,
+"end": 348.00899999999996,
+"chunk": "C"
+},
+{
+"text": "it's",
+"start": 348.00899999999996,
+"end": 348.19499999999994,
+"chunk": "C"
+},
+{
+"text": "carbon",
+"start": 348.19499999999994,
+"end": 348.568,
+"chunk": "C"
+},
+{
+"text": "monoxide,",
+"start": 348.568,
+"end": 349.43999999999994,
+"chunk": "C"
+},
+{
+"text": "get",
+"start": 349.43999999999994,
+"end": 349.62699999999995,
+"chunk": "C"
+},
+{
+"text": "outside",
+"start": 349.62699999999995,
+"end": 349.99899999999997,
+"chunk": "C"
+},
+{
+"text": "to",
+"start": 349.99899999999997,
+"end": 350.186,
+"chunk": "C"
+},
+{
+"text": "fresh",
+"start": 350.186,
+"end": 350.37199999999996,
+"chunk": "C"
+},
+{
+"text": "air",
+"start": 350.37199999999996,
+"end": 350.558,
+"chunk": "C"
+},
+{
+"text": "immediately.",
+"start": 350.558,
+"end": 351.48999999999995,
+"chunk": "C"
+},
+{
+"text": "Then",
+"start": 351.76,
+"end": 352.07599999999996,
+"chunk": "C"
+},
+{
+"text": "call",
+"start": 352.07599999999996,
+"end": 352.39199999999994,
+"chunk": "C"
+},
+{
+"text": "nine-one-one.",
+"start": 352.39199999999994,
+"end": 353.34,
+"chunk": "C"
+},
+{
+"text": "You",
+"start": 354.49999999999994,
+"end": 354.6599999999999,
+"chunk": "D"
+},
+{
+"text": "shut",
+"start": 354.6599999999999,
+"end": 354.81999999999994,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 354.81999999999994,
+"end": 354.9799999999999,
+"chunk": "D"
+},
+{
+"text": "generator",
+"start": 354.9799999999999,
+"end": 355.61999999999995,
+"chunk": "D"
+},
+{
+"text": "off.",
+"start": 355.61999999999995,
+"end": 355.7799999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 356.43999999999994,
+"end": 356.70699999999994,
+"chunk": "D"
+},
+{
+"text": "silence",
+"start": 356.70699999999994,
+"end": 357.24099999999993,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 357.24099999999993,
+"end": 357.5089999999999,
+"chunk": "D"
+},
+{
+"text": "enormous.",
+"start": 357.5089999999999,
+"end": 358.30999999999995,
+"chunk": "D"
+},
+{
+"text": "Rosa",
+"start": 358.7699999999999,
+"end": 359.18799999999993,
+"chunk": "D"
+},
+{
+"text": "leans",
+"start": 359.18799999999993,
+"end": 359.39699999999993,
+"chunk": "D"
+},
+{
+"text": "on",
+"start": 359.39699999999993,
+"end": 359.60599999999994,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 359.60599999999994,
+"end": 359.81499999999994,
+"chunk": "D"
+},
+{
+"text": "like",
+"start": 359.81499999999994,
+"end": 360.02399999999994,
+"chunk": "D"
+},
+{
+"text": "you're",
+"start": 360.02399999999994,
+"end": 360.23299999999995,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 360.23299999999995,
+"end": 360.44199999999995,
+"chunk": "D"
+},
+{
+"text": "railing.",
+"start": 360.44199999999995,
+"end": 360.8599999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 361.2899999999999,
+"end": 361.4849999999999,
+"chunk": "D"
+},
+{
+"text": "others",
+"start": 361.4849999999999,
+"end": 361.8759999999999,
+"chunk": "D"
+},
+{
+"text": "wake",
+"start": 361.8759999999999,
+"end": 362.0709999999999,
+"chunk": "D"
+},
+{
+"text": "up",
+"start": 362.0709999999999,
+"end": 362.26699999999994,
+"chunk": "D"
+},
+{
+"text": "dizzy",
+"start": 362.26699999999994,
+"end": 362.83699999999993,
+"chunk": "D"
+},
+{
+"text": "and",
+"start": 362.83699999999993,
+"end": 363.0329999999999,
+"chunk": "D"
+},
+{
+"text": "confused,",
+"start": 363.0329999999999,
+"end": 363.7169999999999,
+"chunk": "D"
+},
+{
+"text": "and",
+"start": 363.7169999999999,
+"end": 364.13199999999995,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 364.13199999999995,
+"end": 364.32699999999994,
+"chunk": "D"
+},
+{
+"text": "herd",
+"start": 364.32699999999994,
+"end": 364.5229999999999,
+"chunk": "D"
+},
+{
+"text": "them",
+"start": 364.5229999999999,
+"end": 364.7179999999999,
+"chunk": "D"
+},
+{
+"text": "out",
+"start": 364.7179999999999,
+"end": 364.9129999999999,
+"chunk": "D"
+},
+{
+"text": "under",
+"start": 364.9129999999999,
+"end": 365.3039999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 365.3039999999999,
+"end": 365.4989999999999,
+"chunk": "D"
+},
+{
+"text": "porch",
+"start": 365.4989999999999,
+"end": 365.69499999999994,
+"chunk": "D"
+},
+{
+"text": "roof.",
+"start": 365.69499999999994,
+"end": 365.88999999999993,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 366.44999999999993,
+"end": 366.6959999999999,
+"chunk": "D"
+},
+{
+"text": "snow",
+"start": 366.6959999999999,
+"end": 366.9419999999999,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 366.9419999999999,
+"end": 367.1889999999999,
+"chunk": "D"
+},
+{
+"text": "blowing",
+"start": 367.1889999999999,
+"end": 367.6809999999999,
+"chunk": "D"
+},
+{
+"text": "sideways.",
+"start": 367.6809999999999,
+"end": 368.4199999999999,
+"chunk": "D"
+},
+{
+"text": "Dale",
+"start": 368.7399999999999,
+"end": 369.1379999999999,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 369.1379999999999,
+"end": 369.33699999999993,
+"chunk": "D"
+},
+{
+"text": "too",
+"start": 369.33699999999993,
+"end": 369.53599999999994,
+"chunk": "D"
+},
+{
+"text": "heavy",
+"start": 369.53599999999994,
+"end": 369.93299999999994,
+"chunk": "D"
+},
+{
+"text": "to",
+"start": 369.93299999999994,
+"end": 370.13199999999995,
+"chunk": "D"
+},
+{
+"text": "carry.",
+"start": 370.13199999999995,
+"end": 370.5299999999999,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 370.93999999999994,
+"end": 371.14899999999994,
+"chunk": "D"
+},
+{
+"text": "grab",
+"start": 371.14899999999994,
+"end": 371.35799999999995,
+"chunk": "D"
+},
+{
+"text": "him",
+"start": 371.35799999999995,
+"end": 371.5659999999999,
+"chunk": "D"
+},
+{
+"text": "under",
+"start": 371.5659999999999,
+"end": 371.9839999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 371.9839999999999,
+"end": 372.1929999999999,
+"chunk": "D"
+},
+{
+"text": "arms",
+"start": 372.1929999999999,
+"end": 372.4009999999999,
+"chunk": "D"
+},
+{
+"text": "and",
+"start": 372.4009999999999,
+"end": 372.6099999999999,
+"chunk": "D"
+},
+{
+"text": "drag",
+"start": 372.6099999999999,
+"end": 372.8189999999999,
+"chunk": "D"
+},
+{
+"text": "him",
+"start": 372.8189999999999,
+"end": 373.02699999999993,
+"chunk": "D"
+},
+{
+"text": "across",
+"start": 373.02699999999993,
+"end": 373.44499999999994,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 373.44499999999994,
+"end": 373.65399999999994,
+"chunk": "D"
+},
+{
+"text": "lobby",
+"start": 373.65399999999994,
+"end": 374.0709999999999,
+"chunk": "D"
+},
+{
+"text": "floor.",
+"start": 374.0709999999999,
+"end": 374.2799999999999,
+"chunk": "D"
+},
+{
+"text": "Inch",
+"start": 374.7299999999999,
+"end": 375.0929999999999,
+"chunk": "D"
+},
+{
+"text": "by",
+"start": 375.0929999999999,
+"end": 375.45699999999994,
+"chunk": "D"
+},
+{
+"text": "inch.",
+"start": 375.45699999999994,
+"end": 375.81999999999994,
+"chunk": "D"
+},
+{
+"text": "Through",
+"start": 376.2399999999999,
+"end": 376.4479999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 376.4479999999999,
+"end": 376.65599999999995,
+"chunk": "D"
+},
+{
+"text": "open",
+"start": 376.65599999999995,
+"end": 377.07199999999995,
+"chunk": "D"
+},
+{
+"text": "door.",
+"start": 377.07199999999995,
+"end": 377.2799999999999,
+"chunk": "D"
+},
+{
+"text": "Into",
+"start": 377.6699999999999,
+"end": 378.0899999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 378.0899999999999,
+"end": 378.2999999999999,
+"chunk": "D"
+},
+{
+"text": "cold.",
+"start": 378.2999999999999,
+"end": 378.50999999999993,
+"chunk": "D"
+},
+{
+"text": "Lando",
+"start": 378.99999999999994,
+"end": 379.37299999999993,
+"chunk": "D"
+},
+{
+"text": "walks",
+"start": 379.37299999999993,
+"end": 379.5589999999999,
+"chunk": "D"
+},
+{
+"text": "ahead",
+"start": 379.5589999999999,
+"end": 379.9319999999999,
+"chunk": "D"
+},
+{
+"text": "of",
+"start": 379.9319999999999,
+"end": 380.1189999999999,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 380.1189999999999,
+"end": 380.30499999999995,
+"chunk": "D"
+},
+{
+"text": "like",
+"start": 380.30499999999995,
+"end": 380.49099999999993,
+"chunk": "D"
+},
+{
+"text": "he's",
+"start": 380.49099999999993,
+"end": 380.67799999999994,
+"chunk": "D"
+},
+{
+"text": "leading",
+"start": 380.67799999999994,
+"end": 381.05099999999993,
+"chunk": "D"
+},
+{
+"text": "a",
+"start": 381.05099999999993,
+"end": 381.2369999999999,
+"chunk": "D"
+},
+{
+"text": "parade.",
+"start": 381.2369999999999,
+"end": 381.6099999999999,
+"chunk": "D"
+},
+{
+"text": "Your",
+"start": 382.0499999999999,
+"end": 382.3519999999999,
+"chunk": "D"
+},
+{
+"text": "phone",
+"start": 382.3519999999999,
+"end": 382.6529999999999,
+"chunk": "D"
+},
+{
+"text": "says",
+"start": 382.6529999999999,
+"end": 382.9549999999999,
+"chunk": "D"
+},
+{
+"text": "nine",
+"start": 382.9549999999999,
+"end": 383.25699999999995,
+"chunk": "D"
+},
+{
+"text": "percent.",
+"start": 383.25699999999995,
+"end": 383.8599999999999,
+"chunk": "D"
+},
+{
+"text": "One",
+"start": 384.2999999999999,
+"end": 384.6499999999999,
+"chunk": "D"
+},
+{
+"text": "bar.",
+"start": 384.6499999999999,
+"end": 384.99999999999994,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 385.4099999999999,
+"end": 385.6379999999999,
+"chunk": "D"
+},
+{
+"text": "call",
+"start": 385.6379999999999,
+"end": 385.86599999999993,
+"chunk": "D"
+},
+{
+"text": "nine-one-one.",
+"start": 385.86599999999993,
+"end": 386.54999999999995,
+"chunk": "D"
+},
+{
+"text": "It",
+"start": 386.9899999999999,
+"end": 387.3549999999999,
+"chunk": "D"
+},
+{
+"text": "rings.",
+"start": 387.3549999999999,
+"end": 387.7199999999999,
+"chunk": "D"
+},
+{
+"text": "And",
+"start": 388.17999999999995,
+"end": 388.56499999999994,
+"chunk": "D"
+},
+{
+"text": "rings.",
+"start": 388.56499999999994,
+"end": 388.94999999999993,
+"chunk": "D"
+},
+{
+"text": "Then",
+"start": 389.3599999999999,
+"end": 389.74999999999994,
+"chunk": "D"
+},
+{
+"text": "a",
+"start": 389.74999999999994,
+"end": 390.13999999999993,
+"chunk": "D"
+},
+{
+"text": "voice.",
+"start": 390.13999999999993,
+"end": 390.5299999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 390.94999999999993,
+"end": 391.15399999999994,
+"chunk": "D"
+},
+{
+"text": "road",
+"start": 391.15399999999994,
+"end": 391.35799999999995,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 391.35799999999995,
+"end": 391.5619999999999,
+"chunk": "D"
+},
+{
+"text": "closed.",
+"start": 391.5619999999999,
+"end": 391.9699999999999,
+"chunk": "D"
+},
+{
+"text": "They'll",
+"start": 392.2299999999999,
+"end": 392.4179999999999,
+"chunk": "D"
+},
+{
+"text": "get",
+"start": 392.4179999999999,
+"end": 392.60599999999994,
+"chunk": "D"
+},
+{
+"text": "to",
+"start": 392.60599999999994,
+"end": 392.7929999999999,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 392.7929999999999,
+"end": 392.98099999999994,
+"chunk": "D"
+},
+{
+"text": "as",
+"start": 392.98099999999994,
+"end": 393.1689999999999,
+"chunk": "D"
+},
+{
+"text": "fast",
+"start": 393.1689999999999,
+"end": 393.3569999999999,
+"chunk": "D"
+},
+{
+"text": "as",
+"start": 393.3569999999999,
+"end": 393.5439999999999,
+"chunk": "D"
+},
+{
+"text": "they",
+"start": 393.5439999999999,
+"end": 393.7319999999999,
+"chunk": "D"
+},
+{
+"text": "can.",
+"start": 393.7319999999999,
+"end": 393.9199999999999,
+"chunk": "D"
+},
+{
+"text": "And",
+"start": 394.3699999999999,
+"end": 394.55799999999994,
+"chunk": "D"
+},
+{
+"text": "now",
+"start": 394.55799999999994,
+"end": 394.7449999999999,
+"chunk": "D"
+},
+{
+"text": "there's",
+"start": 394.7449999999999,
+"end": 395.1199999999999,
+"chunk": "D"
+},
+{
+"text": "a",
+"start": 395.1199999999999,
+"end": 395.30799999999994,
+"chunk": "D"
+},
+{
+"text": "new",
+"start": 395.30799999999994,
+"end": 395.4949999999999,
+"chunk": "D"
+},
+{
+"text": "problem.",
+"start": 395.4949999999999,
+"end": 395.8699999999999,
+"chunk": "D"
+},
+{
+"text": "Nine",
+"start": 396.2299999999999,
+"end": 396.5729999999999,
+"chunk": "D"
+},
+{
+"text": "degrees.",
+"start": 396.5729999999999,
+"end": 397.25999999999993,
+"chunk": "D"
+},
+{
+"text": "Seven",
+"start": 397.55999999999995,
+"end": 397.9849999999999,
+"chunk": "D"
+},
+{
+"text": "people",
+"start": 397.9849999999999,
+"end": 398.4099999999999,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 398.4099999999999,
+"end": 398.62299999999993,
+"chunk": "D"
+},
+{
+"text": "pajamas.",
+"start": 398.62299999999993,
+"end": 399.25999999999993,
+"chunk": "D"
+},
+{
+"text": "One",
+"start": 399.5799999999999,
+"end": 399.94499999999994,
+"chunk": "D"
+},
+{
+"text": "cat.",
+"start": 399.94499999999994,
+"end": 400.30999999999995,
+"chunk": "D"
+},
+{
+"text": "Shivering.",
+"start": 400.7399999999999,
+"end": 401.38999999999993,
+"chunk": "D"
+},
+{
+"text": "Exhaustion.",
+"start": 401.81999999999994,
+"end": 402.63999999999993,
+"chunk": "D"
+},
+{
+"text": "Confusion.",
+"start": 402.9599999999999,
+"end": 403.7299999999999,
+"chunk": "D"
+},
+{
+"text": "Fumbling",
+"start": 404.1599999999999,
+"end": 404.8069999999999,
+"chunk": "D"
+},
+{
+"text": "hands.",
+"start": 404.8069999999999,
+"end": 405.12999999999994,
+"chunk": "D"
+},
+{
+"text": "Slurred",
+"start": 405.3599999999999,
+"end": 406.0999999999999,
+"chunk": "D"
+},
+{
+"text": "speech.",
+"start": 406.0999999999999,
+"end": 406.4699999999999,
+"chunk": "D"
+},
+{
+"text": "Drowsiness.",
+"start": 406.75999999999993,
+"end": 407.62999999999994,
+"chunk": "D"
+},
+{
+"text": "Half",
+"start": 408.00999999999993,
+"end": 408.2219999999999,
+"chunk": "D"
+},
+{
+"text": "of",
+"start": 408.2219999999999,
+"end": 408.43499999999995,
+"chunk": "D"
+},
+{
+"text": "those",
+"start": 408.43499999999995,
+"end": 408.64699999999993,
+"chunk": "D"
+},
+{
+"text": "look",
+"start": 408.64699999999993,
+"end": 408.8589999999999,
+"chunk": "D"
+},
+{
+"text": "exactly",
+"start": 408.8589999999999,
+"end": 409.4959999999999,
+"chunk": "D"
+},
+{
+"text": "like",
+"start": 409.4959999999999,
+"end": 409.7079999999999,
+"chunk": "D"
+},
+{
+"text": "carbon",
+"start": 409.7079999999999,
+"end": 410.1329999999999,
+"chunk": "D"
+},
+{
+"text": "monoxide.",
+"start": 410.1329999999999,
+"end": 410.7699999999999,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 411.12999999999994,
+"end": 411.33199999999994,
+"chunk": "D"
+},
+{
+"text": "can't",
+"start": 411.33199999999994,
+"end": 411.53399999999993,
+"chunk": "D"
+},
+{
+"text": "tell",
+"start": 411.53399999999993,
+"end": 411.73599999999993,
+"chunk": "D"
+},
+{
+"text": "which",
+"start": 411.73599999999993,
+"end": 411.93799999999993,
+"chunk": "D"
+},
+{
+"text": "one",
+"start": 411.93799999999993,
+"end": 412.13999999999993,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 412.13999999999993,
+"end": 412.3419999999999,
+"chunk": "D"
+},
+{
+"text": "hurting",
+"start": 412.3419999999999,
+"end": 412.7459999999999,
+"chunk": "D"
+},
+{
+"text": "Rosa.",
+"start": 412.7459999999999,
+"end": 413.1499999999999,
+"chunk": "D"
+},
+{
+"text": "Your",
+"start": 413.5899999999999,
+"end": 413.8209999999999,
+"chunk": "D"
+},
+{
+"text": "car",
+"start": 413.8209999999999,
+"end": 414.0519999999999,
+"chunk": "D"
+},
+{
+"text": "is",
+"start": 414.0519999999999,
+"end": 414.2829999999999,
+"chunk": "D"
+},
+{
+"text": "a",
+"start": 414.2829999999999,
+"end": 414.5139999999999,
+"chunk": "D"
+},
+{
+"text": "white",
+"start": 414.5139999999999,
+"end": 414.7459999999999,
+"chunk": "D"
+},
+{
+"text": "hump",
+"start": 414.7459999999999,
+"end": 414.9769999999999,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 414.9769999999999,
+"end": 415.2079999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 415.2079999999999,
+"end": 415.4389999999999,
+"chunk": "D"
+},
+{
+"text": "lot.",
+"start": 415.4389999999999,
+"end": 415.6699999999999,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 416.05999999999995,
+"end": 416.27399999999994,
+"chunk": "D"
+},
+{
+"text": "dig",
+"start": 416.27399999999994,
+"end": 416.4869999999999,
+"chunk": "D"
+},
+{
+"text": "with",
+"start": 416.4869999999999,
+"end": 416.7009999999999,
+"chunk": "D"
+},
+{
+"text": "your",
+"start": 416.7009999999999,
+"end": 416.9149999999999,
+"chunk": "D"
+},
+{
+"text": "hands",
+"start": 416.9149999999999,
+"end": 417.12799999999993,
+"chunk": "D"
+},
+{
+"text": "until",
+"start": 417.12799999999993,
+"end": 417.55499999999995,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 417.55499999999995,
+"end": 417.7689999999999,
+"chunk": "D"
+},
+{
+"text": "can't",
+"start": 417.7689999999999,
+"end": 417.98299999999995,
+"chunk": "D"
+},
+{
+"text": "feel",
+"start": 417.98299999999995,
+"end": 418.1959999999999,
+"chunk": "D"
+},
+{
+"text": "them.",
+"start": 418.1959999999999,
+"end": 418.4099999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 418.81999999999994,
+"end": 419.0719999999999,
+"chunk": "D"
+},
+{
+"text": "door",
+"start": 419.0719999999999,
+"end": 419.32499999999993,
+"chunk": "D"
+},
+{
+"text": "opens.",
+"start": 419.32499999999993,
+"end": 419.8299999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 420.06999999999994,
+"end": 420.34799999999996,
+"chunk": "D"
+},
+{
+"text": "engine",
+"start": 420.34799999999996,
+"end": 420.90399999999994,
+"chunk": "D"
+},
+{
+"text": "catches.",
+"start": 420.90399999999994,
+"end": 421.75999999999993,
+"chunk": "D"
+},
+{
+"text": "Heat",
+"start": 421.92999999999995,
+"end": 422.18299999999994,
+"chunk": "D"
+},
+{
+"text": "pours",
+"start": 422.18299999999994,
+"end": 422.4369999999999,
+"chunk": "D"
+},
+{
+"text": "out.",
+"start": 422.4369999999999,
+"end": 422.68999999999994,
+"chunk": "D"
+},
+{
+"text": "Four",
+"start": 423.1199999999999,
+"end": 423.3299999999999,
+"chunk": "D"
+},
+{
+"text": "people",
+"start": 423.3299999999999,
+"end": 423.74999999999994,
+"chunk": "D"
+},
+{
+"text": "pile",
+"start": 423.74999999999994,
+"end": 424.1699999999999,
+"chunk": "D"
+},
+{
+"text": "in.",
+"start": 424.1699999999999,
+"end": 424.37999999999994,
+"chunk": "D"
+},
+{
+"text": "And",
+"start": 424.67999999999995,
+"end": 424.90399999999994,
+"chunk": "D"
+},
+{
+"text": "Lando",
+"start": 424.90399999999994,
+"end": 425.35099999999994,
+"chunk": "D"
+},
+{
+"text": "starts",
+"start": 425.35099999999994,
+"end": 425.57499999999993,
+"chunk": "D"
+},
+{
+"text": "yowling",
+"start": 425.57499999999993,
+"end": 426.02199999999993,
+"chunk": "D"
+},
+{
+"text": "again.",
+"start": 426.02199999999993,
+"end": 426.4699999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 426.69999999999993,
+"end": 427.0729999999999,
+"chunk": "D"
+},
+{
+"text": "same",
+"start": 427.0729999999999,
+"end": 427.4469999999999,
+"chunk": "D"
+},
+{
+"text": "yowl.",
+"start": 427.4469999999999,
+"end": 427.81999999999994,
+"chunk": "D"
+},
+{
+"text": "He",
+"start": 428.2299999999999,
+"end": 428.4429999999999,
+"chunk": "D"
+},
+{
+"text": "claws",
+"start": 428.4429999999999,
+"end": 428.65599999999995,
+"chunk": "D"
+},
+{
+"text": "at",
+"start": 428.65599999999995,
+"end": 428.8689999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 428.8689999999999,
+"end": 429.0809999999999,
+"chunk": "D"
+},
+{
+"text": "back",
+"start": 429.0809999999999,
+"end": 429.2939999999999,
+"chunk": "D"
+},
+{
+"text": "window.",
+"start": 429.2939999999999,
+"end": 429.7199999999999,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 430.0899999999999,
+"end": 430.2819999999999,
+"chunk": "D"
+},
+{
+"text": "look",
+"start": 430.2819999999999,
+"end": 430.47299999999996,
+"chunk": "D"
+},
+{
+"text": "behind",
+"start": 430.47299999999996,
+"end": 430.8569999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 430.8569999999999,
+"end": 431.0479999999999,
+"chunk": "D"
+},
+{
+"text": "car.",
+"start": 431.0479999999999,
+"end": 431.2399999999999,
+"chunk": "D"
+},
+{
+"text": "The",
+"start": 431.49999999999994,
+"end": 431.72299999999996,
+"chunk": "D"
+},
+{
+"text": "snow",
+"start": 431.72299999999996,
+"end": 431.94499999999994,
+"chunk": "D"
+},
+{
+"text": "has",
+"start": 431.94499999999994,
+"end": 432.1679999999999,
+"chunk": "D"
+},
+{
+"text": "drifted",
+"start": 432.1679999999999,
+"end": 432.6139999999999,
+"chunk": "D"
+},
+{
+"text": "right",
+"start": 432.6139999999999,
+"end": 432.8359999999999,
+"chunk": "D"
+},
+{
+"text": "over",
+"start": 432.8359999999999,
+"end": 433.2819999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 433.2819999999999,
+"end": 433.50499999999994,
+"chunk": "D"
+},
+{
+"text": "tailpipe.",
+"start": 433.50499999999994,
+"end": 433.94999999999993,
+"chunk": "D"
+},
+{
+"text": "Stuck",
+"start": 434.3699999999999,
+"end": 434.6099999999999,
+"chunk": "D"
+},
+{
+"text": "with",
+"start": 434.6099999999999,
+"end": 434.8499999999999,
+"chunk": "D"
+},
+{
+"text": "your",
+"start": 434.8499999999999,
+"end": 435.0899999999999,
+"chunk": "D"
+},
+{
+"text": "car",
+"start": 435.0899999999999,
+"end": 435.3299999999999,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 435.3299999999999,
+"end": 435.56999999999994,
+"chunk": "D"
+},
+{
+"text": "snow?",
+"start": 435.56999999999994,
+"end": 435.80999999999995,
+"chunk": "D"
+},
+{
+"text": "Clear",
+"start": 436.0899999999999,
+"end": 436.31499999999994,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 436.31499999999994,
+"end": 436.5399999999999,
+"chunk": "D"
+},
+{
+"text": "snow",
+"start": 436.5399999999999,
+"end": 436.76499999999993,
+"chunk": "D"
+},
+{
+"text": "off",
+"start": 436.76499999999993,
+"end": 436.9899999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 436.9899999999999,
+"end": 437.2149999999999,
+"chunk": "D"
+},
+{
+"text": "exhaust",
+"start": 437.2149999999999,
+"end": 437.6649999999999,
+"chunk": "D"
+},
+{
+"text": "pipe.",
+"start": 437.6649999999999,
+"end": 437.88999999999993,
+"chunk": "D"
+},
+{
+"text": "Run",
+"start": 438.13999999999993,
+"end": 438.3059999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 438.3059999999999,
+"end": 438.47299999999996,
+"chunk": "D"
+},
+{
+"text": "engine",
+"start": 438.47299999999996,
+"end": 438.80499999999995,
+"chunk": "D"
+},
+{
+"text": "about",
+"start": 438.80499999999995,
+"end": 439.1379999999999,
+"chunk": "D"
+},
+{
+"text": "ten",
+"start": 439.1379999999999,
+"end": 439.3039999999999,
+"chunk": "D"
+},
+{
+"text": "minutes",
+"start": 439.3039999999999,
+"end": 439.80299999999994,
+"chunk": "D"
+},
+{
+"text": "an",
+"start": 439.80299999999994,
+"end": 439.96899999999994,
+"chunk": "D"
+},
+{
+"text": "hour,",
+"start": 439.96899999999994,
+"end": 440.21899999999994,
+"chunk": "D"
+},
+{
+"text": "and",
+"start": 440.21899999999994,
+"end": 440.38499999999993,
+"chunk": "D"
+},
+{
+"text": "crack",
+"start": 440.38499999999993,
+"end": 440.55099999999993,
+"chunk": "D"
+},
+{
+"text": "a",
+"start": 440.55099999999993,
+"end": 440.7169999999999,
+"chunk": "D"
+},
+{
+"text": "window.",
+"start": 440.7169999999999,
+"end": 441.04999999999995,
+"chunk": "D"
+},
+{
+"text": "You",
+"start": 441.4899999999999,
+"end": 441.6669999999999,
+"chunk": "D"
+},
+{
+"text": "dig",
+"start": 441.6669999999999,
+"end": 441.8449999999999,
+"chunk": "D"
+},
+{
+"text": "it",
+"start": 441.8449999999999,
+"end": 442.02199999999993,
+"chunk": "D"
+},
+{
+"text": "out.",
+"start": 442.02199999999993,
+"end": 442.19999999999993,
+"chunk": "D"
+},
+{
+"text": "Lando",
+"start": 442.6199999999999,
+"end": 443.05999999999995,
+"chunk": "D"
+},
+{
+"text": "was",
+"start": 443.05999999999995,
+"end": 443.2799999999999,
+"chunk": "D"
+},
+{
+"text": "right.",
+"start": 443.2799999999999,
+"end": 443.49999999999994,
+"chunk": "D"
+},
+{
+"text": "Again.",
+"start": 443.87999999999994,
+"end": 444.3699999999999,
+"chunk": "D"
+},
+{
+"text": "Five",
+"start": 444.9699999999999,
+"end": 445.26499999999993,
+"chunk": "D"
+},
+{
+"text": "fifty",
+"start": 445.26499999999993,
+"end": 445.8549999999999,
+"chunk": "D"
+},
+{
+"text": "a.m.",
+"start": 445.8549999999999,
+"end": 446.1499999999999,
+"chunk": "D"
+},
+{
+"text": "Headlights",
+"start": 446.5299999999999,
+"end": 446.92999999999995,
+"chunk": "D"
+},
+{
+"text": "on",
+"start": 446.92999999999995,
+"end": 447.12999999999994,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 447.12999999999994,
+"end": 447.3299999999999,
+"chunk": "D"
+},
+{
+"text": "mountain",
+"start": 447.3299999999999,
+"end": 447.7299999999999,
+"chunk": "D"
+},
+{
+"text": "road.",
+"start": 447.7299999999999,
+"end": 447.92999999999995,
+"chunk": "D"
+},
+{
+"text": "A",
+"start": 448.3399999999999,
+"end": 448.6199999999999,
+"chunk": "D"
+},
+{
+"text": "plow.",
+"start": 448.6199999999999,
+"end": 448.8999999999999,
+"chunk": "D"
+},
+{
+"text": "Behind",
+"start": 449.2699999999999,
+"end": 449.62999999999994,
+"chunk": "D"
+},
+{
+"text": "it,",
+"start": 449.62999999999994,
+"end": 450.1599999999999,
+"chunk": "D"
+},
+{
+"text": "an",
+"start": 450.1599999999999,
+"end": 450.3399999999999,
+"chunk": "D"
+},
+{
+"text": "ambulance.",
+"start": 450.3399999999999,
+"end": 450.87999999999994,
+"chunk": "D"
+},
+{
+"text": "They",
+"start": 451.2299999999999,
+"end": 451.4239999999999,
+"chunk": "D"
+},
+{
+"text": "give",
+"start": 451.4239999999999,
+"end": 451.61799999999994,
+"chunk": "D"
+},
+{
+"text": "Dale",
+"start": 451.61799999999994,
+"end": 452.00699999999995,
+"chunk": "D"
+},
+{
+"text": "oxygen",
+"start": 452.00699999999995,
+"end": 452.58899999999994,
+"chunk": "D"
+},
+{
+"text": "right",
+"start": 452.58899999999994,
+"end": 452.7829999999999,
+"chunk": "D"
+},
+{
+"text": "there",
+"start": 452.7829999999999,
+"end": 452.97799999999995,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 452.97799999999995,
+"end": 453.1719999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 453.1719999999999,
+"end": 453.36599999999993,
+"chunk": "D"
+},
+{
+"text": "snow.",
+"start": 453.36599999999993,
+"end": 453.55999999999995,
+"chunk": "D"
+},
+{
+"text": "He",
+"start": 453.9699999999999,
+"end": 454.17999999999995,
+"chunk": "D"
+},
+{
+"text": "opens",
+"start": 454.17999999999995,
+"end": 454.5999999999999,
+"chunk": "D"
+},
+{
+"text": "his",
+"start": 454.5999999999999,
+"end": 454.80999999999995,
+"chunk": "D"
+},
+{
+"text": "eyes.",
+"start": 454.80999999999995,
+"end": 455.0199999999999,
+"chunk": "D"
+},
+{
+"text": "He",
+"start": 455.4099999999999,
+"end": 455.56999999999994,
+"chunk": "D"
+},
+{
+"text": "looks",
+"start": 455.56999999999994,
+"end": 455.7299999999999,
+"chunk": "D"
+},
+{
+"text": "at",
+"start": 455.7299999999999,
+"end": 455.88999999999993,
+"chunk": "D"
+},
+{
+"text": "you.",
+"start": 455.88999999999993,
+"end": 456.04999999999995,
+"chunk": "D"
+},
+{
+"text": "Then",
+"start": 456.37999999999994,
+"end": 456.6379999999999,
+"chunk": "D"
+},
+{
+"text": "at",
+"start": 456.6379999999999,
+"end": 456.8949999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 456.8949999999999,
+"end": 457.15199999999993,
+"chunk": "D"
+},
+{
+"text": "cat.",
+"start": 457.15199999999993,
+"end": 457.4099999999999,
+"chunk": "D"
+},
+{
+"text": "\"No",
+"start": 457.93999999999994,
+"end": 458.22799999999995,
+"chunk": "D"
+},
+{
+"text": "pets,\"",
+"start": 458.22799999999995,
+"end": 458.5159999999999,
+"chunk": "D"
+},
+{
+"text": "he",
+"start": 458.5159999999999,
+"end": 459.20399999999995,
+"chunk": "D"
+},
+{
+"text": "whispers.",
+"start": 459.20399999999995,
+"end": 459.7799999999999,
+"chunk": "D"
+},
+{
+"text": "Then.",
+"start": 460.13999999999993,
+"end": 460.5199999999999,
+"chunk": "D"
+},
+{
+"text": "\"He",
+"start": 460.9799999999999,
+"end": 461.3549999999999,
+"chunk": "D"
+},
+{
+"text": "stays.",
+"start": 461.3549999999999,
+"end": 461.7299999999999,
+"chunk": "D"
+},
+{
+"text": "Free.",
+"start": 462.1599999999999,
+"end": 462.4599999999999,
+"chunk": "D"
+},
+{
+"text": "Forever.\"",
+"start": 462.9699999999999,
+"end": 463.4989999999999,
+"chunk": "D"
+},
+{
+"text": "Everyone",
+"start": 463.4989999999999,
+"end": 464.6479999999999,
+"chunk": "D"
+},
+{
+"text": "made",
+"start": 464.6479999999999,
+"end": 464.82399999999996,
+"chunk": "D"
+},
+{
+"text": "it.",
+"start": 464.82399999999996,
+"end": 464.99999999999994,
+"chunk": "D"
+},
+{
+"text": "Lando",
+"start": 465.3399999999999,
+"end": 465.73099999999994,
+"chunk": "D"
+},
+{
+"text": "slept",
+"start": 465.73099999999994,
+"end": 465.92599999999993,
+"chunk": "D"
+},
+{
+"text": "through",
+"start": 465.92599999999993,
+"end": 466.12199999999996,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 466.12199999999996,
+"end": 466.3169999999999,
+"chunk": "D"
+},
+{
+"text": "whole",
+"start": 466.3169999999999,
+"end": 466.7079999999999,
+"chunk": "D"
+},
+{
+"text": "ambulance",
+"start": 466.7079999999999,
+"end": 467.2949999999999,
+"chunk": "D"
+},
+{
+"text": "ride.",
+"start": 467.2949999999999,
+"end": 467.4899999999999,
+"chunk": "D"
+},
+{
+"text": "On",
+"start": 467.8699999999999,
+"end": 468.10299999999995,
+"chunk": "D"
+},
+{
+"text": "Rosa.",
+"start": 468.10299999999995,
+"end": 468.56999999999994,
+"chunk": "D"
+},
+{
+"text": "So",
+"start": 469.00999999999993,
+"end": 469.2679999999999,
+"chunk": "D"
+},
+{
+"text": "be",
+"start": 469.2679999999999,
+"end": 469.69499999999994,
+"chunk": "D"
+},
+{
+"text": "honest.",
+"start": 469.69499999999994,
+"end": 470.2099999999999,
+"chunk": "D"
+},
+{
+"text": "Three",
+"start": 470.6699999999999,
+"end": 470.83399999999995,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 470.83399999999995,
+"end": 470.99799999999993,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 470.99799999999993,
+"end": 471.1619999999999,
+"chunk": "D"
+},
+{
+"text": "morning.",
+"start": 471.1619999999999,
+"end": 471.4899999999999,
+"chunk": "D"
+},
+{
+"text": "Nine",
+"start": 471.81999999999994,
+"end": 472.0799999999999,
+"chunk": "D"
+},
+{
+"text": "degrees",
+"start": 472.0799999999999,
+"end": 472.5999999999999,
+"chunk": "D"
+},
+{
+"text": "outside.",
+"start": 472.5999999999999,
+"end": 473.1199999999999,
+"chunk": "D"
+},
+{
+"text": "Poison",
+"start": 473.4799999999999,
+"end": 474.06499999999994,
+"chunk": "D"
+},
+{
+"text": "inside.",
+"start": 474.06499999999994,
+"end": 474.6499999999999,
+"chunk": "D"
+},
+{
+"text": "Would",
+"start": 475.0399999999999,
+"end": 475.2049999999999,
+"chunk": "D"
+},
+{
+"text": "you",
+"start": 475.2049999999999,
+"end": 475.3699999999999,
+"chunk": "D"
+},
+{
+"text": "have",
+"start": 475.3699999999999,
+"end": 475.5349999999999,
+"chunk": "D"
+},
+{
+"text": "dragged",
+"start": 475.5349999999999,
+"end": 475.8649999999999,
+"chunk": "D"
+},
+{
+"text": "everyone",
+"start": 475.8649999999999,
+"end": 476.3599999999999,
+"chunk": "D"
+},
+{
+"text": "out",
+"start": 476.3599999999999,
+"end": 476.5249999999999,
+"chunk": "D"
+},
+{
+"text": "into",
+"start": 476.5249999999999,
+"end": 476.8549999999999,
+"chunk": "D"
+},
+{
+"text": "that",
+"start": 476.8549999999999,
+"end": 477.0199999999999,
+"chunk": "D"
+},
+{
+"text": "blizzard?",
+"start": 477.0199999999999,
+"end": 477.3499999999999,
+"chunk": "D"
+},
+{
+"text": "Or",
+"start": 477.6099999999999,
+"end": 477.8169999999999,
+"chunk": "D"
+},
+{
+"text": "stayed",
+"start": 477.8169999999999,
+"end": 478.0229999999999,
+"chunk": "D"
+},
+{
+"text": "where",
+"start": 478.0229999999999,
+"end": 478.2299999999999,
+"chunk": "D"
+},
+{
+"text": "it",
+"start": 478.2299999999999,
+"end": 478.4369999999999,
+"chunk": "D"
+},
+{
+"text": "was",
+"start": 478.4369999999999,
+"end": 478.6429999999999,
+"chunk": "D"
+},
+{
+"text": "warm?",
+"start": 478.6429999999999,
+"end": 478.8499999999999,
+"chunk": "D"
+},
+{
+"text": "Tell",
+"start": 479.2099999999999,
+"end": 479.37699999999995,
+"chunk": "D"
+},
+{
+"text": "me",
+"start": 479.37699999999995,
+"end": 479.5429999999999,
+"chunk": "D"
+},
+{
+"text": "in",
+"start": 479.5429999999999,
+"end": 479.7099999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 479.7099999999999,
+"end": 479.87699999999995,
+"chunk": "D"
+},
+{
+"text": "comments.",
+"start": 479.87699999999995,
+"end": 480.2099999999999,
+"chunk": "D"
+},
+{
+"text": "Next",
+"start": 480.5799999999999,
+"end": 480.78399999999993,
+"chunk": "D"
+},
+{
+"text": "Monday,",
+"start": 480.78399999999993,
+"end": 481.2949999999999,
+"chunk": "D"
+},
+{
+"text": "the",
+"start": 481.2949999999999,
+"end": 481.7299999999999,
+"chunk": "D"
+},
+{
+"text": "lights",
+"start": 481.7299999999999,
+"end": 481.9339999999999,
+"chunk": "D"
+},
+{
+"text": "go",
+"start": 481.9339999999999,
+"end": 482.1379999999999,
+"chunk": "D"
+},
+{
+"text": "out",
+"start": 482.1379999999999,
+"end": 482.3429999999999,
+"chunk": "D"
+},
+{
+"text": "somewhere",
+"start": 482.3429999999999,
+"end": 482.9559999999999,
+"chunk": "D"
+},
+{
+"text": "new.",
+"start": 482.9559999999999,
+"end": 483.1599999999999,
+"chunk": "D"
+}
+]

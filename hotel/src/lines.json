@@ -1,0 +1,1400 @@
+[
+ {
+  "text": "Two forty-seven in the morning.",
+  "start": 0.04,
+  "end": 1.67,
+  "chunk": "A"
+ },
+ {
+  "text": "The power has been out for six hours.",
+  "start": 2.16,
+  "end": 4.39,
+  "chunk": "A"
+ },
+ {
+  "text": "Your cat's carrier is open.",
+  "start": 4.79,
+  "end": 6.35,
+  "chunk": "A"
+ },
+ {
+  "text": "And empty.",
+  "start": 6.77,
+  "end": 7.49,
+  "chunk": "A"
+ },
+ {
+  "text": "Somewhere inside the wall, something is scratching.",
+  "start": 8.01,
+  "end": 11.05,
+  "chunk": "A"
+ },
+ {
+  "text": "It moves.",
+  "start": 11.5,
+  "end": 12.27,
+  "chunk": "A"
+ },
+ {
+  "text": "Down the hallway.",
+  "start": 12.67,
+  "end": 13.46,
+  "chunk": "A"
+ },
+ {
+  "text": "Past the ice machine.",
+  "start": 13.81,
+  "end": 14.94,
+  "chunk": "A"
+ },
+ {
+  "text": "Past room fourteen.",
+  "start": 15.26,
+  "end": 16.44,
+  "chunk": "A"
+ },
+ {
+  "text": "Then it stops.",
+  "start": 16.89,
+  "end": 18.12,
+  "chunk": "A"
+ },
+ {
+  "text": "Right behind your head.",
+  "start": 18.45,
+  "end": 19.6,
+  "chunk": "A"
+ },
+ {
+  "text": "The man at the front desk told you nobody else is staying on this floor.",
+  "start": 20.07,
+  "end": 23.63,
+  "chunk": "A"
+ },
+ {
+  "text": "And downstairs, something has been running all night.",
+  "start": 24.06,
+  "end": 27.2,
+  "chunk": "A"
+ },
+ {
+  "text": "You can feel it through the floor.",
+  "start": 27.6,
+  "end": 29.1,
+  "chunk": "A"
+ },
+ {
+  "text": "A low, steady hum.",
+  "start": 29.49,
+  "end": 31.07,
+  "chunk": "A"
+ },
+ {
+  "text": "So what's inside the walls?",
+  "start": 31.51,
+  "end": 33.39,
+  "chunk": "A"
+ },
+ {
+  "text": "And what is that hum?",
+  "start": 33.74,
+  "end": 35.04,
+  "chunk": "A"
+ },
+ {
+  "text": "Before the sun comes up, one of them is going to try to kill everyone in this hotel.",
+  "start": 35.52,
+  "end": 40.21,
+  "chunk": "A"
+ },
+ {
+  "text": "Twelve hours earlier.",
+  "start": 41.01,
+  "end": 42.27,
+  "chunk": "A"
+ },
+ {
+  "text": "Six p.m.",
+  "start": 42.65,
+  "end": 43.46,
+  "chunk": "A"
+ },
+ {
+  "text": "The Pinecrest Lodge sits halfway up a mountain road.",
+  "start": 44.08,
+  "end": 46.9,
+  "chunk": "A"
+ },
+ {
+  "text": "The sign on the front door says, no pets.",
+  "start": 47.29,
+  "end": 49.85,
+  "chunk": "A"
+ },
+ {
+  "text": "The bag on your shoulder says nothing.",
+  "start": 50.24,
+  "end": 52.15,
+  "chunk": "A"
+ },
+ {
+  "text": "Because Lando is asleep inside it.",
+  "start": 52.41,
+  "end": 54.37,
+  "chunk": "A"
+ },
+ {
+  "text": "Lando is your cat.",
+  "start": 54.75,
+  "end": 55.81,
+  "chunk": "A"
+ },
+ {
+  "text": "Lando has opinions about bags.",
+  "start": 56.21,
+  "end": 58.24,
+  "chunk": "A"
+ },
+ {
+  "text": "The storm got here first.",
+  "start": 58.7,
+  "end": 60.19,
+  "chunk": "A"
+ },
+ {
+  "text": "The radio says a nor'easter is wrapping around the mountains, the plows have stopped for the night, and the road behind you is already gone.",
+  "start": 60.56,
+  "end": 67.74,
+  "chunk": "A"
+ },
+ {
+  "text": "The manager, Dale, slides a key across the desk.",
+  "start": 68.16,
+  "end": 71.16,
+  "chunk": "A"
+ },
+ {
+  "text": "Room twenty-two.",
+  "start": 71.57,
+  "end": 72.41,
+  "chunk": "A"
+ },
+ {
+  "text": "The last one.",
+  "start": 72.79,
+  "end": 73.42,
+  "chunk": "A"
+ },
+ {
+  "text": "He looks at your bag.",
+  "start": 73.87,
+  "end": 74.78,
+  "chunk": "A"
+ },
+ {
+  "text": "The bag meows.",
+  "start": 75.2,
+  "end": 76.13,
+  "chunk": "A"
+ },
+ {
+  "text": "Dale says nothing.",
+  "start": 76.53,
+  "end": 77.6,
+  "chunk": "A"
+ },
+ {
+  "text": "Dale has had a very long day.",
+  "start": 77.99,
+  "end": 80.03,
+  "chunk": "A"
+ },
+ {
+  "text": "Seven p.m.",
+  "start": 80.82,
+  "end": 81.67,
+  "chunk": "A"
+ },
+ {
+  "text": "The snow is coming down an inch every half hour.",
+  "start": 82.16,
+  "end": 84.95,
+  "chunk": "A"
+ },
+ {
+  "text": "Your car is a white hump in the lot.",
+  "start": 85.34,
+  "end": 87.27,
+  "chunk": "A"
+ },
+ {
+  "text": "The only way off this mountain is a road you can't see anymore.",
+  "start": 87.66,
+  "end": 91.03,
+  "chunk": "A"
+ },
+ {
+  "text": "Eight twelve p.m.",
+  "start": 91.76,
+  "end": 92.86,
+  "chunk": "A"
+ },
+ {
+  "text": "The lights flicker.",
+  "start": 93.36,
+  "end": 94.22,
+  "chunk": "A"
+ },
+ {
+  "text": "Once.",
+  "start": 94.62,
+  "end": 95.07,
+  "chunk": "A"
+ },
+ {
+  "text": "Twice.",
+  "start": 95.49,
+  "end": 95.99,
+  "chunk": "A"
+ },
+ {
+  "text": "Then the whole mountain goes dark.",
+  "start": 96.36,
+  "end": 98.45,
+  "chunk": "A"
+ },
+ {
+  "text": "No heat.",
+  "start": 98.85,
+  "end": 99.42,
+  "chunk": "A"
+ },
+ {
+  "text": "No elevator.",
+  "start": 99.7,
+  "end": 100.56,
+  "chunk": "A"
+ },
+ {
+  "text": "No Wi-Fi.",
+  "start": 100.75,
+  "end": 101.54,
+  "chunk": "A"
+ },
+ {
+  "text": "Your phone says sixty-four percent.",
+  "start": 101.92,
+  "end": 103.82,
+  "chunk": "A"
+ },
+ {
+  "text": "Then, from downstairs, a motor coughs to life.",
+  "start": 104.27,
+  "end": 107.23,
+  "chunk": "A"
+ },
+ {
+  "text": "You look over the railing.",
+  "start": 107.76,
+  "end": 108.86,
+  "chunk": "A"
+ },
+ {
+  "text": "Dale is dragging a generator in from the snow.",
+  "start": 109.25,
+  "end": 111.69,
+  "chunk": "A"
+ },
+ {
+  "text": "Into the lobby.",
+  "start": 112.04,
+  "end": 112.84,
+  "chunk": "A"
+ },
+ {
+  "text": "Right next to the fireplace.",
+  "start": 113.19,
+  "end": 114.68,
+  "chunk": "A"
+ },
+ {
+  "text": "He props the front door open with a boot.",
+  "start": 115.11,
+  "end": 117.06,
+  "chunk": "A"
+ },
+ {
+  "text": "\"It's just for the coffee and the phones,\" he says.",
+  "start": 117.42,
+  "end": 119.8,
+  "chunk": "A"
+ },
+ {
+  "text": "\"Door's open.",
+  "start": 120.14,
+  "end": 120.71,
+  "chunk": "A"
+ },
+ {
+  "text": "It's fine.\"  Remember that open door.",
+  "start": 120.96,
+  "end": 123.25,
+  "chunk": "A"
+ },
+ {
+  "text": "A guest in a red hat is lighting candles all along the front desk.",
+  "start": 123.64,
+  "end": 127.44,
+  "chunk": "A"
+ },
+ {
+  "text": "Ten of them.",
+  "start": 127.8,
+  "end": 128.36,
+  "chunk": "A"
+ },
+ {
+  "text": "Fifteen.",
+  "start": 128.78,
+  "end": 129.35,
+  "chunk": "A"
+ },
+ {
+  "text": "When the power is out, use flashlights, not candles.",
+  "start": 129.74,
+  "end": 132.84,
+  "chunk": "A"
+ },
+ {
+  "text": "And in a storm like this, a fire truck is not getting up that road.",
+  "start": 133.17,
+  "end": 136.89,
+  "chunk": "A"
+ },
+ {
+  "text": "You hand her your spare flashlight.",
+  "start": 137.3,
+  "end": 138.89,
+  "chunk": "A"
+ },
+ {
+  "text": "She blows the candles out.",
+  "start": 139.25,
+  "end": 140.43,
+  "chunk": "A"
+ },
+ {
+  "text": "Lando watches the smoke like it owes him money.",
+  "start": 140.79,
+  "end": 143.23,
+  "chunk": "A"
+ },
+ {
+  "text": "By ten, your room is fifty-eight degrees.",
+  "start": 144.38,
+  "end": 147.16,
+  "chunk": "B"
+ },
+ {
+  "text": "By midnight, fifty-one.",
+  "start": 147.54,
+  "end": 149.13,
+  "chunk": "B"
+ },
+ {
+  "text": "Loose, warm layers.",
+  "start": 149.58,
+  "end": 151.08,
+  "chunk": "B"
+ },
+ {
+  "text": "Towels under the door.",
+  "start": 151.4,
+  "end": 152.63,
+  "chunk": "B"
+ },
+ {
+  "text": "Curtains shut.",
+  "start": 153.02,
+  "end": 153.87,
+  "chunk": "B"
+ },
+ {
+  "text": "Close off every room you're not using.",
+  "start": 154.21,
+  "end": 156.36,
+  "chunk": "B"
+ },
+ {
+  "text": "Lando ignores the rule.",
+  "start": 156.82,
+  "end": 158.34,
+  "chunk": "B"
+ },
+ {
+  "text": "Lando sleeps on your face.",
+  "start": 158.78,
+  "end": 160.38,
+  "chunk": "B"
+ },
+ {
+  "text": "Twelve forty.",
+  "start": 160.92000000000002,
+  "end": 161.66,
+  "chunk": "B"
+ },
+ {
+  "text": "A knock.",
+  "start": 162.08,
+  "end": 162.54,
+  "chunk": "B"
+ },
+ {
+  "text": "It's the woman from room twelve.",
+  "start": 162.96,
+  "end": 164.36,
+  "chunk": "B"
+ },
+ {
+  "text": "Rosa.",
+  "start": 164.82,
+  "end": 165.24,
+  "chunk": "B"
+ },
+ {
+  "text": "Two scarves, and a hotel bathrobe over her coat.",
+  "start": 165.63,
+  "end": 168.42000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "\"Everybody's going down to the lobby,\" she says.",
+  "start": 168.87,
+  "end": 171.25,
+  "chunk": "B"
+ },
+ {
+  "text": "\"It's warm down there.\"  It is warm down there.",
+  "start": 171.63,
+  "end": 174.25,
+  "chunk": "B"
+ },
+ {
+  "text": "Six guests asleep on the couches.",
+  "start": 174.65,
+  "end": 176.78,
+  "chunk": "B"
+ },
+ {
+  "text": "The generator humming beside the fire.",
+  "start": 177.06,
+  "end": 179.11,
+  "chunk": "B"
+ },
+ {
+  "text": "The front door open to the snow.",
+  "start": 179.38,
+  "end": 181.25,
+  "chunk": "B"
+ },
+ {
+  "text": "On the stairs, a headache starts behind your eyes.",
+  "start": 181.69,
+  "end": 184.46,
+  "chunk": "B"
+ },
+ {
+  "text": "You figure it's the altitude.",
+  "start": 184.75,
+  "end": 186.03,
+  "chunk": "B"
+ },
+ {
+  "text": "Or the day.",
+  "start": 186.45,
+  "end": 187.06,
+  "chunk": "B"
+ },
+ {
+  "text": "Rosa takes the couch closest to the generator.",
+  "start": 187.55,
+  "end": 189.98000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "You carry Lando back upstairs, because Lando will not stop yowling in that lobby.",
+  "start": 190.3,
+  "end": 195.19,
+  "chunk": "B"
+ },
+ {
+  "text": "Every time you set him down, he pulls toward the door.",
+  "start": 195.51,
+  "end": 198.33,
+  "chunk": "B"
+ },
+ {
+  "text": "Cats hate loud machines.",
+  "start": 198.7,
+  "end": 200.4,
+  "chunk": "B"
+ },
+ {
+  "text": "That's what you tell yourself.",
+  "start": 200.79000000000002,
+  "end": 201.73000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "Two forty-seven a.m.",
+  "start": 202.39,
+  "end": 203.8,
+  "chunk": "B"
+ },
+ {
+  "text": "You wake up, and the room is turning.",
+  "start": 204.25,
+  "end": 206.39,
+  "chunk": "B"
+ },
+ {
+  "text": "The carrier door is open.",
+  "start": 206.74,
+  "end": 208.13,
+  "chunk": "B"
+ },
+ {
+  "text": "Lando is gone.",
+  "start": 208.55,
+  "end": 209.77,
+  "chunk": "B"
+ },
+ {
+  "text": "Then you hear it.",
+  "start": 210.24,
+  "end": 211.07,
+  "chunk": "B"
+ },
+ {
+  "text": "Scratching.",
+  "start": 211.46,
+  "end": 212.17000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "Inside the wall, right behind the bed.",
+  "start": 212.55,
+  "end": 214.77,
+  "chunk": "B"
+ },
+ {
+  "text": "You press your ear to the wallpaper.",
+  "start": 215.21,
+  "end": 216.92000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "Claws.",
+  "start": 217.35000000000002,
+  "end": 218.05,
+  "chunk": "B"
+ },
+ {
+  "text": "Moving.",
+  "start": 218.39,
+  "end": 218.88,
+  "chunk": "B"
+ },
+ {
+  "text": "Fast.",
+  "start": 219.32,
+  "end": 219.82,
+  "chunk": "B"
+ },
+ {
+  "text": "Toward the hallway.",
+  "start": 220.12,
+  "end": 220.99,
+  "chunk": "B"
+ },
+ {
+  "text": "You follow it with your headlamp.",
+  "start": 221.38,
+  "end": 222.8,
+  "chunk": "B"
+ },
+ {
+  "text": "Twenty doors.",
+  "start": 223.13,
+  "end": 224.12,
+  "chunk": "B"
+ },
+ {
+  "text": "Every one of them dark.",
+  "start": 224.39,
+  "end": 225.81,
+  "chunk": "B"
+ },
+ {
+  "text": "The scratching runs ahead of you, past the ice machine, all the way to the end of the hall.",
+  "start": 226.16,
+  "end": 230.77,
+  "chunk": "B"
+ },
+ {
+  "text": "And it stops under a metal grate in the floor.",
+  "start": 231.12,
+  "end": 233.75,
+  "chunk": "B"
+ },
+ {
+  "text": "A vent.",
+  "start": 234.11,
+  "end": 234.66,
+  "chunk": "B"
+ },
+ {
+  "text": "Warm air is rising out of it.",
+  "start": 235.01,
+  "end": 236.73000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "From the lobby.",
+  "start": 237.09,
+  "end": 237.75,
+  "chunk": "B"
+ },
+ {
+  "text": "You kneel down.",
+  "start": 238.18,
+  "end": 238.98000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "Two green eyes look back up at you.",
+  "start": 239.3,
+  "end": 241.32999999999998,
+  "chunk": "B"
+ },
+ {
+  "text": "Lando.",
+  "start": 241.75,
+  "end": 242.32999999999998,
+  "chunk": "B"
+ },
+ {
+  "text": "He isn't trying to get to you.",
+  "start": 242.74,
+  "end": 244.0,
+  "chunk": "B"
+ },
+ {
+  "text": "He's trying to get away from that warm air.",
+  "start": 244.35000000000002,
+  "end": 246.49,
+  "chunk": "B"
+ },
+ {
+  "text": "You stand up too fast.",
+  "start": 246.88,
+  "end": 248.18,
+  "chunk": "B"
+ },
+ {
+  "text": "The hallway tilts.",
+  "start": 248.42000000000002,
+  "end": 249.47,
+  "chunk": "B"
+ },
+ {
+  "text": "Your stomach turns over.",
+  "start": 249.7,
+  "end": 251.0,
+  "chunk": "B"
+ },
+ {
+  "text": "Your fingers can't work the grate.",
+  "start": 251.26,
+  "end": 252.85000000000002,
+  "chunk": "B"
+ },
+ {
+  "text": "For a second, someone is standing at the far end of the hall.",
+  "start": 253.27,
+  "end": 256.37,
+  "chunk": "B"
+ },
+ {
+  "text": "Your headlamp flickers.",
+  "start": 256.73,
+  "end": 257.9,
+  "chunk": "B"
+ },
+ {
+  "text": "There's no one there.",
+  "start": 258.25,
+  "end": 259.07,
+  "chunk": "B"
+ },
+ {
+  "text": "The scratching was Lando.",
+  "start": 259.45,
+  "end": 260.73,
+  "chunk": "B"
+ },
+ {
+  "text": "The dizziness is not.",
+  "start": 261.13,
+  "end": 262.63,
+  "chunk": "B"
+ },
+ {
+  "text": "Carbon monoxide has no color and no smell.",
+  "start": 263.77,
+  "end": 266.82,
+  "chunk": "C"
+ },
+ {
+  "text": "Headache.",
+  "start": 267.44,
+  "end": 267.84999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "Dizziness.",
+  "start": 268.27,
+  "end": 268.92999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Weakness.",
+  "start": 269.29999999999995,
+  "end": 269.96999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "Nausea.",
+  "start": 270.34999999999997,
+  "end": 270.89,
+  "chunk": "C"
+ },
+ {
+  "text": "Sleepiness.",
+  "start": 271.23999999999995,
+  "end": 272.05999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Confusion.",
+  "start": 272.36999999999995,
+  "end": 273.13,
+  "chunk": "C"
+ },
+ {
+  "text": "It feels like the flu.",
+  "start": 273.60999999999996,
+  "end": 274.82,
+  "chunk": "C"
+ },
+ {
+  "text": "And people who are asleep can die from it before they ever feel sick.",
+  "start": 275.28999999999996,
+  "end": 279.27,
+  "chunk": "C"
+ },
+ {
+  "text": "Six people are asleep in that lobby.",
+  "start": 279.72999999999996,
+  "end": 281.92999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Every year in the United States, more than a hundred people die from carbon monoxide from portable generators.",
+  "start": 282.53,
+  "end": 288.77,
+  "chunk": "C"
+ },
+ {
+  "text": "You go down the stairs with Lando in one arm and the railing in the other.",
+  "start": 289.32,
+  "end": 293.0,
+  "chunk": "C"
+ },
+ {
+  "text": "Every step is heavier than the last.",
+  "start": 293.40999999999997,
+  "end": 295.72999999999996,
+  "chunk": "C"
+ },
+ {
+  "text": "The lobby is warm.",
+  "start": 296.15999999999997,
+  "end": 297.27,
+  "chunk": "C"
+ },
+ {
+  "text": "Too warm.",
+  "start": 297.68999999999994,
+  "end": 298.40999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "The fire is down to coals.",
+  "start": 298.84,
+  "end": 300.52,
+  "chunk": "C"
+ },
+ {
+  "text": "The generator is still humming.",
+  "start": 300.88,
+  "end": 302.58,
+  "chunk": "C"
+ },
+ {
+  "text": "\"Rosa.\" She doesn't wake.",
+  "start": 303.10999999999996,
+  "end": 304.84999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "You shake her shoulder.",
+  "start": 305.22999999999996,
+  "end": 306.23999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "She opens her eyes, and she doesn't know who you are.",
+  "start": 306.63,
+  "end": 309.48999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Dale is slumped in the chair behind the desk.",
+  "start": 309.96,
+  "end": 312.30999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "You can't wake him.",
+  "start": 312.66999999999996,
+  "end": 313.57,
+  "chunk": "C"
+ },
+ {
+  "text": "On the ceiling, there's a carbon monoxide alarm.",
+  "start": 314.02,
+  "end": 316.41999999999996,
+  "chunk": "C"
+ },
+ {
+  "text": "Its light is off.",
+  "start": 316.79999999999995,
+  "end": 317.71,
+  "chunk": "C"
+ },
+ {
+  "text": "It runs on the hotel's power.",
+  "start": 318.25,
+  "end": 319.84,
+  "chunk": "C"
+ },
+ {
+  "text": "No battery backup.",
+  "start": 320.21999999999997,
+  "end": 321.34999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "Never run a generator indoors.",
+  "start": 321.84,
+  "end": 323.96999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "Not in a house, a garage, a basement, or a lobby.",
+  "start": 324.30999999999995,
+  "end": 327.80999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Not even with the door open.",
+  "start": 328.08,
+  "end": 329.65999999999997,
+  "chunk": "C"
+ },
+ {
+  "text": "Outside only, at least twenty feet from doors, windows and vents.",
+  "start": 329.97999999999996,
+  "end": 334.29999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Now you have two choices.",
+  "start": 334.88,
+  "end": 336.55999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Stay inside, where it's warm, and the air is poison.",
+  "start": 336.89,
+  "end": 340.27,
+  "chunk": "C"
+ },
+ {
+  "text": "Or go out into a blizzard at three in the morning, where it's nine degrees.",
+  "start": 340.59,
+  "end": 344.92999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "What would you do?",
+  "start": 345.31999999999994,
+  "end": 345.97999999999996,
+  "chunk": "C"
+ },
+ {
+  "text": "You go.",
+  "start": 346.55999999999995,
+  "end": 347.06999999999994,
+  "chunk": "C"
+ },
+ {
+  "text": "If you think it's carbon monoxide, get outside to fresh air immediately.",
+  "start": 347.45,
+  "end": 351.48999999999995,
+  "chunk": "C"
+ },
+ {
+  "text": "Then call nine-one-one.",
+  "start": 351.76,
+  "end": 353.34,
+  "chunk": "C"
+ },
+ {
+  "text": "You shut the generator off.",
+  "start": 354.49999999999994,
+  "end": 355.7799999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The silence is enormous.",
+  "start": 356.43999999999994,
+  "end": 358.30999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "Rosa leans on you like you're the railing.",
+  "start": 358.7699999999999,
+  "end": 360.8599999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The others wake up dizzy and confused, and you herd them out under the porch roof.",
+  "start": 361.2899999999999,
+  "end": 365.88999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "The snow is blowing sideways.",
+  "start": 366.44999999999993,
+  "end": 368.4199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Dale is too heavy to carry.",
+  "start": 368.7399999999999,
+  "end": 370.5299999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "You grab him under the arms and drag him across the lobby floor.",
+  "start": 370.93999999999994,
+  "end": 374.2799999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Inch by inch.",
+  "start": 374.7299999999999,
+  "end": 375.81999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Through the open door.",
+  "start": 376.2399999999999,
+  "end": 377.2799999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Into the cold.",
+  "start": 377.6699999999999,
+  "end": 378.50999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Lando walks ahead of you like he's leading a parade.",
+  "start": 378.99999999999994,
+  "end": 381.6099999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Your phone says nine percent.",
+  "start": 382.0499999999999,
+  "end": 383.8599999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "One bar.",
+  "start": 384.2999999999999,
+  "end": 384.99999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "You call nine-one-one.",
+  "start": 385.4099999999999,
+  "end": 386.54999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "It rings.",
+  "start": 386.9899999999999,
+  "end": 387.7199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "And rings.",
+  "start": 388.17999999999995,
+  "end": 388.94999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Then a voice.",
+  "start": 389.3599999999999,
+  "end": 390.5299999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The road is closed.",
+  "start": 390.94999999999993,
+  "end": 391.9699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "They'll get to you as fast as they can.",
+  "start": 392.2299999999999,
+  "end": 393.9199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "And now there's a new problem.",
+  "start": 394.3699999999999,
+  "end": 395.8699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Nine degrees.",
+  "start": 396.2299999999999,
+  "end": 397.25999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Seven people in pajamas.",
+  "start": 397.55999999999995,
+  "end": 399.25999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "One cat.",
+  "start": 399.5799999999999,
+  "end": 400.30999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "Shivering.",
+  "start": 400.7399999999999,
+  "end": 401.38999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Exhaustion.",
+  "start": 401.81999999999994,
+  "end": 402.63999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Confusion.",
+  "start": 402.9599999999999,
+  "end": 403.7299999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Fumbling hands.",
+  "start": 404.1599999999999,
+  "end": 405.12999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Slurred speech.",
+  "start": 405.3599999999999,
+  "end": 406.4699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Drowsiness.",
+  "start": 406.75999999999993,
+  "end": 407.62999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Half of those look exactly like carbon monoxide.",
+  "start": 408.00999999999993,
+  "end": 410.7699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "You can't tell which one is hurting Rosa.",
+  "start": 411.12999999999994,
+  "end": 413.1499999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Your car is a white hump in the lot.",
+  "start": 413.5899999999999,
+  "end": 415.6699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "You dig with your hands until you can't feel them.",
+  "start": 416.05999999999995,
+  "end": 418.4099999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The door opens.",
+  "start": 418.81999999999994,
+  "end": 419.8299999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The engine catches.",
+  "start": 420.06999999999994,
+  "end": 421.75999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Heat pours out.",
+  "start": 421.92999999999995,
+  "end": 422.68999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Four people pile in.",
+  "start": 423.1199999999999,
+  "end": 424.37999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "And Lando starts yowling again.",
+  "start": 424.67999999999995,
+  "end": 426.4699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The same yowl.",
+  "start": 426.69999999999993,
+  "end": 427.81999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "He claws at the back window.",
+  "start": 428.2299999999999,
+  "end": 429.7199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "You look behind the car.",
+  "start": 430.0899999999999,
+  "end": 431.2399999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "The snow has drifted right over the tailpipe.",
+  "start": 431.49999999999994,
+  "end": 433.94999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Stuck with your car in snow?",
+  "start": 434.3699999999999,
+  "end": 435.80999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "Clear the snow off the exhaust pipe.",
+  "start": 436.0899999999999,
+  "end": 437.88999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Run the engine about ten minutes an hour, and crack a window.",
+  "start": 438.13999999999993,
+  "end": 441.04999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "You dig it out.",
+  "start": 441.4899999999999,
+  "end": 442.19999999999993,
+  "chunk": "D"
+ },
+ {
+  "text": "Lando was right.",
+  "start": 442.6199999999999,
+  "end": 443.49999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Again.",
+  "start": 443.87999999999994,
+  "end": 444.3699999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Five fifty a.m.",
+  "start": 444.9699999999999,
+  "end": 446.1499999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Headlights on the mountain road.",
+  "start": 446.5299999999999,
+  "end": 447.92999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "A plow.",
+  "start": 448.3399999999999,
+  "end": 448.8999999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Behind it, an ambulance.",
+  "start": 449.2699999999999,
+  "end": 450.87999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "They give Dale oxygen right there in the snow.",
+  "start": 451.2299999999999,
+  "end": 453.55999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "He opens his eyes.",
+  "start": 453.9699999999999,
+  "end": 455.0199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "He looks at you.",
+  "start": 455.4099999999999,
+  "end": 456.04999999999995,
+  "chunk": "D"
+ },
+ {
+  "text": "Then at the cat.",
+  "start": 456.37999999999994,
+  "end": 457.4099999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "\"No pets,\" he whispers.",
+  "start": 457.93999999999994,
+  "end": 459.7799999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Then.",
+  "start": 460.13999999999993,
+  "end": 460.5199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "\"He stays.",
+  "start": 460.9799999999999,
+  "end": 461.7299999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Free.",
+  "start": 462.1599999999999,
+  "end": 462.4599999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Forever.\"  Everyone made it.",
+  "start": 462.9699999999999,
+  "end": 464.99999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "Lando slept through the whole ambulance ride.",
+  "start": 465.3399999999999,
+  "end": 467.4899999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "On Rosa.",
+  "start": 467.8699999999999,
+  "end": 468.56999999999994,
+  "chunk": "D"
+ },
+ {
+  "text": "So be honest.",
+  "start": 469.00999999999993,
+  "end": 470.2099999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Three in the morning.",
+  "start": 470.6699999999999,
+  "end": 471.4899999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Nine degrees outside.",
+  "start": 471.81999999999994,
+  "end": 473.1199999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Poison inside.",
+  "start": 473.4799999999999,
+  "end": 474.6499999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Would you have dragged everyone out into that blizzard?",
+  "start": 475.0399999999999,
+  "end": 477.3499999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Or stayed where it was warm?",
+  "start": 477.6099999999999,
+  "end": 478.8499999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Tell me in the comments.",
+  "start": 479.2099999999999,
+  "end": 480.2099999999999,
+  "chunk": "D"
+ },
+ {
+  "text": "Next Monday, the lights go out somewhere new.",
+  "start": 480.5799999999999,
+  "end": 483.1599999999999,
+  "chunk": "D"
+ }
+]
