@@ -45,7 +45,7 @@ END_START, END_END = 32.40, 36.40
 TOTAL = END_END
 CHOICE_START, CHOICE_END = 18.03, 20.45
 TIMER_END = 20.22
-LIGHTS_OUT = 35.76 - 12.50    # out time of "once."
+LIGHTS_OUT = 35.36 - 12.50    # out time of "out" (before the source's 2:14 AM stamp appears at 35.47)
 DARK_SRC = 38.30              # clean dark-city frames start here in the source
 
 def ease(x):
@@ -56,16 +56,16 @@ def ease(x):
 # rect width = h*9/16. Either 'bottom' (rect bottom row, kept fixed) or 'ytop'.
 SHOTS = [
     (0.00, 4.50,  dict(cx=1170, h0=893, h1=840, bottom=VALID_Y)),            # cellar doors
-    (4.50, 7.20,  dict(cx=1640, h0=996, h1=960, ytop0=380, ytop1=400, fill=1080)),  # neighbor's face
-    (7.20, 9.47,  dict(cx=1300, h0=893, h1=760, bottom=VALID_Y)),            # doors, "let me in"
-    (9.47, 11.97, dict(cx=1210, h0=893, h1=850, bottom=VALID_Y)),            # hands on the handle
-    (11.97, 14.43, dict(cx=790, h0=996, h1=960, ytop0=160, ytop1=170, fill=VALID_Y)),  # Lando shaking
+    (4.50, 7.20,  dict(cx=1640, h0=996, h1=960, ytop0=380, ytop1=400, fill=1080, fade=24)),  # neighbor's face
+    (7.20, 9.46,  dict(cx=1300, h0=893, h1=760, bottom=VALID_Y)),            # doors, "let me in"
+    (9.46, 11.96, dict(cx=1210, h0=893, h1=850, bottom=VALID_Y)),            # hands on the handle
+    (11.96, 14.43, dict(cx=790, h0=996, h1=960, ytop0=160, ytop1=170, fill=VALID_Y)),  # Lando shaking
     (14.43, 18.03, dict(cx=940, h0=893, h1=820, bottom=VALID_Y)),           # tornado
-    (18.03, 20.45, dict(cx=1640, h0=996, h1=996, ytop0=380, ytop1=380, fill=1080, choice=True)),
+    (18.03, 20.45, dict(cx=1640, h0=996, h1=996, ytop0=380, ytop1=380, fill=1080, fade=24, choice=True)),
     (20.45, LIGHTS_OUT, dict(cx=975, h0=893, h1=800, bottom=VALID_Y)),       # lit city
     (LIGHTS_OUT, 23.80, dict(cx=945, h0=760, h1=720, bottom=VALID_Y, dark=True)),  # dark city
     (23.80, 28.60, dict(cx=1517, h0=798, h1=730, ytop0=95, ytop1=110)),      # phone alert
-    (28.60, 32.40, dict(cx=958, h0=893, h1=800, bottom=VALID_Y)),            # farmhouse window
+    (28.60, 32.40, dict(cx=958, h0=893, h1=860, bottom=VALID_Y)),            # farmhouse window
 ]
 
 # ---------------------------------------------------------------- captions
@@ -80,7 +80,7 @@ def clean(t):
 
 # chunks per segment: list of (n_words, key_word)
 CHUNK_PLAN = [
-    (0.0, 20.30, [(2, 'KNOCKS'), (4, 'CELLAR'), (4, 'VOICE'), (4, 'HEAD'), (1, 'PLEASE'), (3, 'IN'),
+    (0.0, 20.30, [(2, 'KNOCKS'), (4, 'CELLAR'), (4, 'VOICE'), (2, 'ABOVE'), (2, 'HEAD'), (1, 'PLEASE'), (3, 'IN'),
                   (2, 'NEIGHBOR'), (3, 'HANDS'), (3, 'HANDLE'), (4, 'SHAKING'), (3, 'CARRIER'),
                   (2, 'SOMEWHERE'), (4, 'DARK'), (2, 'STORM'), (2, 'FINISHED'), (3, 'ABOUT'),
                   (2, 'SECONDS'), (2, 'DECIDE')], 0.0),
@@ -141,6 +141,9 @@ def caption_at(t):
             n = max(n, 1)
             img, total = caption_img(ci, n)
             pop = 1.0 + 0.08 * (1 - ease((t - c['start']) / 0.12))
+            full = caption_img(ci, len(c['words']))[1]
+            if full > 780:
+                pop *= 780 / full
             return img, total, pop
     return None
 
@@ -225,7 +228,7 @@ def crop_frame(src, a, b, p, t):
     fill = p.get('fill')
     if fill is not None and fill <= img.shape[0]:
         # fade the last 70 valid rows to the background colour, blank everything below
-        g = 70
+        g = p.get('fade', 70)
         ramp = np.linspace(1, 0, g, dtype=np.float32)[:, None, None]
         bgc = np.array(BG[::-1], np.float32)
         seg = img[fill - g:fill].astype(np.float32)
@@ -257,8 +260,8 @@ TAG = None
 def draw_hook(cv, t):
     if t >= 4.45:
         return
-    a = ease(t / 0.25) * (1 - ease((t - 4.2) / 0.25))
-    s = 1.0 + 0.05 * (1 - ease(t / 0.3))
+    a = 1 - ease((t - 4.2) / 0.25)
+    s = 1.0
     paste_center(cv, HOOK, W / 2, 300, a, s)
     paste_center(cv, HOOK2, W / 2, 420, a, s)
 

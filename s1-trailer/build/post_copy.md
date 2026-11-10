@@ -13,7 +13,7 @@ Comment OPEN or WAIT 🔦
 #WhenItGoesDark #hurricane #blackout #survival
 Related video: 97WA72zzAa8
 Settings: not made for kids, altered content No (cartoon), playlist "Animated Blackout Survival Stories (Day by Day)"
-Pinned comment: Would you open the cellar door? OPEN or WAIT 🔦 The full 10-minute story is linked above.
+Pinned comment: Would you open the cellar door? OPEN or WAIT 🔦 The full 10-minute story is on the channel: Hurricane Blackout Survival: 30 Hours
 
 ## TikTok / Instagram / Facebook
 Caption:
