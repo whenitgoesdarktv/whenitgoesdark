@@ -19,11 +19,17 @@ OUT = os.path.join(HERE, 'out'); PREV = os.path.join(HERE, 'preview')
 AMBER = (255, 181, 71); WHITE = (255, 255, 255); RED = (232, 72, 72)
 BGW, BGH = 2560, 1440   # working canvas for backgrounds (16:9)
 
+_fonts = {}
 def font(name, size, var=None):
-    f = ImageFont.truetype(os.path.join(FONTS, name), size)
-    if var:
-        f.set_variation_by_name(var)
-    return f
+    # cached so each (file, size, weight) is one object; text caches key on that identity
+    k = (name, size, var)
+    if k not in _fonts:
+        f = ImageFont.truetype(os.path.join(FONTS, name), size)
+        if var:
+            f.set_variation_by_name(var)
+        f._wigd_key = k
+        _fonts[k] = f
+    return _fonts[k]
 
 F_CAP = font('Oswald[wght].ttf', 58, 'Bold')
 F_ANTON = lambda s: font('Anton-Regular.ttf', s)
@@ -135,19 +141,72 @@ def paste_rgba(dst, src, x, y):
     else:
         dst[y0:y1, x0:x1] = (s[..., :3] * a + d * (1 - a)).astype(np.uint8)
 
+def warm_mask(img, thr=165, sep=60, grow=5):
+    f = img.astype(np.float32); b, g, r = f[..., 0], f[..., 1], f[..., 2]
+    m = ((r > thr) & (r - b > sep) & (g > 0.45 * r)).astype(np.float32)
+    m = cv2.dilate(m, np.ones((grow, grow), np.uint8))
+    return np.clip(cv2.GaussianBlur(m, (0, 0), 3)[..., None], 0, 1)
+
+def windows_off(img, strength=1.0, exterior=True):
+    """Lit windows / lamp glow go dark (power out): warm light becomes dim night blue.
+    Exteriors: anything warm is a light source, so a low threshold catches the whole window glow."""
+    m = (warm_mask(img, 95, 35, 9) if exterior else warm_mask(img)) * strength
+    f = img.astype(np.float32)
+    dark = f.mean(axis=2, keepdims=True) * 0.22 * np.array([1.35, 1.0, 0.75])
+    return np.clip(f * (1 - m) + dark * m, 0, 255).astype(np.uint8)
+
+FIRE_BOX = (0.0, 0.12, 0.34, 0.58)  # bg05 fireplace area (x0, y0, x1, y1) as fractions of the plate
+def fire_to_coals(img):
+    h, w = img.shape[:2]; x0, y0, x1, y1 = [int(v) for v in (FIRE_BOX[0] * w, FIRE_BOX[1] * h, FIRE_BOX[2] * w, FIRE_BOX[3] * h)]
+    reg = img[y0:y1, x0:x1]
+    f = reg.astype(np.float32); b, g, r = f[..., 0], f[..., 1], f[..., 2]
+    m = ((r > 150) & (r - b > 70)).astype(np.float32)
+    m = cv2.GaussianBlur(cv2.dilate(m, np.ones((9, 9), np.uint8)), (0, 0), 6)[..., None]
+    coal = np.stack([b * 0.10, g * 0.14, r * 0.42], axis=2)
+    out = img.copy(); out[y0:y1, x0:x1] = np.clip(f * (1 - m) + coal * m, 0, 255).astype(np.uint8)
+    # the whole room loses most of its firelight
+    return (out.astype(np.float32) * np.array([0.92, 0.82, 0.74])).astype(np.uint8)
+
+GEN_BOX = (0.27, 0.30, 0.50, 0.56)  # search box for the red generator baked into bg05
+def hide_generator(img):
+    h, w = img.shape[:2]; x0, y0, x1, y1 = [int(v) for v in (GEN_BOX[0] * w, GEN_BOX[1] * h, GEN_BOX[2] * w, GEN_BOX[3] * h)]
+    f = img[y0:y1, x0:x1].astype(np.int32); b, g, r = f[..., 0], f[..., 1], f[..., 2]
+    red = ((r > 110) & (r > g * 1.7) & (r > b * 1.7)).astype(np.uint8)
+    ys, xs = np.nonzero(red)
+    if len(ys) < 50:
+        return img
+    m = np.zeros(img.shape[:2], np.uint8)
+    py0, py1 = np.percentile(ys, 1), np.percentile(ys, 99.5); px0, px1 = np.percentile(xs, 1), np.percentile(xs, 99)
+    pad = int(0.012 * w)
+    cv2.rectangle(m, (int(x0 + px0) - pad, int(y0 + py0) - pad), (int(x0 + px1) + pad, int(y0 + py1) + pad), 255, -1)
+    small = cv2.resize(img, (w // 2, h // 2)); ms = cv2.resize(m, (w // 2, h // 2), interpolation=cv2.INTER_NEAREST)
+    filled = cv2.inpaint(small, ms, 9, cv2.INPAINT_TELEA)
+    up = cv2.resize(filled, (w, h), interpolation=cv2.INTER_CUBIC)
+    mm = cv2.GaussianBlur(m.astype(np.float32) / 255, (0, 0), 6)[..., None]
+    return (img.astype(np.float32) * (1 - mm) + up.astype(np.float32) * mm).astype(np.uint8)
+
 _layer_cache = {}
 def shot_layer(shot):
     key = id(shot)
     if key in _layer_cache:
         return _layer_cache[key]
     base = load_bg(shot['bg']).copy()
-    if 'lights_off' in shot['fx']:   # power is out: kill the lamp glow, push to a cold night look
+    fxs = shot['fx']
+    if 'no_bg_gen' in fxs:
+        base = hide_generator(base)
+    if 'coals' in fxs:
+        base = fire_to_coals(base)
+    if 'windows_off' in fxs:
+        base = windows_off(base)
+    if 'lights_off' in fxs:   # power is out: kill the lamp glow, push to a cold night look
+        base = windows_off(base, strength=0.92, exterior=False)
         f = base.astype(np.float32)
         L = f.mean(axis=2, keepdims=True)
-        f *= np.minimum(1.0, (70 + np.maximum(L - 70, 0) * 0.18) / np.maximum(L, 1))
+        f *= np.minimum(1.0, (60 + np.maximum(L - 60, 0) * 0.06) / np.maximum(L, 1))
         f = f * 0.62 * np.array([1.22, 0.98, 0.78])
         base = np.clip(f, 0, 255).astype(np.uint8)
     dark = 'dark' in shot['fx']
+    night_out = ('snow' in fxs or 'snow_heavy' in fxs) and not ('dawn' in fxs or 'warm' in fxs)
     for (name, xf, yb, hf, flip) in shot['chars']:
         c = load_char(name)
         if c is None:
@@ -171,6 +230,9 @@ def shot_layer(shot):
             cc[..., :3] *= 0.78
             cc[..., 0] = cc[..., 0] * 1.06 + 6; cc[..., 2] *= 0.94
             cc = np.clip(cc, 0, 255)
+        elif night_out:  # snowy night exterior: cool, slightly darker so cutouts don't read as stickers
+            cc[..., :3] *= np.array([0.98, 0.88, 0.80]) * 0.9
+            cc = np.clip(cc, 0, 255)
         c = cc.astype(np.uint8)
         x = int(xf * BGW - c.shape[1] / 2); y = int(yb * BGH - c.shape[0])
         # contact shadow
@@ -185,7 +247,7 @@ def shot_layer(shot):
 # ------------------------------------------------------------------ text helpers (PIL -> BGRA numpy, cached)
 _txt = {}
 def text_rgba(txt, f, fill=WHITE, stroke=0, stroke_fill=(0, 0, 0), shadow=True, key=None):
-    k = key or (txt, id(f), fill, stroke, shadow)
+    k = key or (txt, getattr(f, '_wigd_key', id(f)), fill, stroke, shadow)
     if k in _txt:
         return _txt[k]
     l, t, r, b = f.getbbox(txt, stroke_width=stroke)
@@ -275,6 +337,8 @@ def caption_img(ci, n):
     return arr
 
 def draw_caption(fr, t):
+    if shot_at(t)['bg'] == 'CHOICE':
+        return
     for i, c in enumerate(CAPS):
         if c['start'] <= t < c['end']:
             n = max(1, sum(1 for x in c['words'] if x['start'] <= t + 0.03))
@@ -365,7 +429,7 @@ def draw_rule(fr, t):
             put(fr, p, 40 - (1 - k) * 60, 150, k, 'tl')
             return
 
-TIMESTAMPS = {0: '2:47 AM', 18: '6:00 PM', 35: '7:00 PM', 38: '8:12 PM', 63: '10:00 PM', 91: '2:47 AM', 210: '5:50 AM'}
+TIMESTAMPS = {0: '2:47 AM', 19: '6:00 PM', 35: '7:00 PM', 39: '8:12 PM', 65: '10:00 PM', 91: '2:47 AM', 210: '5:50 AM'}
 def draw_timestamp(fr, t):
     for li, txt in TIMESTAMPS.items():
         ta = t_of(li)
@@ -425,8 +489,9 @@ def phone_overlay(fr, pct, calling, t):
     pw, ph = 330, 620
     p = panel_rgba(pw, ph, 46, (14, 16, 22, 245), outline=(70, 74, 84, 255), width=6)
     put(p, text_rgba(pct, F_OSW(30), (255, 120, 100) if pct in ('9%', '6%', '3%', '12%') else WHITE, shadow=False), pw - 70, 40)
+    nbars = 1 if (calling or pct in ('9%', '6%', '3%')) else 2
     for i in range(4):  # signal bars
-        on = (i == 0) if calling else True
+        on = i < nbars
         cv2.rectangle(p, (40 + i * 16, 52 - i * 8), (50 + i * 16, 58), (235, 235, 235, 255) if on else (90, 90, 90, 255), -1)
     if calling:
         put(p, text_rgba('Calling', F_BAR(34), (200, 205, 215), shadow=False), pw / 2, 230)
@@ -434,7 +499,7 @@ def phone_overlay(fr, pct, calling, t):
         if (t * 1.2) % 1 < 0.6:
             cv2.circle(p, (pw // 2, 500), 46, (70, 200, 90, 255), -1, cv2.LINE_AA)
     else:
-        put(p, text_rgba('No service', F_BAR(30), (200, 205, 215), shadow=False), pw / 2, 250)
+        put(p, text_rgba('1 bar' if nbars == 1 else 'Storm: weak signal', F_BAR(30), (200, 205, 215), shadow=False), pw / 2, 250)
         put(p, text_rgba(pct, F_ANTON(120), WHITE, shadow=False), pw / 2, 360)
     put(fr, p, W - 330, H / 2 - 20)
 
@@ -563,6 +628,7 @@ def apply_fx(fr, shot, t):
             if ft <= t < ft + 0.18:
                 f *= 0.35
         if t >= t_of(43):
+            f = windows_off(np.clip(f, 0, 255).astype(np.uint8), 1.0).astype(np.float32)
             f *= [0.55, 0.5, 0.45]
     if 'beam' in fx or 'beam_char' in fx:
         cx = 0.5 + 0.05 * math.sin(t * 0.7); cy = 0.55 + 0.03 * math.sin(t * 0.9)
@@ -605,11 +671,11 @@ def apply_fx(fr, shot, t):
         if t0 <= t < t_of(121) + 0.3 and not ((t * 9) % 1 < 0.2 and t > t_of(121)):
             cv2.ellipse(fr, (W // 2 + 40, int(H * 0.52)), (40, 120), 0, 0, 360, (8, 8, 10), -1, cv2.LINE_AA)
             cv2.circle(fr, (W // 2 + 40, int(H * 0.52) - 140), 34, (8, 8, 10), -1, cv2.LINE_AA)
-    if 'siren_lights' in fx:
-        p = (t * 2.2) % 1
-        col = np.array([60, 40, 230]) if p < 0.5 else np.array([230, 90, 40])
-        edge = (1 - vignette()) * 1.4
-        fr = np.clip(fr.astype(np.float32) + edge * col * 0.5, 0, 255).astype(np.uint8)
+    if 'siren_lights' in fx:   # slow (0.5 Hz), soft red/blue drift at the frame edges, never a strobe
+        p = 0.5 + 0.5 * math.sin(t * math.pi)
+        col = np.array([60, 40, 230]) * p + np.array([230, 90, 40]) * (1 - p)
+        edge = (1 - vignette()) * 1.1
+        fr = np.clip(fr.astype(np.float32) + edge * col * 0.18, 0, 255).astype(np.uint8)
     if 'siren_soft' in fx:   # slow red wash from the ambulance lights
         p = 0.5 + 0.5 * math.sin(t * 2.6)
         edge = (1 - vignette()) * 1.2

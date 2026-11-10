@@ -5,7 +5,7 @@ Your cat's carrier is open. And empty.
 
 Somewhere inside the wall, something is scratching.
 
-It moves. Down the hallway. Past the ice machine. Past room fourteen.
+It moves. Down the hallway. Past the ice machine. Past room twenty-four.
 
 Then it stops. Right behind your head.
 
@@ -17,7 +17,7 @@ So what's inside the walls? And what is that hum?
 
 Before the sun comes up, one of them is going to try to kill everyone in this hotel.
 
-Twelve hours earlier. Six p.m.
+Nine hours earlier. Six p.m.
 
 The Pinecrest Lodge sits halfway up a mountain road. The sign on the front door says, no pets.
 

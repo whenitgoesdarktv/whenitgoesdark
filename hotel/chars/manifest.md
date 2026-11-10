@@ -20,7 +20,10 @@ All images were made on the ElevenLabs creative flow `rJlIUOf7hVqeignE5TBe` (Sea
 | 3383YYObZSPZX1etgMM8 (xXVYoyAW4rVOkodAZ3pw "HOTEL Rosa poses") | door, confused, sleep couch, blanket | 2K 1:1 | Rosa sheet | 918 |
 | D5UrewsuUf0UgHmLc4Ru (ITYW1V9g8H6N9Ecb4NPO "HOTEL extras") | ear wall, dig snow, Lando on face, red-hat guest | 2K 1:1 | hero poses sheet, Lando sheet | 1224 |
 | JwXzXcz13TpVPS6lRBmq (IhsPGDpcYxZG17Di3cK1 "HOTEL Rosa + Lando ambulance bench") | Rosa asleep on bench with Lando (coordinator's late request) | 2K 3:4 | Rosa sheet, Lando sheet | 1224 |
-| **Total** | | | | **8,050** |
+| i12euQ8XMSZwwIjb8UA2 (OnMxVJKuNtZhrs9ZgDZU "HOTEL review extras") | couch guests, porch group, hero drags Dale, Lando bag asleep (independent review) | 2K 1:1 | hero poses sheet, Dale poses sheet, Lando poses sheet | 1530 |
+| **Total** | | | | **9,580** |
+
+Node BTKMwBEwTk3ZNrTeBgFx ("HOTEL hero drags Dale (fix, priced only)") was only priced, at 409 credits for a 512 px edit, and never run. It cost nothing. At 512 px the pose would have been too small to use, so I fixed hero_drag_dale locally instead.
 
 ## Files
 
@@ -51,5 +54,11 @@ All images were made on the ElevenLabs creative flow `rJlIUOf7hVqeignE5TBe` (Sea
 
 | rosa_lando_bench.png | JwXzXcz13TpVPS6lRBmq | 1392x2204 (native, no upscale) | Requested late by the coordinator. On model: she sleeps sitting up with her head tilted, no nose, wrapped in a gray blanket, with Lando curled asleep on her lap. The bench was drawn as a padded seat with a short backrest (no ambulance walls). The blanket hides most of the maroon scarf; only a sliver shows next to the mustard one. |
 
-Every brief pose is covered. The last four rows come from one extra sheet (1,224 credits). I made it because the 14 priority poses came in well under budget. No edits or fix generations were needed, so all 8 generations are first takes. The total is 8,050 credits, under the 10,000 cap.
+| guests_asleep_couch.png | i12euQ8XMSZwwIjb8UA2 | 2148x1200 | Long three-seat dark-green couch with three sleepers under brown plaid, navy quilt and mustard throw. No faces: blond tuft, gray tuft with a white pillow, a hanging hand, red-and-white striped socks. The couch was drawn from a text description (no reference image), so it is a close match to the rosa_sleep_couch couch, not an exact copy. |
+| guests_porch_group.png | i12euQ8XMSZwwIjb8UA2 | 1340x1200 | Four guests from behind: gray bun, brown hair, bald, black ponytail. They wear pajamas and robes with blankets and slippers, with shiver lines. Ears and cheek edges show, but no facial features. The gaps between legs are transparent. |
+| hero_drag_dale.png | i12euQ8XMSZwwIjb8UA2, recomposited locally | 1112x1200 | The model swapped the legs: the hero had Dale's khaki trousers stretched out, and Dale had the hero's jeans walking. I fixed this locally with no credits. I cut both pairs of legs out, moved the dark jeans and gray sneakers under the hero (walking backwards), and mirrored the khaki legs and brown shoes under Dale so they trail forward-right with the heels dragging. The leg tops are tucked under the jacket and vest hems. The joins look clean on navy, but a close look shows Dale's torso stays fairly upright, so he reads as "carried and slumping" more than fully dragged. No noses. |
+| lando_bag_asleep.png | i12euQ8XMSZwwIjb8UA2 | 1702x1200 | Good. Same dark gray duffel as lando_bag; Lando is asleep with closed eyes and a content smile, one paw out. The gap inside the handle is transparent. |
+| hero_dig_snow_night.png | recolor of hero_dig_snow.png (no generation) | 1409x1200 | The snow (mound, ground strip, flung puffs and drops) is multiplied toward #9fb0c8, so white becomes about #9fb0c8 and the shading darkens proportionally. The hero's white head, neck and hands are untouched. The script is snow_tint.py in the scratchpad. |
+
+Every brief pose is covered. The last four rows come from one extra sheet (1,224 credits). I made it because the 14 priority poses came in well under budget. No edits or fix generations were run. All 9 generations are first takes. The total is 9,580 credits, under the 10,000 cap.
 The raw sheets I downloaded are in the session scratchpad: /tmp/claude-0/-home-claude/ec2f9e2c-42c6-5caf-b097-14fc003ba9bf/scratchpad/gen/. The cutout script is cutout.py in the same scratchpad folder.

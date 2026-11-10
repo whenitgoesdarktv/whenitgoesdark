@@ -11,311 +11,316 @@
   11.85s (0:11.85) line   5: It moves.
   13.02s (0:13.02) line   6: Down the hallway.
   14.16s (0:14.16) line   7: Past the ice machine.
-  15.61s (0:15.61) line   8: Past room fourteen.
-  [SHOT   17.09s] bg=bg01_hallway_dark chars=['hero_walk_headlamp'] fx=['beam_char', 'dark']
-  17.24s (0:17.24) line   9: Then it stops.
-  18.80s (0:18.80) line  10: Right behind your head.
-  [SHOT   20.87s] bg=bg03_front_desk chars=[] fx=['blackout_grade', 'dark', 'lights_off']
-  21.02s (0:21.02) line  11: The man at the front desk told you nobody else is staying on this floor.
-  [SHOT   24.86s] bg=bg06_balcony_view chars=[] fx=['blackout_grade', 'dark', 'heat_haze', 'rumble']
-  25.01s (0:25.01) line  12: And downstairs, something has been running all night.
-  28.55s (0:28.55) line  13: You can feel it through the floor.
-  30.44s (0:30.44) line  14: A low, steady hum.
-  [SHOT   32.31s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch']
-  32.46s (0:32.46) line  15: So what's inside the walls?
-  [SHOT   34.54s] bg=bg05_lobby_fire chars=[] fx=['dark', 'heat_haze', 'red_glow', 'rumble']
-  34.69s (0:34.69) line  16: And what is that hum?
-  [SHOT   36.32s] bg=bg02_lodge_exterior_dusk chars=[] fx=['blackout_grade', 'night', 'snow']
-  36.47s (0:36.47) line  17: Before the sun comes up, one of them is going to try to kill everyone in this hotel.
-  [SHOT   46.81s] bg=bg02_lodge_exterior_dusk chars=[] fx=['snow']
-  46.96s (0:46.96) line  18: Twelve hours earlier.
-  48.60s (0:48.60) line  19: Six p.m.
-  50.03s (0:50.03) line  20: The Pinecrest Lodge sits halfway up a mountain road.
-  [SHOT   53.09s] bg=bg02_lodge_exterior_dusk chars=[] fx=['sign_nopets', 'snow']
-  53.24s (0:53.24) line  21: The sign on the front door says, no pets.
-  [SHOT   56.04s] bg=bg03_front_desk chars=['lando_bag'] fx=['warm']
-  56.19s (0:56.19) line  22: The bag on your shoulder says nothing.
-  58.36s (0:58.36) line  23: Because Lando is asleep inside it.
-  60.70s (1:00.70) line  24: Lando is your cat.
-  62.16s (1:02.16) line  25: Lando has opinions about bags.
-  [SHOT   64.50s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy']
-  64.65s (1:04.65) line  26: The storm got here first.
-  66.51s (1:06.51) line  27: The radio says a nor'easter is wrapping around the mountains, the plows have stopped for the night, and the road behind you is already gone.
-  [SHOT   73.96s] bg=bg03_front_desk chars=['dale_desk_key@.595'] fx=['key_tag', 'warm']
-  74.11s (1:14.11) line  28: The manager, Dale, slides a key across the desk.
-  77.52s (1:17.52) line  29: Room twenty-two.
-  78.74s (1:18.74) line  30: The last one.
-  [SHOT   79.67s] bg=bg03_front_desk chars=['lando_bag'] fx=['warm']
-  79.82s (1:19.82) line  31: He looks at your bag.
-  81.15s (1:21.15) line  32: The bag meows.
-  [SHOT   82.33s] bg=bg03_front_desk chars=['dale_desk_key@.595'] fx=['warm']
-  82.48s (1:22.48) line  33: Dale says nothing.
-  83.94s (1:23.94) line  34: Dale has had a very long day.
-  [SHOT   86.62s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy']
-  86.77s (1:26.77) line  35: Seven p.m.
-  88.11s (1:28.11) line  36: The snow is coming down an inch every half hour.
-  91.29s (1:31.29) line  37: Your car is a white hump in the lot.
-  [SHOT   93.46s] bg=bg02_lodge_exterior_dusk chars=[] fx=['flicker_out', 'night', 'snow']
-  93.61s (1:33.61) line  38: The only way off this mountain is a road you can't see anymore.
-  98.21s (1:38.21) line  39: Eight twelve p.m.
-  99.81s (1:39.81) line  40: The lights flicker.
- 101.57s (1:41.57) line  41: Once.
- 102.44s (1:42.44) line  42: Twice.
- 103.31s (1:43.31) line  43: Then the whole mountain goes dark.
-  [SHOT  107.25s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'phone64']
- 107.40s (1:47.40) line  44: No heat.
- 108.25s (1:48.25) line  45: No elevator.
- 109.30s (1:49.30) line  46: No Wi-Fi.
- 110.47s (1:50.47) line  47: Your phone says sixty-four percent.
-  [SHOT  113.67s] bg=bg06_balcony_view chars=[] fx=['dark', 'rumble']
- 113.82s (1:53.82) line  48: Then, from downstairs, a motor coughs to life.
- 117.31s (1:57.31) line  49: You look over the railing.
-  [SHOT  118.65s] bg=bg05_lobby_fire chars=['dale_generator'] fx=['dark', 'door_snow', 'firelight']
- 118.80s (1:58.80) line  50: Dale is dragging a generator in from the snow.
- 121.59s (2:01.59) line  51: Into the lobby.
- 122.74s (2:02.74) line  52: Right next to the fireplace.
-  [SHOT  124.51s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow2', 'firelight']
- 124.66s (2:04.66) line  53: He props the front door open with a boot.
-  [SHOT  126.82s] bg=bg05_lobby_fire chars=['dale_generator'] fx=['dark', 'firelight']
- 126.97s (2:06.97) line  54: "It's just for the coffee and the phones," he says.
- 129.69s (2:09.69) line  55: "Door's open.
-  [SHOT  130.36s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow2', 'ominous']
- 130.51s (2:10.51) line  56: It's fine."  Remember that open door.
-  [SHOT  133.04s] bg=bg03_front_desk chars=['guest_redhat_back'] fx=['blackout_grade', 'candles', 'dark', 'lights_off']
- 133.19s (2:13.19) line  57: A guest in a red hat is lighting candles all along the front desk.
- 137.35s (2:17.35) line  58: Ten of them.
- 138.33s (2:18.33) line  59: Fifteen.
- 140.09s (2:20.09) line  60: When the power is out, use flashlights, not candles.
- 143.52s (2:23.52) line  61: And in a storm like this, a fire truck is not getting up that road.
- 147.65s (2:27.65) line  62: You hand her your spare flashlight.
-  [SHOT  149.45s] bg=bg03_front_desk chars=['lando_bag'] fx=['blackout_grade', 'dark', 'lights_off', 'smoke']
- 149.60s (2:29.60) line  63: She blows the candles out.
- 151.14s (2:31.14) line  64: Lando watches the smoke like it owes him money.
-  [SHOT  156.18s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'cold', 'dark', 'temp_readout']
- 156.33s (2:36.33) line  65: By ten, your room is fifty-eight degrees.
- 159.49s (2:39.49) line  66: By midnight, fifty-one.
- 161.53s (2:41.53) line  67: Loose, warm layers.
- 163.35s (2:43.35) line  68: Towels under the door.
- 164.97s (2:44.97) line  69: Curtains shut.
- 166.16s (2:46.16) line  70: Close off every room you're not using.
-  [SHOT  168.62s] bg=bg07_room22 chars=['lando_sleep_curled'] fx=['blackout_grade', 'cold', 'dark']
- 168.77s (2:48.77) line  71: Lando ignores the rule.
-  [SHOT  170.58s] bg=bg07_room22 chars=['lando_on_face'] fx=['blackout_grade', 'cold', 'dark']
- 170.73s (2:50.73) line  72: Lando sleeps on your face.
- 172.87s (2:52.87) line  73: Twelve forty.
-  [SHOT  173.88s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'knock']
- 174.03s (2:54.03) line  74: A knock.
-  [SHOT  174.76s] bg=bg01_hallway_dark chars=['rosa_door'] fx=['beam_char', 'dark']
- 174.91s (2:54.91) line  75: It's the woman from room twelve.
- 176.77s (2:56.77) line  76: Rosa.
- 177.58s (2:57.58) line  77: Two scarves, and a hotel bathrobe over her coat.
- 180.82s (3:00.82) line  78: "Everybody's going down to the lobby," she says.
-  [SHOT  183.43s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow', 'firelight']
- 183.58s (3:03.58) line  79: "It's warm down there."  It is warm down there.
- 186.60s (3:06.60) line  80: Six guests asleep on the couches.
- 189.01s (3:09.01) line  81: The generator humming beside the fire.
- 191.33s (3:11.33) line  82: The front door open to the snow.
-  [SHOT  193.49s] bg=bg09_stairs_down chars=[] fx=['dark', 'headache']
- 193.64s (3:13.64) line  83: On the stairs, a headache starts behind your eyes.
- 196.70s (3:16.70) line  84: You figure it's the altitude.
- 198.40s (3:18.40) line  85: Or the day.
-  [SHOT  199.35s] bg=bg05_lobby_fire chars=['rosa_sleep_couch'] fx=['dark', 'firelight', 'heat_haze']
- 199.50s (3:19.50) line  86: Rosa takes the couch closest to the generator.
-  [SHOT  202.10s] bg=bg05_lobby_fire chars=['lando_yowl'] fx=['dark', 'door_snow', 'firelight']
- 202.25s (3:22.25) line  87: You carry Lando back upstairs, because Lando will not stop yowling in that lobby.
- 207.46s (3:27.46) line  88: Every time you set him down, he pulls toward the door.
-  [SHOT  210.50s] bg=bg09_stairs_down chars=[] fx=['dark']
- 210.65s (3:30.65) line  89: Cats hate loud machines.
- 212.74s (3:32.74) line  90: That's what you tell yourself.
-  [SHOT  215.79s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'dizzy']
- 215.94s (3:35.94) line  91: Two forty-seven a.m.
- 217.80s (3:37.80) line  92: You wake up, and the room is turning.
-  [SHOT  220.14s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'dizzy']
- 220.29s (3:40.29) line  93: The carrier door is open.
- 222.10s (3:42.10) line  94: Lando is gone.
-  [SHOT  223.64s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch', 'shake_soft']
- 223.79s (3:43.79) line  95: Then you hear it.
- 225.01s (3:45.01) line  96: Scratching.
- 226.10s (3:46.10) line  97: Inside the wall, right behind the bed.
-  [SHOT  228.61s] bg=bg07_room22 chars=['hero_ear_wall'] fx=['beam_char', 'blackout_grade', 'dark']
- 228.76s (3:48.76) line  98: You press your ear to the wallpaper.
-  [SHOT  230.75s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch', 'shake_soft']
- 230.90s (3:50.90) line  99: Claws.
- 231.94s (3:51.94) line 100: Moving.
- 232.87s (3:52.87) line 101: Fast.
- 233.67s (3:53.67) line 102: Toward the hallway.
-  [SHOT  234.78s] bg=bg01_hallway_dark chars=['hero_walk_headlamp'] fx=['beam', 'dark', 'dust', 'scratch']
- 234.93s (3:54.93) line 103: You follow it with your headlamp.
- 236.68s (3:56.68) line 104: Twenty doors.
- 237.94s (3:57.94) line 105: Every one of them dark.
- 239.71s (3:59.71) line 106: The scratching runs ahead of you, past the ice machine, all the way to the end of the hall.
-  [SHOT  244.52s] bg=bg08_vent_grate chars=[] fx=['dark', 'heat_haze']
- 244.67s (4:04.67) line 107: And it stops under a metal grate in the floor.
- 247.66s (4:07.66) line 108: A vent.
- 248.56s (4:08.56) line 109: Warm air is rising out of it.
- 250.64s (4:10.64) line 110: From the lobby.
-  [SHOT  251.58s] bg=bg01_hallway_dark chars=['hero_kneel_vent'] fx=['beam_char', 'dark']
- 251.73s (4:11.73) line 111: You kneel down.
-  [SHOT  252.70s] bg=bg08_vent_grate chars=[] fx=['dark', 'eyes', 'heat_haze']
- 252.85s (4:12.85) line 112: Two green eyes look back up at you.
- 255.30s (4:15.30) line 113: Lando.
- 256.89s (4:16.89) line 114: He isn't trying to get to you.
- 258.50s (4:18.50) line 115: He's trying to get away from that warm air.
-  [SHOT  260.88s] bg=bg01_hallway_dark chars=['hero_dizzy'] fx=['beam_char', 'dark', 'dizzy']
- 261.03s (4:21.03) line 116: You stand up too fast.
- 262.57s (4:22.57) line 117: The hallway tilts.
- 263.85s (4:23.85) line 118: Your stomach turns over.
- 265.41s (4:25.41) line 119: Your fingers can't work the grate.
-  [SHOT  267.27s] bg=bg01_hallway_dark chars=[] fx=['beam', 'dark', 'dizzy', 'figure']
- 267.42s (4:27.42) line 120: For a second, someone is standing at the far end of the hall.
- 270.88s (4:30.88) line 121: Your headlamp flickers.
- 272.40s (4:32.40) line 122: There's no one there.
-  [SHOT  273.45s] bg=BLACK chars=[] fx=['heartbeat']
- 273.60s (4:33.60) line 123: The scratching was Lando.
-  [SHOT  275.13s] bg=bg05_lobby_fire chars=[] fx=['dark', 'heat_haze', 'red_glow']
- 275.28s (4:35.28) line 124: The dizziness is not.
- 280.12s (4:40.12) line 125: Carbon monoxide has no color and no smell.
- 283.79s (4:43.79) line 126: Headache.
- 284.62s (4:44.62) line 127: Dizziness.
- 285.65s (4:45.65) line 128: Weakness.
- 286.70s (4:46.70) line 129: Nausea.
- 287.59s (4:47.59) line 130: Sleepiness.
- 288.72s (4:48.72) line 131: Confusion.
- 289.96s (4:49.96) line 132: It feels like the flu.
- 291.64s (4:51.64) line 133: And people who are asleep can die from it before they ever feel sick.
-  [SHOT  295.93s] bg=bg06_balcony_view chars=[] fx=['dark', 'heat_haze']
- 296.08s (4:56.08) line 134: Six people are asleep in that lobby.
-  [SHOT  298.73s] bg=STAT chars=[] fx=[]
- 298.88s (4:58.88) line 135: Every year in the United States, more than a hundred people die from carbon monoxide from portable generators.
-  [SHOT  306.12s] bg=bg09_stairs_down chars=['hero_carry_lando'] fx=['dark', 'dizzy_soft']
- 306.27s (5:06.27) line 136: You go down the stairs with Lando in one arm and the railing in the other.
- 310.36s (5:10.36) line 137: Every step is heavier than the last.
-  [SHOT  312.96s] bg=bg05_lobby_fire chars=[] fx=['coals', 'dark', 'heat_haze_strong']
- 313.11s (5:13.11) line 138: The lobby is warm.
- 314.64s (5:14.64) line 139: Too warm.
- 315.79s (5:15.79) line 140: The fire is down to coals.
- 317.83s (5:17.83) line 141: The generator is still humming.
-  [SHOT  319.91s] bg=bg05_lobby_fire chars=['rosa_confused'] fx=['coals', 'dark', 'heat_haze_strong']
- 320.06s (5:20.06) line 142: "Rosa." She doesn't wake.
- 322.18s (5:22.18) line 143: You shake her shoulder.
- 323.58s (5:23.58) line 144: She opens her eyes, and she doesn't know who you are.
-  [SHOT  326.76s] bg=bg03_front_desk chars=['dale_slumped'] fx=['blackout_grade', 'dark', 'heat_haze', 'lights_off']
- 326.91s (5:26.91) line 145: Dale is slumped in the chair behind the desk.
- 329.62s (5:29.62) line 146: You can't wake him.
-  [SHOT  330.82s] bg=bg10_ceiling_alarm chars=[] fx=['dark', 'no_battery']
- 330.97s (5:30.97) line 147: On the ceiling, there's a carbon monoxide alarm.
- 333.75s (5:33.75) line 148: Its light is off.
- 335.20s (5:35.20) line 149: It runs on the hotel's power.
- 337.17s (5:37.17) line 150: No battery backup.
-  [SHOT  338.64s] bg=bg11_porch_blizzard chars=[] fx=['diagram_20ft', 'snow_heavy']
- 338.79s (5:38.79) line 151: Never run a generator indoors.
- 341.26s (5:41.26) line 152: Not in a house, a garage, a basement, or a lobby.
- 345.03s (5:45.03) line 153: Not even with the door open.
- 346.93s (5:46.93) line 154: Outside only, at least twenty feet from doors, windows and vents.
-  [SHOT  352.88s] bg=SPLIT chars=[] fx=[]
- 353.03s (5:53.03) line 155: Now you have two choices.
- 355.04s (5:55.04) line 156: Stay inside, where it's warm, and the air is poison.
- 358.74s (5:58.74) line 157: Or go out into a blizzard at three in the morning, where it's nine degrees.
-  [SHOT  363.32s] bg=CHOICE chars=[] fx=[]
- 363.47s (6:03.47) line 158: What would you do?
-  [SHOT  367.76s] bg=bg11_porch_blizzard chars=[] fx=['snow_heavy', 'whoosh']
- 367.91s (6:07.91) line 159: You go.
- 368.80s (6:08.80) line 160: If you think it's carbon monoxide, get outside to fresh air immediately.
- 373.11s (6:13.11) line 161: Then call nine-one-one.
-  [SHOT  377.10s] bg=bg05_lobby_fire chars=[] fx=['coals', 'dark', 'gen_off']
- 377.25s (6:17.25) line 162: You shut the generator off.
- 379.19s (6:19.19) line 163: The silence is enormous.
-  [SHOT  382.37s] bg=bg11_porch_blizzard chars=['rosa_confused', 'hero_walk_headlamp'] fx=['snow_heavy']
- 382.52s (6:22.52) line 164: Rosa leans on you like you're the railing.
- 385.04s (6:25.04) line 165: The others wake up dizzy and confused, and you herd them out under the porch roof.
- 390.20s (6:30.20) line 166: The snow is blowing sideways.
-  [SHOT  392.34s] bg=bg05_lobby_fire chars=['dale_slumped'] fx=['coals', 'dark', 'door_snow']
- 392.49s (6:32.49) line 167: Dale is too heavy to carry.
- 394.69s (6:34.69) line 168: You grab him under the arms and drag him across the lobby floor.
- 398.48s (6:38.48) line 169: Inch by inch.
- 399.99s (6:39.99) line 170: Through the open door.
- 401.42s (6:41.42) line 171: Into the cold.
-  [SHOT  402.60s] bg=bg11_porch_blizzard chars=['lando_parade'] fx=['snow_heavy']
- 402.75s (6:42.75) line 172: Lando walks ahead of you like he's leading a parade.
-  [SHOT  405.65s] bg=bg11_porch_blizzard chars=[] fx=['phone_call', 'snow_heavy']
- 405.80s (6:45.80) line 173: Your phone says nine percent.
- 408.05s (6:48.05) line 174: One bar.
- 409.16s (6:49.16) line 175: You call nine-one-one.
- 410.74s (6:50.74) line 176: It rings.
- 411.93s (6:51.93) line 177: And rings.
- 413.11s (6:53.11) line 178: Then a voice.
- 414.70s (6:54.70) line 179: The road is closed.
- 415.98s (6:55.98) line 180: They'll get to you as fast as they can.
-  [SHOT  417.97s] bg=bg11_porch_blizzard chars=[] fx=['snow_heavy', 'temp_9']
- 418.12s (6:58.12) line 181: And now there's a new problem.
- 419.98s (6:59.98) line 182: Nine degrees.
- 421.31s (7:01.31) line 183: Seven people in pajamas.
- 423.33s (7:03.33) line 184: One cat.
- 424.49s (7:04.49) line 185: Shivering.
- 425.57s (7:05.57) line 186: Exhaustion.
- 426.71s (7:06.71) line 187: Confusion.
- 427.91s (7:07.91) line 188: Fumbling hands.
- 429.11s (7:09.11) line 189: Slurred speech.
- 430.51s (7:10.51) line 190: Drowsiness.
-  [SHOT  431.61s] bg=bg11_porch_blizzard chars=['rosa_confused'] fx=['cold', 'snow_heavy']
- 431.76s (7:11.76) line 191: Half of those look exactly like carbon monoxide.
- 434.88s (7:14.88) line 192: You can't tell which one is hurting Rosa.
-  [SHOT  438.59s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy']
- 438.74s (7:18.74) line 193: Your car is a white hump in the lot.
-  [SHOT  441.06s] bg=bg04_parking_lot_snow chars=['hero_dig_snow'] fx=['snow_heavy']
- 441.21s (7:21.21) line 194: You dig with your hands until you can't feel them.
-  [SHOT  443.82s] bg=bg13_car_interior chars=[] fx=['dash_glow']
- 443.97s (7:23.97) line 195: The door opens.
- 445.22s (7:25.22) line 196: The engine catches.
- 447.08s (7:27.08) line 197: Heat pours out.
- 448.27s (7:28.27) line 198: Four people pile in.
-  [SHOT  449.68s] bg=bg13_car_interior chars=['lando_yowl'] fx=['dash_glow']
- 449.83s (7:29.83) line 199: And Lando starts yowling again.
- 451.85s (7:31.85) line 200: The same yowl.
- 453.38s (7:33.38) line 201: He claws at the back window.
-  [SHOT  455.09s] bg=bg12_car_tailpipe chars=[] fx=['ominous', 'snow_heavy']
- 455.24s (7:35.24) line 202: You look behind the car.
- 456.65s (7:36.65) line 203: The snow has drifted right over the tailpipe.
- 459.52s (7:39.52) line 204: Stuck with your car in snow?
- 461.24s (7:41.24) line 205: Clear the snow off the exhaust pipe.
- 463.29s (7:43.29) line 206: Run the engine about ten minutes an hour, and crack a window.
-  [SHOT  466.49s] bg=bg12_car_tailpipe chars=['hero_dig_snow', 'lando_parade'] fx=['snow']
- 466.64s (7:46.64) line 207: You dig it out.
- 467.77s (7:47.77) line 208: Lando was right.
- 469.03s (7:49.03) line 209: Again.
-  [SHOT  471.57s] bg=bg14_mountain_dawn chars=[] fx=['dawn', 'siren_lights', 'snow_light']
- 471.72s (7:51.72) line 210: Five fifty a.m.
- 473.28s (7:53.28) line 211: Headlights on the mountain road.
- 475.09s (7:55.09) line 212: A plow.
- 476.02s (7:56.02) line 213: Behind it, an ambulance.
-  [SHOT  477.83s] bg=bg14_mountain_dawn chars=['dale_oxygen'] fx=['dawn', 'siren_lights', 'snow_light']
- 477.98s (7:57.98) line 214: They give Dale oxygen right there in the snow.
- 480.72s (8:00.72) line 215: He opens his eyes.
- 482.16s (8:02.16) line 216: He looks at you.
- 483.13s (8:03.13) line 217: Then at the cat.
- 484.69s (8:04.69) line 218: "No pets," he whispers.
-  [SHOT  486.74s] bg=bg14_mountain_dawn chars=['lando_parade'] fx=['dawn', 'snow_light', 'warm']
- 486.89s (8:06.89) line 219: Then.
- 487.73s (8:07.73) line 220: "He stays.
- 488.91s (8:08.91) line 221: Free.
- 489.72s (8:09.72) line 222: Forever."  Everyone made it.
-  [SHOT  492.74s] bg=bg15_ambulance_interior chars=['rosa_lando_bench'] fx=['dawn_grade', 'siren_soft']
- 492.89s (8:12.89) line 223: Lando slept through the whole ambulance ride.
- 495.42s (8:15.42) line 224: On Rosa.
-  [SHOT  497.01s] bg=SPLIT chars=[] fx=[]
- 497.16s (8:17.16) line 225: So be honest.
- 498.82s (8:18.82) line 226: Three in the morning.
- 499.97s (8:19.97) line 227: Nine degrees outside.
- 501.63s (8:21.63) line 228: Poison inside.
- 503.19s (8:23.19) line 229: Would you have dragged everyone out into that blizzard?
- 505.76s (8:25.76) line 230: Or stayed where it was warm?
-  [SHOT  507.21s] bg=bg02_lodge_exterior_dusk chars=[] fx=['night', 'snow']
- 507.36s (8:27.36) line 231: Tell me in the comments.
- 508.73s (8:28.73) line 232: Next Monday, the lights go out somewhere new.
+  15.61s (0:15.61) line   8: Past room twenty-four.
+  [SHOT   17.42s] bg=bg01_hallway_dark chars=['hero_walk_headlamp'] fx=['beam_char', 'dark']
+  17.57s (0:17.57) line   9: Then it stops.
+  19.13s (0:19.13) line  10: Right behind your head.
+  [SHOT   21.20s] bg=bg03_front_desk chars=[] fx=['blackout_grade', 'dark', 'lights_off']
+  21.35s (0:21.35) line  11: The man at the front desk told you nobody else is staying on this floor.
+  [SHOT   25.19s] bg=bg06_balcony_view chars=[] fx=['blackout_grade', 'dark', 'heat_haze', 'rumble']
+  25.34s (0:25.34) line  12: And downstairs, something has been running all night.
+  28.88s (0:28.88) line  13: You can feel it through the floor.
+  30.77s (0:30.77) line  14: A low, steady hum.
+  [SHOT   32.64s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch']
+  32.79s (0:32.79) line  15: So what's inside the walls?
+  [SHOT   34.87s] bg=bg09_stairs_down chars=[] fx=['dark', 'heat_haze', 'rumble']
+  35.02s (0:35.02) line  16: And what is that hum?
+  [SHOT   36.65s] bg=bg02_lodge_exterior_dusk chars=[] fx=['blackout_grade', 'night', 'snow', 'windows_off']
+  36.80s (0:36.80) line  17: Before the sun comes up, one of them is going to try to kill everyone in this hotel.
+  [SHOT   46.54s] bg=bg02_lodge_exterior_dusk chars=[] fx=['snow']
+  46.69s (0:46.69) line  18: Nine hours earlier.
+  48.42s (0:48.42) line  19: Six p.m.
+  49.85s (0:49.85) line  20: The Pinecrest Lodge sits halfway up a mountain road.
+  [SHOT   52.91s] bg=bg02_lodge_exterior_dusk chars=[] fx=['sign_nopets', 'snow']
+  53.06s (0:53.06) line  21: The sign on the front door says, no pets.
+  [SHOT   55.86s] bg=bg03_front_desk chars=['lando_bag_asleep'] fx=['warm']
+  56.01s (0:56.01) line  22: The bag on your shoulder says nothing.
+  58.18s (0:58.18) line  23: Because Lando is asleep inside it.
+  [SHOT   60.37s] bg=bg03_front_desk chars=['lando_bag'] fx=['warm']
+  60.52s (1:00.52) line  24: Lando is your cat.
+  61.98s (1:01.98) line  25: Lando has opinions about bags.
+  [SHOT   64.32s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy']
+  64.47s (1:04.47) line  26: The storm got here first.
+  66.33s (1:06.33) line  27: The radio says a nor'easter is wrapping around the mountains, the plows have stopped for the night, and the road behind you is already gone.
+  [SHOT   73.78s] bg=bg03_front_desk chars=['dale_desk_key@.595'] fx=['key_tag', 'warm']
+  73.93s (1:13.93) line  28: The manager, Dale, slides a key across the desk.
+  77.34s (1:17.34) line  29: Room twenty-two.
+  78.56s (1:18.56) line  30: The last one.
+  [SHOT   79.49s] bg=bg03_front_desk chars=['lando_bag'] fx=['warm']
+  79.64s (1:19.64) line  31: He looks at your bag.
+  80.97s (1:20.97) line  32: The bag meows.
+  [SHOT   82.15s] bg=bg03_front_desk chars=['dale_desk_key@.595'] fx=['warm']
+  82.30s (1:22.30) line  33: Dale says nothing.
+  83.76s (1:23.76) line  34: Dale has had a very long day.
+  [SHOT   86.44s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy']
+  86.59s (1:26.59) line  35: Seven p.m.
+  87.93s (1:27.93) line  36: The snow is coming down an inch every half hour.
+  91.11s (1:31.11) line  37: Your car is a white hump in the lot.
+  [SHOT   93.28s] bg=bg02_lodge_exterior_dusk chars=[] fx=['flicker_out', 'night', 'snow']
+  93.43s (1:33.43) line  38: The only way off this mountain is a road you can't see anymore.
+  99.53s (1:39.53) line  39: Eight twelve p.m.
+ 101.13s (1:41.13) line  40: The lights flicker.
+ 102.89s (1:42.89) line  41: Once.
+ 103.76s (1:43.76) line  42: Twice.
+ 104.63s (1:44.63) line  43: Then the whole mountain goes dark.
+  [SHOT  108.57s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'phone64']
+ 108.72s (1:48.72) line  44: No heat.
+ 109.57s (1:49.57) line  45: No elevator.
+ 110.62s (1:50.62) line  46: No Wi-Fi.
+ 111.79s (1:51.79) line  47: Your phone says sixty-four percent.
+  [SHOT  114.99s] bg=bg06_balcony_view chars=[] fx=['dark', 'rumble']
+ 115.14s (1:55.14) line  48: Then, from downstairs, a motor coughs to life.
+ 118.63s (1:58.63) line  49: You look over the railing.
+  [SHOT  119.97s] bg=bg05_lobby_fire chars=['dale_generator'] fx=['dark', 'door_snow2', 'firelight']
+ 120.12s (2:00.12) line  50: Dale is dragging a generator in from the snow.
+ 122.91s (2:02.91) line  51: Into the lobby.
+  [SHOT  123.91s] bg=bg05_lobby_fire chars=[] fx=['dark', 'firelight']
+ 124.06s (2:04.06) line  52: Right next to the fireplace.
+  [SHOT  125.83s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow2', 'firelight']
+ 125.98s (2:05.98) line  53: He props the front door open with a boot.
+ 128.29s (2:08.29) line  54: "It's just for the coffee and the phones," he says.
+ 131.01s (2:11.01) line  55: "Door's open.
+  [SHOT  131.68s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow2', 'ominous']
+ 131.83s (2:11.83) line  56: It's fine."  Remember that open door.
+  [SHOT  134.36s] bg=bg03_front_desk chars=['guest_redhat_back'] fx=['blackout_grade', 'candles', 'dark', 'lights_off']
+ 134.51s (2:14.51) line  57: A guest in a red hat is lighting candles all along the front desk.
+ 138.67s (2:18.67) line  58: Ten of them.
+ 139.65s (2:19.65) line  59: Fifteen.
+ 141.41s (2:21.41) line  60: When the power is out, use flashlights, not candles.
+ 144.84s (2:24.84) line  61: And in a storm like this, a fire truck is not getting up that road.
+ 148.97s (2:28.97) line  62: You hand her your spare flashlight.
+  [SHOT  150.77s] bg=bg03_front_desk chars=['lando_bag'] fx=['blackout_grade', 'dark', 'lights_off', 'smoke']
+ 150.92s (2:30.92) line  63: She blows the candles out.
+ 152.46s (2:32.46) line  64: Lando watches the smoke like it owes him money.
+  [SHOT  157.90s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'cold', 'dark', 'temp_readout']
+ 158.05s (2:38.05) line  65: By ten, your room is fifty-eight degrees.
+ 161.21s (2:41.21) line  66: By midnight, fifty-one.
+ 163.25s (2:43.25) line  67: Loose, warm layers.
+ 165.07s (2:45.07) line  68: Towels under the door.
+ 166.69s (2:46.69) line  69: Curtains shut.
+ 167.88s (2:47.88) line  70: Close off every room you're not using.
+  [SHOT  170.34s] bg=bg07_room22 chars=['lando_sleep_curled'] fx=['blackout_grade', 'cold', 'dark']
+ 170.49s (2:50.49) line  71: Lando ignores the rule.
+  [SHOT  172.30s] bg=bg07_room22 chars=['lando_on_face'] fx=['blackout_grade', 'cold', 'dark']
+ 172.45s (2:52.45) line  72: Lando sleeps on your face.
+ 174.59s (2:54.59) line  73: Twelve forty.
+  [SHOT  175.60s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'knock']
+ 175.75s (2:55.75) line  74: A knock.
+  [SHOT  176.48s] bg=bg01_hallway_dark chars=['rosa_door'] fx=['beam_char', 'dark']
+ 176.63s (2:56.63) line  75: It's the woman from room twelve.
+ 178.49s (2:58.49) line  76: Rosa.
+ 179.30s (2:59.30) line  77: Two scarves, and a hotel bathrobe over her coat.
+ 182.54s (3:02.54) line  78: "Everybody's going down to the lobby," she says.
+  [SHOT  185.15s] bg=bg05_lobby_fire chars=['guests_asleep_couch', 'guests_asleep_couch'] fx=['dark', 'door_snow', 'firelight']
+ 185.30s (3:05.30) line  79: "It's warm down there."  It is warm down there.
+ 188.32s (3:08.32) line  80: Six guests asleep on the couches.
+ 190.73s (3:10.73) line  81: The generator humming beside the fire.
+ 193.05s (3:13.05) line  82: The front door open to the snow.
+  [SHOT  195.21s] bg=bg09_stairs_down chars=[] fx=['dark', 'headache']
+ 195.36s (3:15.36) line  83: On the stairs, a headache starts behind your eyes.
+ 198.42s (3:18.42) line  84: You figure it's the altitude.
+ 200.12s (3:20.12) line  85: Or the day.
+  [SHOT  201.07s] bg=bg05_lobby_fire chars=['rosa_sleep_couch'] fx=['dark', 'firelight', 'heat_haze']
+ 201.22s (3:21.22) line  86: Rosa takes the couch closest to the generator.
+  [SHOT  203.82s] bg=bg05_lobby_fire chars=['lando_yowl'] fx=['dark', 'door_snow', 'firelight']
+ 203.97s (3:23.97) line  87: You carry Lando back upstairs, because Lando will not stop yowling in that lobby.
+ 209.18s (3:29.18) line  88: Every time you set him down, he pulls toward the door.
+  [SHOT  212.22s] bg=bg09_stairs_down chars=[] fx=['dark']
+ 212.37s (3:32.37) line  89: Cats hate loud machines.
+ 214.46s (3:34.46) line  90: That's what you tell yourself.
+  [SHOT  217.91s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'dizzy']
+ 218.06s (3:38.06) line  91: Two forty-seven a.m.
+ 219.92s (3:39.92) line  92: You wake up, and the room is turning.
+  [SHOT  222.26s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'dizzy']
+ 222.41s (3:42.41) line  93: The carrier door is open.
+ 224.22s (3:44.22) line  94: Lando is gone.
+  [SHOT  225.76s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch', 'shake_soft']
+ 225.91s (3:45.91) line  95: Then you hear it.
+ 227.13s (3:47.13) line  96: Scratching.
+ 228.22s (3:48.22) line  97: Inside the wall, right behind the bed.
+  [SHOT  230.73s] bg=bg07_room22 chars=['hero_ear_wall'] fx=['beam_char', 'blackout_grade', 'dark']
+ 230.88s (3:50.88) line  98: You press your ear to the wallpaper.
+  [SHOT  232.87s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'dark', 'scratch', 'shake_soft']
+ 233.02s (3:53.02) line  99: Claws.
+ 234.06s (3:54.06) line 100: Moving.
+ 234.99s (3:54.99) line 101: Fast.
+ 235.79s (3:55.79) line 102: Toward the hallway.
+  [SHOT  236.90s] bg=bg01_hallway_dark chars=['hero_walk_headlamp'] fx=['beam', 'dark', 'dust', 'scratch']
+ 237.05s (3:57.05) line 103: You follow it with your headlamp.
+ 238.80s (3:58.80) line 104: Twenty doors.
+ 240.06s (4:00.06) line 105: Every one of them dark.
+ 241.83s (4:01.83) line 106: The scratching runs ahead of you, past the ice machine, all the way to the end of the hall.
+  [SHOT  246.64s] bg=bg08_vent_grate chars=[] fx=['dark', 'heat_haze']
+ 246.79s (4:06.79) line 107: And it stops under a metal grate in the floor.
+ 249.78s (4:09.78) line 108: A vent.
+ 250.68s (4:10.68) line 109: Warm air is rising out of it.
+ 252.76s (4:12.76) line 110: From the lobby.
+  [SHOT  253.70s] bg=bg01_hallway_dark chars=['hero_kneel_vent'] fx=['beam_char', 'dark']
+ 253.85s (4:13.85) line 111: You kneel down.
+  [SHOT  254.82s] bg=bg08_vent_grate chars=[] fx=['dark', 'eyes', 'heat_haze']
+ 254.97s (4:14.97) line 112: Two green eyes look back up at you.
+ 257.42s (4:17.42) line 113: Lando.
+ 259.01s (4:19.01) line 114: He isn't trying to get to you.
+ 260.62s (4:20.62) line 115: He's trying to get away from that warm air.
+  [SHOT  263.00s] bg=bg01_hallway_dark chars=['hero_dizzy'] fx=['beam_char', 'dark', 'dizzy']
+ 263.15s (4:23.15) line 116: You stand up too fast.
+ 264.69s (4:24.69) line 117: The hallway tilts.
+ 265.97s (4:25.97) line 118: Your stomach turns over.
+ 267.53s (4:27.53) line 119: Your fingers can't work the grate.
+  [SHOT  269.39s] bg=bg01_hallway_dark chars=[] fx=['beam', 'dark', 'dizzy', 'figure']
+ 269.54s (4:29.54) line 120: For a second, someone is standing at the far end of the hall.
+ 273.00s (4:33.00) line 121: Your headlamp flickers.
+ 274.52s (4:34.52) line 122: There's no one there.
+  [SHOT  275.57s] bg=BLACK chars=[] fx=['heartbeat']
+ 275.72s (4:35.72) line 123: The scratching was Lando.
+  [SHOT  277.25s] bg=bg05_lobby_fire chars=[] fx=['dark', 'heat_haze', 'red_glow']
+ 277.40s (4:37.40) line 124: The dizziness is not.
+ 282.24s (4:42.24) line 125: Carbon monoxide has no color and no smell.
+ 285.91s (4:45.91) line 126: Headache.
+ 286.74s (4:46.74) line 127: Dizziness.
+ 287.77s (4:47.77) line 128: Weakness.
+ 288.82s (4:48.82) line 129: Nausea.
+ 289.71s (4:49.71) line 130: Sleepiness.
+ 290.84s (4:50.84) line 131: Confusion.
+ 292.08s (4:52.08) line 132: It feels like the flu.
+ 293.76s (4:53.76) line 133: And people who are asleep can die from it before they ever feel sick.
+  [SHOT  298.05s] bg=bg05_lobby_fire chars=['guests_asleep_couch', 'guests_asleep_couch'] fx=['dark', 'firelight', 'heat_haze']
+ 298.20s (4:58.20) line 134: Six people are asleep in that lobby.
+  [SHOT  300.85s] bg=STAT chars=[] fx=[]
+ 301.00s (5:01.00) line 135: Every year in the United States, more than a hundred people die from carbon monoxide from portable generators.
+  [SHOT  308.24s] bg=bg09_stairs_down chars=['hero_carry_lando'] fx=['dark', 'dizzy_soft']
+ 308.39s (5:08.39) line 136: You go down the stairs with Lando in one arm and the railing in the other.
+  [SHOT  312.33s] bg=bg09_stairs_down chars=['hero_carry_lando'] fx=['dark', 'dizzy', 'headache']
+ 312.48s (5:12.48) line 137: Every step is heavier than the last.
+  [SHOT  315.08s] bg=bg05_lobby_fire chars=['guests_asleep_couch'] fx=['coals', 'dark', 'heat_haze_strong']
+ 315.23s (5:15.23) line 138: The lobby is warm.
+ 316.76s (5:16.76) line 139: Too warm.
+ 317.91s (5:17.91) line 140: The fire is down to coals.
+ 319.95s (5:19.95) line 141: The generator is still humming.
+  [SHOT  322.03s] bg=bg05_lobby_fire chars=['rosa_confused'] fx=['coals', 'dark', 'heat_haze_strong']
+ 322.18s (5:22.18) line 142: "Rosa." She doesn't wake.
+ 324.30s (5:24.30) line 143: You shake her shoulder.
+ 325.70s (5:25.70) line 144: She opens her eyes, and she doesn't know who you are.
+  [SHOT  328.88s] bg=bg03_front_desk chars=['dale_slumped@.62'] fx=['blackout_grade', 'dark', 'heat_haze', 'lights_off']
+ 329.03s (5:29.03) line 145: Dale is slumped in the chair behind the desk.
+ 331.74s (5:31.74) line 146: You can't wake him.
+  [SHOT  332.94s] bg=bg10_ceiling_alarm chars=[] fx=['dark', 'no_battery']
+ 333.09s (5:33.09) line 147: On the ceiling, there's a carbon monoxide alarm.
+ 335.87s (5:35.87) line 148: Its light is off.
+ 337.32s (5:37.32) line 149: It runs on the hotel's power.
+ 339.29s (5:39.29) line 150: No battery backup.
+  [SHOT  340.76s] bg=bg11_porch_blizzard chars=[] fx=['diagram_20ft', 'snow_heavy']
+ 340.91s (5:40.91) line 151: Never run a generator indoors.
+ 343.38s (5:43.38) line 152: Not in a house, a garage, a basement, or a lobby.
+ 347.15s (5:47.15) line 153: Not even with the door open.
+ 349.05s (5:49.05) line 154: Outside only, at least twenty feet from doors, windows and vents.
+  [SHOT  355.80s] bg=SPLIT chars=[] fx=[]
+ 355.95s (5:55.95) line 155: Now you have two choices.
+ 357.96s (5:57.96) line 156: Stay inside, where it's warm, and the air is poison.
+ 361.66s (6:01.66) line 157: Or go out into a blizzard at three in the morning, where it's nine degrees.
+  [SHOT  366.24s] bg=CHOICE chars=[] fx=[]
+ 366.39s (6:06.39) line 158: What would you do?
+  [SHOT  370.68s] bg=bg11_porch_blizzard chars=[] fx=['snow_heavy', 'whoosh']
+ 370.83s (6:10.83) line 159: You go.
+ 371.72s (6:11.72) line 160: If you think it's carbon monoxide, get outside to fresh air immediately.
+ 376.03s (6:16.03) line 161: Then call nine-one-one.
+  [SHOT  380.62s] bg=bg05_lobby_fire chars=[] fx=['coals', 'dark', 'gen_off']
+ 380.77s (6:20.77) line 162: You shut the generator off.
+ 382.71s (6:22.71) line 163: The silence is enormous.
+  [SHOT  385.89s] bg=bg11_porch_blizzard chars=['rosa_confused', 'hero_walk_headlamp'] fx=['snow_heavy']
+ 386.04s (6:26.04) line 164: Rosa leans on you like you're the railing.
+  [SHOT  388.41s] bg=bg11_porch_blizzard chars=['guests_porch_group'] fx=['snow_heavy']
+ 388.56s (6:28.56) line 165: The others wake up dizzy and confused, and you herd them out under the porch roof.
+ 393.72s (6:33.72) line 166: The snow is blowing sideways.
+  [SHOT  395.86s] bg=bg05_lobby_fire chars=['dale_slumped'] fx=['coals', 'dark', 'door_snow']
+ 396.01s (6:36.01) line 167: Dale is too heavy to carry.
+  [SHOT  398.06s] bg=bg05_lobby_fire chars=['hero_drag_dale'] fx=['coals', 'dark', 'door_snow']
+ 398.21s (6:38.21) line 168: You grab him under the arms and drag him across the lobby floor.
+ 402.00s (6:42.00) line 169: Inch by inch.
+  [SHOT  403.36s] bg=bg11_porch_blizzard chars=['hero_drag_dale'] fx=['snow_heavy']
+ 403.51s (6:43.51) line 170: Through the open door.
+ 404.94s (6:44.94) line 171: Into the cold.
+  [SHOT  406.12s] bg=bg11_porch_blizzard chars=['lando_parade'] fx=['snow_heavy']
+ 406.27s (6:46.27) line 172: Lando walks ahead of you like he's leading a parade.
+  [SHOT  409.17s] bg=bg11_porch_blizzard chars=[] fx=['phone_call', 'snow_heavy']
+ 409.32s (6:49.32) line 173: Your phone says nine percent.
+ 411.57s (6:51.57) line 174: One bar.
+ 412.68s (6:52.68) line 175: You call nine-one-one.
+ 414.26s (6:54.26) line 176: It rings.
+ 415.45s (6:55.45) line 177: And rings.
+ 416.63s (6:56.63) line 178: Then a voice.
+ 418.22s (6:58.22) line 179: The road is closed.
+ 419.50s (6:59.50) line 180: They'll get to you as fast as they can.
+  [SHOT  421.49s] bg=bg11_porch_blizzard chars=['guests_porch_group'] fx=['snow_heavy', 'temp_9']
+ 421.64s (7:01.64) line 181: And now there's a new problem.
+ 423.50s (7:03.50) line 182: Nine degrees.
+ 424.83s (7:04.83) line 183: Seven people in pajamas.
+ 426.85s (7:06.85) line 184: One cat.
+ 428.01s (7:08.01) line 185: Shivering.
+ 429.09s (7:09.09) line 186: Exhaustion.
+ 430.23s (7:10.23) line 187: Confusion.
+ 431.43s (7:11.43) line 188: Fumbling hands.
+ 432.63s (7:12.63) line 189: Slurred speech.
+ 434.03s (7:14.03) line 190: Drowsiness.
+  [SHOT  435.13s] bg=bg11_porch_blizzard chars=['rosa_confused'] fx=['cold', 'snow_heavy']
+ 435.28s (7:15.28) line 191: Half of those look exactly like carbon monoxide.
+ 438.40s (7:18.40) line 192: You can't tell which one is hurting Rosa.
+  [SHOT  442.71s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy', 'windows_off']
+ 442.86s (7:22.86) line 193: Your car is a white hump in the lot.
+  [SHOT  445.18s] bg=bg04_parking_lot_snow chars=['hero_dig_snow_night'] fx=['snow_heavy', 'windows_off']
+ 445.33s (7:25.33) line 194: You dig with your hands until you can't feel them.
+  [SHOT  447.94s] bg=bg13_car_interior chars=[] fx=['dash_glow']
+ 448.09s (7:28.09) line 195: The door opens.
+ 449.34s (7:29.34) line 196: The engine catches.
+ 451.20s (7:31.20) line 197: Heat pours out.
+ 452.39s (7:32.39) line 198: Four people pile in.
+  [SHOT  453.80s] bg=bg13_car_interior chars=['lando_yowl'] fx=['dash_glow']
+ 453.95s (7:33.95) line 199: And Lando starts yowling again.
+ 455.97s (7:35.97) line 200: The same yowl.
+ 457.50s (7:37.50) line 201: He claws at the back window.
+  [SHOT  459.21s] bg=bg12_car_tailpipe chars=[] fx=['ominous', 'snow_heavy']
+ 459.36s (7:39.36) line 202: You look behind the car.
+ 460.77s (7:40.77) line 203: The snow has drifted right over the tailpipe.
+ 463.64s (7:43.64) line 204: Stuck with your car in snow?
+ 465.36s (7:45.36) line 205: Clear the snow off the exhaust pipe.
+ 467.41s (7:47.41) line 206: Run the engine about ten minutes an hour, and crack a window.
+  [SHOT  470.61s] bg=bg12_car_tailpipe chars=['hero_dig_snow_night', 'lando_parade'] fx=['snow', 'windows_off']
+ 470.76s (7:50.76) line 207: You dig it out.
+ 471.89s (7:51.89) line 208: Lando was right.
+ 473.15s (7:53.15) line 209: Again.
+  [SHOT  476.09s] bg=bg14_mountain_dawn chars=[] fx=['dawn', 'siren_lights', 'snow_light']
+ 476.24s (7:56.24) line 210: Five fifty a.m.
+ 477.80s (7:57.80) line 211: Headlights on the mountain road.
+ 479.61s (7:59.61) line 212: A plow.
+ 480.54s (8:00.54) line 213: Behind it, an ambulance.
+  [SHOT  482.35s] bg=bg14_mountain_dawn chars=['dale_oxygen'] fx=['dawn', 'siren_lights', 'snow_light']
+ 482.50s (8:02.50) line 214: They give Dale oxygen right there in the snow.
+ 485.24s (8:05.24) line 215: He opens his eyes.
+ 486.68s (8:06.68) line 216: He looks at you.
+ 487.65s (8:07.65) line 217: Then at the cat.
+ 489.21s (8:09.21) line 218: "No pets," he whispers.
+  [SHOT  491.26s] bg=bg14_mountain_dawn chars=['lando_parade'] fx=['dawn', 'snow_light', 'warm']
+ 491.41s (8:11.41) line 219: Then.
+ 492.25s (8:12.25) line 220: "He stays.
+ 493.43s (8:13.43) line 221: Free.
+ 494.24s (8:14.24) line 222: Forever."  Everyone made it.
+  [SHOT  497.26s] bg=bg15_ambulance_interior chars=['rosa_lando_bench'] fx=['dawn_grade', 'siren_soft']
+ 497.41s (8:17.41) line 223: Lando slept through the whole ambulance ride.
+ 499.94s (8:19.94) line 224: On Rosa.
+  [SHOT  501.53s] bg=SPLIT chars=[] fx=[]
+ 501.68s (8:21.68) line 225: So be honest.
+ 503.34s (8:23.34) line 226: Three in the morning.
+ 504.49s (8:24.49) line 227: Nine degrees outside.
+ 506.15s (8:26.15) line 228: Poison inside.
+ 507.71s (8:27.71) line 229: Would you have dragged everyone out into that blizzard?
+ 510.28s (8:30.28) line 230: Or stayed where it was warm?
+  [SHOT  511.73s] bg=bg02_lodge_exterior_dusk chars=[] fx=['night', 'snow', 'windows_off']
+ 511.88s (8:31.88) line 231: Tell me in the comments.
+ 513.25s (8:33.25) line 232: Next Monday, the lights go out somewhere new.
 
-End card from about 511.91s to 518.91s
+End card from about 516.43s to 523.43s
 
-Chapters (card appears 1.45 s before the first line): 1 THE LAST ROOM @ 45.51s; 2 LIGHTS OUT @ 96.76s; 3 THE COLD @ 154.88s; 4 SOMETHING IN THE WALLS @ 214.49s; 5 THE HUM @ 278.67s; 6 INSIDE OR OUT @ 351.58s; 7 FRESH AIR @ 375.80s; 8 THE TAILPIPE @ 437.29s; 9 MORNING @ 470.27s
+Chapters (card appears 1.45 s before the first line): 1 THE LAST ROOM @ 45.24s; 2 LIGHTS OUT @ 98.08s; 3 THE COLD @ 156.60s; 4 SOMETHING IN THE WALLS @ 216.61s; 5 THE HUM @ 280.79s; 6 INSIDE OR OUT @ 354.50s; 7 FRESH AIR @ 379.32s; 8 THE TAILPIPE @ 441.41s; 9 MORNING @ 474.79s
 Rule cards: RULE 1 FLASHLIGHTS, NOT CANDLES lines 60-61: ['Candles start fires.', 'Fire trucks may not reach you.']; RULE 2 KEEP THE HEAT IN lines 67-70: ['Loose, warm layers', 'Towels under the door', 'Close off unused rooms']; RULE 3 THE INVISIBLE KILLER lines 125-133: ['No color. No smell.', 'Headache, dizziness, confusion', 'Sleepers may never wake']; RULE 4 GENERATORS GO OUTSIDE lines 151-154: ['Never indoors, even with doors open', '20+ feet from doors, windows, vents']; RULE 5 FRESH AIR FIRST lines 160-161: ['Get outside right away', 'Then call 911']; RULE 6 HYPOTHERMIA SIGNS lines 185-190: ['Shivering, exhaustion, confusion', 'Fumbling hands, slurred speech']; RULE 7 CLEAR THE EXHAUST lines 204-206: ['Dig out the tailpipe first', 'Engine 10 min an hour, window cracked']
-Status bar changes: line 0 -> ['2:47 AM', 'OFF', '12%', '49°F']; line 18 -> ['6:00 PM', 'ON', '80%', '68°F']; line 35 -> ['7:00 PM', 'ON', '77%', '68°F']; line 39 -> ['8:12 PM', 'ON', '64%', '68°F']; line 43 -> ['8:12 PM', 'OFF', '64%', '66°F']; line 65 -> ['10:00 PM', 'OFF', '41%', '58°F']; line 66 -> ['12:00 AM', 'OFF', '33%', '51°F']; line 73 -> ['12:40 AM', 'OFF', '31%', '51°F']; line 91 -> ['2:47 AM', 'OFF', '12%', '49°F']; line 162 -> ['3:10 AM', 'OFF', '9%', '9°F']; line 193 -> ['3:40 AM', 'OFF', '6%', '9°F']; line 210 -> ['5:50 AM', 'OFF', '3%', '12°F']
-SFX cues: sfx_scratching_wall @ line 0+0.0s (0.4s); sfx_scratching_wall @ line 4+0.0s (8.4s); sfx_scratching_wall @ line 6+0.0s (13.0s); sfx_heartbeat @ line 9+0.2s (17.4s); sfx_whoosh_hit @ line 12+0.0s (25.0s); sfx_whoosh_hit @ line 17+4.2s (40.7s); sfx_cat_purr @ line 23+0.8s (59.2s); sfx_key_slide @ line 28+1.0s (75.1s); sfx_meow_bag @ line 32+0.1s (81.2s); sfx_lights_flicker @ line 41+0.0s (101.6s); sfx_lights_flicker @ line 42+0.0s (102.4s); sfx_lights_flicker @ line 43+0.0s (103.3s); sfx_generator_start @ line 48+1.2s (115.0s); sfx_candle_light @ line 57+0.4s (133.6s); sfx_blow_out @ line 63+0.3s (149.9s); sfx_knock_door @ line 74+0.0s (174.0s); sfx_cat_yowl @ line 87+0.5s (202.8s); sfx_scratching_wall @ line 95+0.0s (223.8s); sfx_scratching_wall @ line 99+0.0s (230.9s); sfx_footsteps_carpet @ line 103+0.0s (234.9s); sfx_scratching_wall @ line 106+0.0s (239.7s); sfx_cat_purr @ line 112+0.6s (253.5s); sfx_lights_flicker @ line 121+0.0s (270.9s); sfx_heartbeat @ line 123+0.0s (273.6s); sfx_whoosh_hit @ line 124+1.8s (277.1s); sfx_heartbeat @ line 156+0.0s (355.0s); sfx_whoosh_hit @ line 159+0.0s (367.9s); sfx_generator_off @ line 162+0.4s (377.6s); sfx_footsteps_snow @ line 165+0.0s (385.0s); sfx_phone_ring @ line 176+0.0s (410.7s); sfx_phone_ring @ line 177+0.0s (411.9s); sfx_digging_snow @ line 194+0.0s (441.2s); sfx_car_start @ line 196+0.0s (445.2s); sfx_cat_yowl @ line 199+0.0s (449.8s); sfx_digging_snow @ line 207+0.0s (466.6s); sfx_plow @ line 210+0.0s (471.7s); sfx_siren_distant @ line 213+0.0s (476.0s); sfx_cat_purr @ line 222+1.0s (490.7s)
+Status bar changes: line 0 -> ['2:47 AM', 'OFF', '12%', '49°F']; line 18 -> ['6:00 PM', 'ON', '80%', '68°F']; line 35 -> ['7:00 PM', 'ON', '77%', '68°F']; line 39 -> ['8:12 PM', 'ON', '64%', '68°F']; line 43 -> ['8:12 PM', 'OFF', '64%', '66°F']; line 65 -> ['10:00 PM', 'OFF', '41%', '58°F']; line 66 -> ['12:00 AM', 'OFF', '33%', '51°F']; line 73 -> ['12:40 AM', 'OFF', '31%', '51°F']; line 91 -> ['2:47 AM', 'OFF', '12%', '49°F']; line 136 -> ['2:55 AM', 'OFF', '11%', '49°F']; line 162 -> ['3:10 AM', 'OFF', '9%', '49°F']; line 164 -> ['3:10 AM', 'OFF', '9%', '9°F']; line 193 -> ['3:40 AM', 'OFF', '6%', '9°F']; line 210 -> ['5:50 AM', 'OFF', '3%', '12°F']
+SFX cues: sfx_scratching_wall @ line 0+0.0s (0.4s); sfx_scratching_wall @ line 4+0.0s (8.4s); sfx_scratching_wall @ line 6+0.0s (13.0s); sfx_heartbeat @ line 9+0.2s (17.8s); sfx_whoosh_hit @ line 12+0.0s (25.3s); sfx_whoosh_hit @ line 17+4.2s (41.0s); sfx_cat_purr @ line 23+0.8s (59.0s); sfx_key_slide @ line 28+1.0s (74.9s); sfx_meow_bag @ line 32+0.1s (81.1s); sfx_lights_flicker @ line 41+0.0s (102.9s); sfx_lights_flicker @ line 42+0.0s (103.8s); sfx_lights_flicker @ line 43+0.0s (104.6s); sfx_generator_start @ line 48+1.2s (116.3s); sfx_candle_light @ line 57+0.4s (134.9s); sfx_blow_out @ line 63+0.3s (151.2s); sfx_knock_door @ line 74+0.0s (175.8s); sfx_cat_yowl @ line 87+0.5s (204.5s); sfx_scratching_wall @ line 95+0.0s (225.9s); sfx_scratching_wall @ line 99+0.0s (233.0s); sfx_footsteps_carpet @ line 103+0.0s (237.1s); sfx_scratching_wall @ line 106+0.0s (241.8s); sfx_cat_purr @ line 112+0.6s (255.6s); sfx_heartbeat @ line 123+0.0s (275.7s); sfx_whoosh_hit @ line 124+1.8s (279.2s); sfx_heartbeat @ line 156+0.0s (358.0s); sfx_whoosh_hit @ line 159+0.0s (370.8s); sfx_generator_off @ line 162+1.1s (381.9s); sfx_footsteps_snow @ line 165+0.0s (388.6s); sfx_phone_ring @ line 176+0.0s (414.3s); sfx_phone_ring @ line 177+0.0s (415.5s); sfx_digging_snow @ line 194+0.0s (445.3s); sfx_car_start @ line 196+0.0s (449.3s); sfx_cat_yowl @ line 199+0.0s (454.0s); sfx_digging_snow @ line 207+0.0s (470.8s); sfx_plow @ line 210+0.0s (476.2s); sfx_siren_distant @ line 213+0.0s (480.5s); sfx_cat_purr @ line 222+1.0s (495.2s)

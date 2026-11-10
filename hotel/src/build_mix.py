@@ -38,6 +38,15 @@ for i in range(len(SRC)):
     dst = int((cuts[i] + B['shift'][i]) * SR)
     voice[dst:dst + len(seg)] += seg[:max(0, N - dst)]
 
+# re-voiced lines: silence the old take, drop the new one in at the same start
+for i, (fn, _txt) in TL.VOICE_FIX.items():
+    t0 = LINES[i]['start']; old_end = SRC[i]['end'] + B['shift'][i]
+    a0, a1 = int((t0 - 0.03) * SR), int((old_end + 0.05) * SR)
+    nxt = int((LINES[i + 1]['start'] - 0.02) * SR) if i + 1 < len(LINES) else N
+    voice[a0:min(a1, nxt)] = 0
+    clip = load(os.path.join(HERE, fn)); s0 = int(t0 * SR)
+    voice[s0:s0 + len(clip)] += clip[:N - s0]
+
 # voice envelope for ducking
 env = np.abs(voice).max(axis=1)
 k = int(0.12 * SR)

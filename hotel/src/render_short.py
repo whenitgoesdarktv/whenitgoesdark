@@ -66,7 +66,9 @@ if cur: CHUNKS.append(cur)
 CAPS = []
 for j, c in enumerate(CHUNKS):
     cands = [x['text'] for x in c if x['text'].strip('.,?!').upper() not in STOP]
-    key = max(cands, key=len) if cands else c[-1]['text']
+    PRIORITY = ('KILL', 'EMPTY', 'SCRATCHING', 'HUM', 'HUM?', 'WALLS?', 'WALLS', 'STOPS', 'HEAD.', 'NOBODY', 'DARK')
+    pri = [x for x in cands if x.strip('.,?!') in [p.strip('.,?!') for p in PRIORITY]]
+    key = pri[0] if pri else (max(cands, key=len) if cands else c[-1]['text'])
     end = c[-1]['end'] + 0.35
     if j + 1 < len(CHUNKS): end = min(end, CHUNKS[j + 1][0]['start'])
     CAPS.append(dict(words=[(x['text'], x['start']) for x in c], key=key, start=c[0]['start'], end=min(end, OPEN_END)))

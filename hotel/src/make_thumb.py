@@ -88,10 +88,13 @@ im.resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, 'thumb_A_walls.jpg'
 
 # B: the lobby, the generator, the sleepers
 im = bg('bg05_lobby_fire', 1.35, .33, .5, 1.05)
+im = Image.fromarray(np.asarray(im)); _a = np.asarray(im)[..., ::-1].copy()
+import cv2, sys; sys.path.insert(0, H); import render_long as _R
+im = Image.fromarray(_R.windows_off(_a, 1.0, exterior=False)[..., ::-1].copy())
 im = glow_spot(im, 760, 560, 360, (0, 0, 140), 0.75)              # red menace around the generator
 char(im, 'rosa_sleep_couch', 1330, 1085, 640, dark=0.95)
 im = vignette(im, 0.55)
 text(im, ["DON'T FALL", "ASLEEP"], 60, 40, 220, [WHITE, RED])
-tag(im, 'NO POWER', 70, 500)
+tag(im, 'NO POWER', 70, 530)
 im.resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, 'thumb_B_asleep.jpg'), quality=92)
 print('ok')

@@ -15,22 +15,23 @@ A winter storm. A mountain hotel. The power goes out at 8:12 PM, the manager sta
 Would you have dragged everyone out into the blizzard, or stayed where it was warm? Comment OUT or STAY 🔦
 
 0:00 2:47 AM
-0:45 The Last Room
-1:36 Lights Out
-2:34 The Cold
-3:34 Something in the Walls
-4:38 The Hum
-5:51 Inside or Out
-6:15 Fresh Air
-7:17 The Tailpipe
-7:50 Morning
+0:44 The Last Room
+1:37 Lights Out
+2:36 The Cold
+3:36 Something in the Walls
+4:40 The Hum
+5:54 Inside or Out
+6:19 Fresh Air
+7:21 The Tailpipe
+7:54 Morning
 
 The safety tips in this story come from official sources:
 Flashlights, not candles: U.S. Fire Administration https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/candle and CDC https://www.cdc.gov/natural-disasters/psa-toolkit/proper-use-of-candles-during-a-power-outage.html
 Keeping the heat in, and clearing a car's exhaust pipe: National Weather Service https://www.weather.gov/safety/winter-during
 Carbon monoxide signs, generator deaths, alarms with battery backup, fresh air first: CPSC https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center
+Flu-like symptoms, sleepers can die before symptoms, never inside even with doors open, 20+ feet from windows, doors and vents: CDC https://www.cdc.gov/carbon-monoxide/about/index.html
+Never in a home, garage or basement; open doors and windows don't ventilate enough: CPSC https://www.cpsc.gov/Newsroom/News-Releases/2024/As-Winter-Storms-Continue-CPSC-Urges-Families-to-Take-Steps-to-Prevent-Carbon-Monoxide-Poisoning-and-Fires
 CO can kill people while they sleep: MedlinePlus https://medlineplus.gov/carbonmonoxidepoisoning.html
-Generators never indoors, 20+ feet from doors, windows and vents: CDC https://www.cdc.gov/natural-disasters/psa-toolkit/prevent-carbon-monoxide-poisoning.html
 Hypothermia signs: CDC https://www.cdc.gov/winter-weather/prevention/index.html
 
 This is a fictional story. If you think someone has carbon monoxide poisoning, get everyone to fresh air and call 911.
