@@ -92,24 +92,35 @@ if hum is not None:
     from scipy.signal import butter, sosfilt
     _sos = butter(4, 180, 'low', fs=SR, output='sos')
     def lowpass(x, fc=180):
-        return sosfilt(_sos, x, axis=0).astype(np.float32)
+        sos = _sos if fc == 180 else butter(4, fc, 'low', fs=SR, output='sos')
+        return sosfilt(sos, x, axis=0).astype(np.float32)
     for (a, b) in (TL.HUM_COLD_OPEN, TL.HUM):
-        t0, t1 = t_of(a), t_of(b) + (0.4 if b == 162 else 0.0)
+        t0 = t_of(a) + (TL.HUM_START_OFF if (a, b) == TL.HUM else 0.0)
+        t1 = t_of(b) + (TL.GEN_OFF_AT if b == 162 else 0.0)
         x = loop_to(hum, int((t1 - t0) * SR))
-        place(fx, lowpass(x), t0, -16, 1.5, 0.15)
+        place(fx, lowpass(x), t0, -16, 1.5, 0.3)
     # extra presence in lobby shots
     # shot times computed the same way as render_long (start = first line - 0.15 s)
     for k, (first, bg, *_r) in enumerate(TL.SHOTS):
         if bg not in ('bg05_lobby_fire', 'bg06_balcony_view'):
             continue
-        st = 0.0 if k == 0 else t_of(first) - 0.15
-        en = TOTAL if k + 1 >= len(TL.SHOTS) else t_of(TL.SHOTS[k + 1][0]) - 0.15
-        if t_of(TL.HUM[0]) <= st < t_of(TL.HUM[1]):
+        st = 0.0 if k == 0 else TL.shot_time(t_of, first) - 0.15
+        en = TOTAL if k + 1 >= len(TL.SHOTS) else TL.shot_time(t_of, TL.SHOTS[k + 1][0]) - 0.15
+        en = min(en, t_of(TL.HUM[1]) + TL.GEN_OFF_AT)   # never past the moment it's switched off
+        st = max(st, t_of(TL.HUM[0]) + TL.HUM_START_OFF)
+        if t_of(TL.HUM[0]) <= st < t_of(TL.HUM[1]) + TL.GEN_OFF_AT and en > st:
             x = loop_to(hum, int((en - st) * SR))
-            place(fx, x, st, -20, 0.4, 0.4)
+            place(fx, x, st, -20, 0.4, 0.3)
+    # car engine idling while everyone sits in the car
+    a, b, off, g = TL.CAR_IDLE
+    t0, t1 = t_of(a) + off, t_of(b) - 0.3
+    place(fx, lowpass(loop_to(hum, int((t1 - t0) * SR)), 140), t0, g, 0.8, 1.0)
 # one-shots
-for line, off, name, g in TL.SFX:
-    place(fx, sfx(name), t_of(line) + off, g)
+for line, off, name, g, *opt in TL.SFX:
+    x = sfx(name)
+    if x is not None and opt:   # optional max length in seconds (e.g. one ring of the phone, not the whole file)
+        x = x[:int(opt[0] * SR)]
+    place(fx, x, t_of(line) + off, g, 0.02, (0.4 if opt[0] > 2 else 0.1) if opt else 0.05)
 
 mix = voice + fx * duck
 # end card: let ambience fade out under the end card

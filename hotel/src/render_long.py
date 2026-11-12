@@ -4,7 +4,7 @@ python3 -I render_long.py segments            -> renders out/seg_XXX.mp4 (60 s e
 python3 -I render_long.py preview T1,T2,...   -> writes preview/frame_T.jpg
 python3 -I render_long.py concat              -> joins segments into out/video_noaudio.mp4
 """
-import sys, os, math, json, subprocess, random
+import sys, os, re, math, json, subprocess, random
 import numpy as np, cv2
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -54,9 +54,9 @@ def line_at(t):
 SHOTS = []
 for k, s in enumerate(TL.SHOTS):
     first, bg, cam, chars, fx = s
-    st = 0.0 if k == 0 else t_of(first) - 0.15
+    st = 0.0 if k == 0 else TL.shot_time(t_of, first) - 0.15
     nxt = TL.SHOTS[k + 1][0] if k + 1 < len(TL.SHOTS) else None
-    en = TOTAL if nxt is None else t_of(nxt) - 0.15
+    en = TOTAL if nxt is None else TL.shot_time(t_of, nxt) - 0.15
     SHOTS.append(dict(first=first, bg=bg, cam=cam, chars=chars, fx=fx, start=st, end=en))
 # chapter title cards should sit in the pause before the chapter's first line
 CH_TIMES = [(t_of(f) - 1.45, n, title) for f, n, title in TL.CHAPTERS]
@@ -107,12 +107,21 @@ _char_cache = {}
 def load_char(name):
     if name in _char_cache:
         return _char_cache[name]
-    base_name, _, keep = name.partition('@')   # 'name@.6' keeps the top 60% (e.g. cut a prop desk off)
+    # crop ops after the file name: '@f' keeps the top f, '<f' keeps the left f, '>f' drops the left f
+    m = re.match(r'^([A-Za-z0-9_]+)((?:[@<>][0-9.]+)*)$', name)
+    base_name, ops = m.group(1), re.findall(r'([@<>])([0-9.]+)', m.group(2))
     p = os.path.join(CHARS, base_name + '.png')
     if os.path.exists(p):
         im = cv2.imread(p, cv2.IMREAD_UNCHANGED)
-        if keep:
-            im = im[:int(float(keep) * im.shape[0])]
+        if im.shape[2] == 4:   # trim to the drawing first so fractions refer to the character, not the canvas
+            ys, xs = np.nonzero(im[..., 3] > 8)
+            if len(ys):
+                im = im[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+        for op, v in ops:
+            v = float(v)
+            if op == '@': im = im[:int(v * im.shape[0])]
+            elif op == '<': im = im[:, :int(v * im.shape[1])]
+            elif op == '>': im = im[:, int(v * im.shape[1]):]
         if im.shape[2] == 3:
             im = np.dstack([im, np.full(im.shape[:2], 255, np.uint8)])
         ys, xs = np.nonzero(im[..., 3] > 8)
@@ -198,6 +207,8 @@ def shot_layer(shot):
         base = fire_to_coals(base)
     if 'windows_off' in fxs:
         base = windows_off(base)
+    if 'door_dim' in fxs:   # porch after the fire burned down: the doorway glow is only embers
+        base = windows_off(base, strength=0.7)
     if 'lights_off' in fxs:   # power is out: kill the lamp glow, push to a cold night look
         base = windows_off(base, strength=0.92, exterior=False)
         f = base.astype(np.float32)
@@ -206,6 +217,7 @@ def shot_layer(shot):
         f = f * 0.62 * np.array([1.22, 0.98, 0.78])
         base = np.clip(f, 0, 255).astype(np.uint8)
     dark = 'dark' in shot['fx']
+    prepped = []
     night_out = ('snow' in fxs or 'snow_heavy' in fxs) and not ('dawn' in fxs or 'warm' in fxs)
     for (name, xf, yb, hf, flip) in shot['chars']:
         c = load_char(name)
@@ -230,19 +242,80 @@ def shot_layer(shot):
             cc[..., :3] *= 0.78
             cc[..., 0] = cc[..., 0] * 1.06 + 6; cc[..., 2] *= 0.94
             cc = np.clip(cc, 0, 255)
+        if 'char_dim' in fxs:   # extra-dark room: pull the cutout down to the plate's level
+            cc[..., :3] *= np.array([0.80, 0.66, 0.58])
+            cc = np.clip(cc, 0, 255)
         elif night_out:  # snowy night exterior: cool, slightly darker so cutouts don't read as stickers
             cc[..., :3] *= np.array([0.98, 0.88, 0.80]) * 0.9
             cc = np.clip(cc, 0, 255)
+        if 'warm' in fxs or 'firelight' in fxs:   # firelit / lamplit rooms: warm the cutout to match
+            cc[..., :3] *= np.array([0.85, 0.95, 1.12])
+            cc = np.clip(cc, 0, 255)
         c = cc.astype(np.uint8)
-        x = int(xf * BGW - c.shape[1] / 2); y = int(yb * BGH - c.shape[0])
-        # contact shadow
-        sh = np.zeros(base.shape[:2], np.float32)
-        cv2.ellipse(sh, (int(xf * BGW), min(int(yb * BGH) - 6, BGH - 2)), (int(c.shape[1] * 0.42), int(c.shape[1] * 0.08)), 0, 0, 360, 1.0, -1)
-        sh = cv2.GaussianBlur(sh, (0, 0), 18)[..., None]
-        base = (base.astype(np.float32) * (1 - 0.55 * sh)).astype(np.uint8)
-        paste_rgba(base, c, x, y)
-    _layer_cache.clear(); _layer_cache[key] = base   # keep only the current shot
-    return base
+        # contact shadow (skipped when the character's feet are off-frame or it sits behind furniture)
+        if yb < 1.02 and '@' not in name:
+            sh = np.zeros(base.shape[:2], np.float32)
+            cv2.ellipse(sh, (int(xf * BGW), min(int(yb * BGH) - 6, BGH - 2)), (int(c.shape[1] * 0.42), int(c.shape[1] * 0.08)), 0, 0, 360, 1.0, -1)
+            sh = cv2.GaussianBlur(sh, (0, 0), 14)[..., None]
+            base = (base.astype(np.float32) * (1 - 0.7 * sh)).astype(np.uint8)
+        nm = name.lower()
+        wdir = 0
+        for k, d in WALK_DIR.items():
+            if nm.startswith(k):
+                wdir = -d if flip else d
+        kind = ('walk' if any(k in nm for k in ('walk', 'parade', 'drag', 'generator')) else
+                'sleep' if any(k in nm for k in ('sleep', 'slumped', 'asleep', 'oxygen', 'bench', 'on_face')) else
+                'sway' if any(k in nm for k in ('yowl', 'dizzy', 'confused', 'blanket')) else 'idle')
+        prepped.append((c, xf * BGW, yb * BGH, kind, len(prepped) * 1.7, wdir))
+    _layer_cache.clear(); _layer_cache[key] = (base, prepped)   # keep only the current shot
+    return _layer_cache[key]
+
+WALK_DIR = {'hero_walk_headlamp': 1, 'lando_parade': 1, 'dale_generator': 1, 'hero_drag_dale': -1}   # unflipped facing
+
+def breathe(c, amp):
+    """Stretch only the upper 55% (chest and head); legs, seats and props stay put."""
+    h, w = c.shape[:2]
+    cut = int(h * 0.55)
+    top = c[:cut]
+    nt = max(1, int(round(cut * (1 + amp))))
+    if nt == cut:
+        return c
+    return np.concatenate([cv2.resize(top, (w, nt), interpolation=cv2.INTER_LINEAR), c[cut:]], axis=0)
+
+def shot_canvas(shot, t):
+    """Background plate plus characters, posed for time t (breathing, walking across, rocking)."""
+    base, prepped = shot_layer(shot)
+    if not prepped:
+        return base
+    out = base.copy()
+    u = (t - shot['start']) / max(shot['end'] - shot['start'], 0.01)
+    for c, cx, by, kind, ph, wdir in prepped:
+        h, w = c.shape[:2]
+        dx = dy = 0.0
+        ang = 0.0
+        if kind == 'walk':
+            amp = 0.006 * math.sin(2 * math.pi * 0.3 * t + ph)
+            dy = 0.0015 * BGH * math.sin(2 * math.pi * 1.0 * t + ph)
+            dx = wdir * 0.04 * BGW * (u - 0.5)
+        elif kind == 'sleep':
+            amp = 0.008 * math.sin(2 * math.pi * 0.22 * t + ph)
+        elif kind == 'sway':
+            amp = 0.008 * math.sin(2 * math.pi * 0.35 * t + ph)
+            ang = 1.0 * math.sin(2 * math.pi * 0.5 * t + ph)
+        else:
+            amp = 0.007 * math.sin(2 * math.pi * 0.3 * t + ph)
+        cc = breathe(c, amp)
+        nh = cc.shape[0]
+        if ang:
+            pad = int(0.08 * nh)
+            big = cv2.copyMakeBorder(cc, pad, 0, pad, pad, cv2.BORDER_CONSTANT, value=(0, 0, 0, 0))
+            M = cv2.getRotationMatrix2D((big.shape[1] / 2, big.shape[0] - 1), ang, 1.0)   # pivot at the feet
+            cc = cv2.warpAffine(big, M, (big.shape[1], big.shape[0]), flags=cv2.INTER_LINEAR, borderValue=(0, 0, 0, 0))
+            w2 = cc.shape[1]
+            paste_rgba(out, cc, int(cx - w2 / 2 + dx), int(by - cc.shape[0] + dy))
+        else:
+            paste_rgba(out, cc, int(cx - w / 2 + dx), int(by - nh + dy))
+    return out
 
 # ------------------------------------------------------------------ text helpers (PIL -> BGRA numpy, cached)
 _txt = {}
@@ -397,11 +470,13 @@ def draw_chapter(fr, t):
     put(fr, lab, W - 40 - lab.shape[1], 30, 0.9, 'tl')
     # shorter card when the chapter opens on a full-screen card (split/choice/stat), so the two never overlap
     dur = 1.45 if shot_at(ct + 1.46)['bg'] in ('SPLIT', 'CHOICE', 'STAT') else 2.6
+    if n == 1:
+        dur = 0   # the title card right before already opens chapter 1
     if 0 <= dt < dur:
         a = ease(dt / 0.35) * (1 - ease((dt - (dur - 0.4)) / 0.4))
         fr[:] = (fr.astype(np.float32) * (1 - 0.45 * a)).astype(np.uint8)
-        put(fr, text_rgba(f'CHAPTER {n}', F_OSW(36), AMBER), W / 2, H / 2 - 70, a)
-        put(fr, text_rgba(title, F_ANTON(120), WHITE, stroke=2), W / 2, H / 2 + 30, a)
+        put(fr, text_rgba(f'CHAPTER {n}', F_OSW(36), AMBER), W / 2, H * 0.24 - 70, a)
+        put(fr, text_rgba(title, F_ANTON(120), WHITE, stroke=2), W / 2, H * 0.24 + 30, a)
 
 _rule = {}
 def draw_rule(fr, t):
@@ -485,7 +560,7 @@ def haze(fr, t, amp):
     mx = mx * (W / (W - 4) if False else 1)
     return cv2.remap(fr, mx, my, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
-def phone_overlay(fr, pct, calling, t):
+def phone_overlay(fr, pct, calling, t, connected=False):
     pw, ph = 330, 620
     p = panel_rgba(pw, ph, 46, (14, 16, 22, 245), outline=(70, 74, 84, 255), width=6)
     put(p, text_rgba(pct, F_OSW(30), (255, 120, 100) if pct in ('9%', '6%', '3%', '12%') else WHITE, shadow=False), pw - 70, 40)
@@ -494,9 +569,11 @@ def phone_overlay(fr, pct, calling, t):
         on = i < nbars
         cv2.rectangle(p, (40 + i * 16, 52 - i * 8), (50 + i * 16, 58), (235, 235, 235, 255) if on else (90, 90, 90, 255), -1)
     if calling:
-        put(p, text_rgba('Calling', F_BAR(34), (200, 205, 215), shadow=False), pw / 2, 230)
+        put(p, text_rgba('Connected' if connected else 'Calling', F_BAR(34), (120, 230, 140) if connected else (200, 205, 215), shadow=False), pw / 2, 230)
         put(p, text_rgba('911', F_ANTON(110), WHITE, shadow=False), pw / 2, 320)
-        if (t * 1.2) % 1 < 0.6:
+        if connected:
+            cv2.circle(p, (pw // 2, 500), 46, (60, 60, 220, 255), -1, cv2.LINE_AA)   # red end-call button
+        elif (t * 1.2) % 1 < 0.6:
             cv2.circle(p, (pw // 2, 500), 46, (70, 200, 90, 255), -1, cv2.LINE_AA)
     else:
         put(p, text_rgba('1 bar' if nbars == 1 else 'Storm: weak signal', F_BAR(30), (200, 205, 215), shadow=False), pw / 2, 250)
@@ -573,18 +650,43 @@ def title_card(fr, t, t0):
     put(fr, text_rgba('WHEN IT GOES DARK', F_ANTON(150), AMBER, stroke=2), W / 2, H / 2 - 40, a)
     put(fr, text_rgba('WINTER STORM.  12 HOURS.  NO POWER.', F_OSW(46), WHITE), W / 2, H / 2 + 90, a)
 
-def candles(fr, t, t0):
-    n = min(15, 1 + int((t - t0) * 4))
+DOOR_BOX = (0.735, 0.13, 0.875, 0.70)   # bg05 open front door (plate fractions)
+def door_rect(shot):
+    z, cx, cy = shot['cam'][0], shot['cam'][2], shot['cam'][3]
+    fx0 = 0.5 + z * (DOOR_BOX[0] - cx); fx1 = 0.5 + z * (DOOR_BOX[2] - cx)
+    fy0 = 0.5 + z * (DOOR_BOX[1] - cy); fy1 = 0.5 + z * (DOOR_BOX[3] - cy)
+    clip = lambda v, m: int(min(max(v, 0), 1) * m)
+    return clip(fx0, W), clip(fy0, H), clip(fx1, W), clip(fy1, H)
+
+COUNTER_Y = 0.418   # bg03 counter top, as a fraction of the plate
+def candle_row(shot):
+    z, cx, cy = shot['cam'][0], shot['cam'][2], shot['cam'][3]
+    base_y = (COUNTER_Y - cy) * z + 0.5                      # counter line in frame coords
+    xs = [(xp - cx) * z * (BGH / BGW) * (BGW / BGH) + 0.5 for xp in np.linspace(0.40, 0.84, 15)]
+    return base_y, xs
+
+def candles(fr, t, t0, shot, lit=True):
+    base_y, xs = candle_row(shot)
+    n = 15 if not lit else min(15, 1 + int((t - t0) * 4))
+    rnd = random.Random(7)
+    hs = [rnd.uniform(0.85, 1.15) for _ in range(15)]
+    z = shot['cam'][0]
+    if lit and n:
+        # warm light spilling over the counter and whoever is lighting them
+        g = np.zeros((H // 4, W // 4), np.float32)
+        for i in range(n):
+            cv2.circle(g, (int(xs[i] * W / 4), int(base_y * H / 4) - 10), int(26 * z), 1.0, -1)
+        g = cv2.resize(cv2.GaussianBlur(g, (0, 0), 22 * z / 1.5), (W, H))[..., None]
+        fr[:] = np.clip(fr.astype(np.float32) + np.minimum(g, 1.0) * np.array([40, 110, 210]) * 0.55, 0, 255).astype(np.uint8)
     for i in range(n):
-        x = int(W * (0.24 + 0.036 * i)); y = int(H * 0.40 + 4 * math.sin(i))
-        fl = 1 + 0.15 * math.sin(t * 13 + i * 2)
-        cv2.rectangle(fr, (x - 7, y), (x + 7, y + 48), (210, 225, 235), -1)
-        glow = np.zeros((140, 140), np.float32); cv2.circle(glow, (70, 70), int(40 * fl), 1.0, -1); glow = cv2.GaussianBlur(glow, (0, 0), 18)
-        y0, x0 = y - 85, x - 70
-        reg = fr[max(y0, 0):y0 + 140, max(x0, 0):x0 + 140].astype(np.float32)
-        g = glow[:reg.shape[0], :reg.shape[1], None]
-        fr[max(y0, 0):y0 + 140, max(x0, 0):x0 + 140] = np.clip(reg + g * np.array([60, 150, 255]) * 0.9, 0, 255).astype(np.uint8)
-        cv2.ellipse(fr, (x, y - 14), (6, int(14 * fl)), 0, 0, 360, (120, 220, 255), -1, cv2.LINE_AA)
+        x = int(xs[i] * W); yb = int(base_y * H); ch = int(30 * z * hs[i]); cw = max(4, int(5 * z))
+        if not (0 < x < W): continue
+        cv2.ellipse(fr, (x, yb), (int(cw * 2.2), int(cw * 0.8)), 0, 0, 360, (40, 70, 110), -1, cv2.LINE_AA)   # brass holder
+        cv2.rectangle(fr, (x - cw, yb - ch), (x + cw, yb - 2), (200, 214, 226) if lit else (150, 160, 170), -1)
+        cv2.line(fr, (x, yb - ch), (x, yb - ch - int(5 * z)), (30, 30, 30), 2)
+        if lit:
+            fl = 1 + 0.15 * math.sin(t * 13 + i * 2)
+            cv2.ellipse(fr, (x, yb - ch - int(9 * z)), (max(3, int(4 * z)), int(9 * z * fl)), 0, 0, 360, (120, 220, 255), -1, cv2.LINE_AA)
 
 def eyes(fr, t, t0):
     dt = t - t0
@@ -659,18 +761,28 @@ def apply_fx(fr, shot, t):
     if 'snow' in fx: fx_snow(fr, t, 160)
     if 'snow_heavy' in fx: fx_snow(fr, t, 380, wind=1.6, bright=225)
     if 'snow_light' in fx: fx_snow(fr, t, 90, bright=200)
-    if 'door_snow' in fx:
-        sub = fr[:, int(W * 0.72):]; fx_snow(sub, t, 60, wind=-0.8, bright=200)
-    if 'door_snow2' in fx:
-        fx_snow(fr, t, 160, wind=-1.2, bright=205)
+    if 'door_snow' in fx or 'door_snow2' in fx:
+        x0, y0, x1, y1 = door_rect(shot)
+        if x1 - x0 > 20 and y1 - y0 > 20:
+            sub = fr[y0:y1, x0:x1]
+            fx_snow(sub, t, 160 if 'door_snow2' in fx else 70, wind=-1.0, bright=205)
     if 'dust' in fx: fx_dust(fr, t)
-    if 'candles' in fx: candles(fr, t, st + 0.3)
+    if 'candles' in fx: candles(fr, t, t_of(57) + 0.3, shot)   # count keeps going across the candle shots
+    if 'candles_out' in fx: candles(fr, t, -99, shot, lit=False)
     if 'eyes' in fx: eyes(fr, t, st)
     if 'figure' in fx:
         t0 = t_of(120)
-        if t0 <= t < t_of(121) + 0.3 and not ((t * 9) % 1 < 0.2 and t > t_of(121)):
-            cv2.ellipse(fr, (W // 2 + 40, int(H * 0.52)), (40, 120), 0, 0, 360, (8, 8, 10), -1, cv2.LINE_AA)
-            cv2.circle(fr, (W // 2 + 40, int(H * 0.52) - 140), 34, (8, 8, 10), -1, cv2.LINE_AA)
+        if t0 + 0.3 <= t < t_of(121) + 0.35 and not ((t * 9) % 1 < 0.25 and t > t_of(121)):
+            cx, foot, hh = W // 2 + 30, int(H * 0.70), int(H * 0.34)
+            col = (6, 6, 8)
+            # rim light so it reads against the dark hall
+            sil = np.zeros((H, W), np.uint8)
+            pts = np.array([[cx - hh * 0.17, foot - hh * 0.78], [cx + hh * 0.17, foot - hh * 0.78], [cx + hh * 0.13, foot - hh * 0.42],
+                            [cx + hh * 0.10, foot], [cx - hh * 0.10, foot], [cx - hh * 0.13, foot - hh * 0.42]], np.int32)
+            cv2.fillPoly(sil, [pts], 255); cv2.circle(sil, (cx, int(foot - hh * 0.88)), int(hh * 0.10), 255, -1, cv2.LINE_AA)
+            glow = cv2.GaussianBlur(cv2.dilate(sil, np.ones((9, 9), np.uint8)), (0, 0), 6).astype(np.float32)[..., None] / 255
+            fr[:] = np.clip(fr.astype(np.float32) + glow * np.array([60, 70, 90]), 0, 255).astype(np.uint8)
+            fr[sil > 0] = col
     if 'siren_lights' in fx:   # slow (0.5 Hz), soft red/blue drift at the frame edges, never a strobe
         p = 0.5 + 0.5 * math.sin(t * math.pi)
         col = np.array([60, 40, 230]) * p + np.array([230, 90, 40]) * (1 - p)
@@ -680,17 +792,31 @@ def apply_fx(fr, shot, t):
         p = 0.5 + 0.5 * math.sin(t * 2.6)
         edge = (1 - vignette()) * 1.2
         fr = np.clip(fr.astype(np.float32) + edge * np.array([20, 20, 120]) * p * 0.6, 0, 255).astype(np.uint8)
+    if 'curtains_close' in fx:
+        k = ease((dt - 0.3) / 1.0)
+        for side in (0, 1):
+            wpx = int(W * 0.5 * k)
+            if wpx <= 0: continue
+            panel = np.zeros((H, wpx, 3), np.uint8)
+            xx = np.arange(wpx)
+            fold = (0.75 + 0.25 * np.sin(xx / 22.0))[None, :, None]
+            panel[:] = (np.array([70, 34, 18]) * fold).astype(np.uint8)   # heavy navy curtain (BGR)
+            if side == 0: fr[:, :wpx] = panel
+            else: fr[:, W - wpx:] = panel[:, ::-1]
+    if 'eyes_now' in fx:
+        eyes(fr, t + 1.0, st)
     if 'sign_nopets' in fx:
         put(fr, panel_rgba(420, 150, 12, (235, 225, 205, 255), outline=(60, 40, 25, 255), width=8), W / 2, H * 0.52)
         put(fr, text_rgba('NO PETS', F_ANTON(96), (150, 30, 30), shadow=False), W / 2, H * 0.52)
-    if 'key_tag' in fx and dt > 1.4:
-        k = ease((dt - 1.4) / 0.3)
-        put(fr, panel_rgba(150, 90, 16, (200, 160, 70, 255), outline=(70, 45, 15, 255), width=5), W * 0.3, H * 0.68, k)
-        put(fr, text_rgba('22', F_ANTON(70), (40, 25, 10), shadow=False), W * 0.3, H * 0.68, k)
+    if 'key_tag' in fx and dt > 1.2:
+        k = ease((dt - 1.2) / 0.45)
+        kx, ky = W * (0.50 - 0.08 * k), H * (0.50 + 0.10 * k)   # slides off the countertop toward you
+        put(fr, panel_rgba(120, 72, 14, (200, 160, 70, 255), outline=(70, 45, 15, 255), width=5), kx, ky, min(1, k * 3))
+        put(fr, text_rgba('22', F_ANTON(56), (40, 25, 10), shadow=False), kx, ky, min(1, k * 3))
     if 'phone64' in fx and t >= t_of(47) - 0.1:
         phone_overlay(fr, '64%', False, t)
     if 'phone_call' in fx:
-        phone_overlay(fr, '9%', t >= t_of(175) - 0.1, t)
+        phone_overlay(fr, '9%', t >= t_of(175) - 0.1, t, connected=t >= t_of(178) - 0.05)
     if 'temp_readout' in fx:
         val = '58°F' if t < t_of(66) else '51°F'
         put(fr, text_rgba(val, F_ANTON(150), (150, 210, 255), stroke=2), W * 0.78, H * 0.35)
@@ -707,14 +833,15 @@ def apply_fx(fr, shot, t):
         put(fr, text_rgba('20+ FEET', F_ANTON(80), AMBER, stroke=2), W * 0.485, y - 70, k)
     if 'smoke' in fx:   # soft wisps rising off the counter
         lay = np.zeros((H // 4, W // 4), np.float32)
+        base_y, xs = candle_row(shot)
         for i in range(14):
             ph = (t * 0.35 + i / 14) % 1
-            x = (W * (0.18 + 0.05 * i) + 30 * math.sin(t * 1.3 + i * 1.7) * ph) / 4
-            y = (H * 0.50 - 260 * ph) / 4
+            x = (W * xs[i] + 30 * math.sin(t * 1.3 + i * 1.7) * ph) / 4
+            y = (H * base_y - 60 - 260 * ph) / 4
             cv2.circle(lay, (int(x), int(y)), int(4 + 10 * ph), 0.55 * (1 - ph), -1, cv2.LINE_AA)
         lay = cv2.GaussianBlur(lay, (0, 0), 5)
         lay = cv2.resize(lay, (W, H))[..., None]
-        fr = np.clip(fr.astype(np.float32) * (1 - lay * 0.5) + lay * 0.5 * np.array([170, 168, 165]), 0, 255).astype(np.uint8)
+        fr = np.clip(fr.astype(np.float32) * (1 - lay * 0.85) + lay * 0.85 * np.array([175, 172, 168]), 0, 255).astype(np.uint8)
     if 'ominous' in fx:
         fr = (fr.astype(np.float32) * (0.92 + 0.08 * vignette())).astype(np.uint8)
     if 'dig' in fx:
@@ -757,6 +884,9 @@ def camera(layer, cam, u):
     return cv2.warpAffine(layer, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 CLEAN = False
+# gamma lift for dark scenes: shadows come up a lot, highlights barely move
+LIFT_LUT = np.clip(255 * (np.arange(256) / 255.0) ** 0.72 * 0.96 + 6, 0, 255).astype(np.uint8)
+BRIGHT_LUT = np.clip(255 * (np.arange(256) / 255.0) ** 0.58 * 0.95 + 10, 0, 255).astype(np.uint8)   # cold-open walls readable on phones
 
 def frame_at(t):
     shot = shot_at(t)
@@ -776,11 +906,26 @@ def frame_at(t):
         fr = open_frame(t)
         if fr is None:
             shot2 = dict(shot, bg='bg01_hallway_dark')
-            fr = camera(shot_layer(shot2), shot['cam'], ease(u))
+            fr = camera(shot_canvas(shot2, t), shot['cam'], ease(u))
     else:
-        fr = camera(shot_layer(shot), shot['cam'], ease(u))
+        fr = camera(shot_canvas(shot, t), shot['cam'], ease(u))
     if bg not in ('STAT', 'CHOICE', 'END', 'SPLIT'):
         fr = apply_fx(fr, shot, t)
+        if 'dark' in shot['fx'] or bg == 'OPEN':
+            fr = cv2.LUT(fr, BRIGHT_LUT if 'bright' in shot['fx'] else LIFT_LUT)
+        if 'wallstrip' in shot['fx']:   # the wall he's listening to, right at his cupped hand
+            x0 = int(W * 0.62)
+            strip = cv2.resize(load_bg('bg07_room22')[int(BGH * 0.10):int(BGH * 0.40), int(BGW * 0.30):int(BGW * 0.42)], (W - x0, H))
+            fr[:, x0:] = (strip.astype(np.float32) * 0.55 * np.array([1.15, 1.0, 0.85])).clip(0, 255).astype(np.uint8)
+            cv2.line(fr, (x0, 0), (x0, H), (20, 22, 26), 6)
+        if 'jamb' in shot['fx']:   # drawn after the lift so your dark room stays dark
+            fx = shot['fx']
+            x0 = int(W * 0.60)
+            cv2.rectangle(fr, (x0, 0), (x0 + 60, H), (24, 30, 38), -1)          # door frame
+            cv2.rectangle(fr, (x0, 0), (x0 + 5, H), (70, 84, 100), -1)           # lit edge from your headlamp
+            g = np.linspace(16, 6, W - x0 - 60).astype(np.uint8)
+            fr[:, x0 + 60:] = np.stack([g + 4, g + 2, g], axis=1)[None]           # your dark room, fading away
+
     # shot-start whoosh punch for montage cuts
     if 'whoosh' in shot['fx'] and t - shot['start'] < 0.25:
         k = 1 - (t - shot['start']) / 0.25

@@ -25,7 +25,7 @@ CAP_Y = 1380
 
 # shot crops on the clean 1920x1080 source: (start, end, cx0, cx1, h0, h1)
 def _shots():
-    cuts = [0.0] + [t_of(f) - 0.15 for f, *_ in TL.SHOTS[1:] if t_of(f) - 0.15 < OPEN_END] + [OPEN_END]
+    cuts = [0.0] + [TL.shot_time(t_of, f) - 0.15 for f, *_ in TL.SHOTS[1:] if TL.shot_time(t_of, f) - 0.15 < OPEN_END] + [OPEN_END]
     out = []
     for i in range(len(cuts) - 1):
         a, b = cuts[i], cuts[i + 1]

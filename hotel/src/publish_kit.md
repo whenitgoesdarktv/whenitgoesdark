@@ -8,6 +8,7 @@ Backups: "Blizzard: 12 Hours Trapped in a Mountain Hotel" · "Snowed In at a Hot
 ## Thumbnails (run YouTube Test & Compare with both)
 - A: thumb_A_walls.jpg ("IT'S IN THE WALLS", green eyes in the floor vent)
 - B: thumb_B_asleep.jpg ("DON'T FALL ASLEEP", Rosa asleep by the generator)
+- C: thumb_C_poison.jpg ("POISON INSIDE / 9°F OUTSIDE", the hero's scared face, Lando yowling)
 
 ## Description
 A winter storm. A mountain hotel. The power goes out at 8:12 PM, the manager starts a generator in the lobby, and by 2:47 AM something is scratching inside the walls.
@@ -15,15 +16,15 @@ A winter storm. A mountain hotel. The power goes out at 8:12 PM, the manager sta
 Would you have dragged everyone out into the blizzard, or stayed where it was warm? Comment OUT or STAY 🔦
 
 0:00 2:47 AM
-0:44 The Last Room
-1:37 Lights Out
-2:36 The Cold
-3:36 Something in the Walls
-4:40 The Hum
-5:54 Inside or Out
-6:19 Fresh Air
-7:21 The Tailpipe
-7:54 Morning
+0:43 The Last Room
+1:36 Lights Out
+2:34 The Cold
+3:34 Something in the Walls
+4:38 The Hum
+5:52 Inside or Out
+6:17 Fresh Air
+7:19 The Tailpipe
+7:52 Morning
 
 The safety tips in this story come from official sources:
 Flashlights, not candles: U.S. Fire Administration https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/candle and CDC https://www.cdc.gov/natural-disasters/psa-toolkit/proper-use-of-candles-during-a-power-outage.html
