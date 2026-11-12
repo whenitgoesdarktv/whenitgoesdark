@@ -83,7 +83,7 @@
  129.21s (2:09.21) line  55: "Door's open.
   [SHOT  129.88s] bg=bg05_lobby_fire chars=[] fx=['dark', 'door_snow2', 'ominous']
  130.03s (2:10.03) line  56: It's fine."  Remember that open door.
-  [SHOT  132.56s] bg=bg03_front_desk chars=['guest_redhat_back_skin'] fx=['blackout_grade', 'candles', 'dark', 'lights_off']
+  [SHOT  132.56s] bg=bg03_front_desk chars=['guest_redhat_back_hair'] fx=['blackout_grade', 'candles', 'dark', 'lights_off']
  132.71s (2:12.71) line  57: A guest in a red hat is lighting candles all along the front desk.
  136.87s (2:16.87) line  58: Ten of them.
   [SHOT  137.70s] bg=bg03_front_desk chars=[] fx=['blackout_grade', 'candles', 'dark', 'lights_off']
@@ -91,9 +91,9 @@
  139.61s (2:19.61) line  60: When the power is out, use flashlights, not candles.
   [SHOT  142.89s] bg=bg04_parking_lot_snow chars=[] fx=['snow_heavy', 'windows_off']
  143.04s (2:23.04) line  61: And in a storm like this, a fire truck is not getting up that road.
-  [SHOT  147.02s] bg=bg03_front_desk chars=['guest_redhat_back_skin'] fx=['beam', 'blackout_grade', 'candles', 'dark', 'lights_off']
+  [SHOT  147.02s] bg=bg03_front_desk chars=['guest_redhat_back_hair'] fx=['beam', 'blackout_grade', 'candles', 'dark', 'lights_off']
  147.17s (2:27.17) line  62: You hand her your spare flashlight.
-  [SHOT  148.97s] bg=bg03_front_desk chars=['lando_bag'] fx=['blackout_grade', 'candles_out', 'dark', 'lights_off', 'smoke']
+  [SHOT  148.97s] bg=bg03_front_desk chars=['lando_bag'] fx=['blackout_grade', 'candles_out', 'dark', 'head_track', 'lights_off', 'smoke']
  149.12s (2:29.12) line  63: She blows the candles out.
  150.66s (2:30.66) line  64: Lando watches the smoke like it owes him money.
   [SHOT  156.10s] bg=bg07_room22 chars=[] fx=['blackout_grade', 'cold', 'dark', 'temp_readout']
@@ -185,7 +185,7 @@
  272.72s (4:32.72) line 122: There's no one there.
   [SHOT  273.77s] bg=BLACK chars=[] fx=['heartbeat']
  273.92s (4:33.92) line 123: The scratching was Lando.
-  [SHOT  275.45s] bg=bg05_lobby_fire chars=[] fx=['dark', 'heat_haze', 'red_glow']
+  [SHOT  275.45s] bg=bg05_lobby_fire chars=[] fx=['co_plume', 'dark', 'heat_haze', 'red_glow']
  275.60s (4:35.60) line 124: The dizziness is not.
  280.44s (4:40.44) line 125: Carbon monoxide has no color and no smell.
   [SHOT  283.96s] bg=bg01_hallway_dark chars=['hero_dizzy'] fx=['beam_char', 'dark', 'dizzy']
@@ -223,7 +223,7 @@
   [SHOT  327.08s] bg=bg03_front_desk chars=['dale_slumped@.46'] fx=['blackout_grade', 'dark', 'heat_haze', 'lights_off']
  327.23s (5:27.23) line 145: Dale is slumped in the chair behind the desk.
  329.94s (5:29.94) line 146: You can't wake him.
-  [SHOT  331.14s] bg=bg10_ceiling_alarm chars=[] fx=['dark', 'no_battery']
+  [SHOT  331.14s] bg=bg10_ceiling_alarm chars=[] fx=['alarm_anim', 'dark', 'no_battery']
  331.29s (5:31.29) line 147: On the ceiling, there's a carbon monoxide alarm.
  334.07s (5:34.07) line 148: Its light is off.
  335.52s (5:35.52) line 149: It runs on the hotel's power.
@@ -246,7 +246,7 @@
   [SHOT  378.82s] bg=bg05_lobby_fire chars=[] fx=['coals', 'dark', 'gen_off']
  378.97s (6:18.97) line 162: You shut the generator off.
  380.91s (6:20.91) line 163: The silence is enormous.
-  [SHOT  384.09s] bg=bg11_porch_blizzard chars=['rosa_confused', 'hero_walk_headlamp'] fx=['door_dim', 'snow_heavy']
+  [SHOT  384.09s] bg=bg11_porch_blizzard chars=['rosa_confused', 'hero_walk_headlamp'] fx=['door_dim', 'no_travel', 'snow_heavy']
  384.24s (6:24.24) line 164: Rosa leans on you like you're the railing.
   [SHOT  386.61s] bg=bg11_porch_blizzard chars=['guests_porch_group'] fx=['door_dim', 'snow_heavy']
  386.76s (6:26.76) line 165: The others wake up dizzy and confused, and you herd them out under the porch roof.

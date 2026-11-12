@@ -103,7 +103,11 @@ def load_bg(name):
     _bg_cache[name] = im
     return im
 
+import puppet as PUP
+import zlib
+PUPPETS = True
 _char_cache = {}
+_char_box = {}
 def load_char(name):
     if name in _char_cache:
         return _char_cache[name]
@@ -117,16 +121,21 @@ def load_char(name):
             ys, xs = np.nonzero(im[..., 3] > 8)
             if len(ys):
                 im = im[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+        bh_, bw_ = im.shape[:2]          # trimmed base drawing: the frame the hand-placed rigs are measured in
+        ox, oy = 0, 0                    # where this crop starts inside it
         for op, v in ops:
             v = float(v)
             if op == '@': im = im[:int(v * im.shape[0])]
             elif op == '<': im = im[:, :int(v * im.shape[1])]
-            elif op == '>': im = im[:, int(v * im.shape[1]):]
+            elif op == '>':
+                d = int(v * im.shape[1]); im = im[:, d:]; ox += d
         if im.shape[2] == 3:
             im = np.dstack([im, np.full(im.shape[:2], 255, np.uint8)])
         ys, xs = np.nonzero(im[..., 3] > 8)
         if len(ys):
             im = im[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+            ox += xs.min(); oy += ys.min()
+        _char_box[name] = (base_name, bw_, bh_, ox, oy, im.shape[0])
     else:
         im = None
     _char_cache[name] = im
@@ -266,7 +275,10 @@ def shot_layer(shot):
         kind = ('walk' if any(k in nm for k in ('walk', 'parade', 'drag', 'generator')) else
                 'sleep' if any(k in nm for k in ('sleep', 'slumped', 'asleep', 'oxygen', 'bench', 'on_face')) else
                 'sway' if any(k in nm for k in ('yowl', 'dizzy', 'confused', 'blanket')) else 'idle')
-        prepped.append((c, xf * BGW, yb * BGH, kind, len(prepped) * 1.7, wdir))
+        rig = None
+        if PUPPETS and kind != 'sleep' and 'no_rig' not in fxs:
+            rig = PUP.build_rig(c, name, _char_box[name], flip) if name in _char_box else None
+        prepped.append((c, xf * BGW, yb * BGH, kind, len(prepped) * 1.7 + 0.37 * (zlib.crc32(name.encode()) % 7), wdir, rig))
     _layer_cache.clear(); _layer_cache[key] = (base, prepped)   # keep only the current shot
     return _layer_cache[key]
 
@@ -289,7 +301,15 @@ def shot_canvas(shot, t):
         return base
     out = base.copy()
     u = (t - shot['start']) / max(shot['end'] - shot['start'], 0.01)
-    for c, cx, by, kind, ph, wdir in prepped:
+    fxs = shot['fx']
+    night_out = ('snow' in fxs or 'snow_heavy' in fxs) and not ('dawn' in fxs or 'warm' in fxs)
+    puffs = []
+    for c, cx, by, kind, ph, wdir, rig in prepped:
+        if rig is not None:
+            if 'head_track' in fxs:   # following something with its eyes: a slow, wide head turn
+                c = PUP.pose(c, rig, t, ph, angle=-2.0 + 5.0 * math.sin(2 * math.pi * 0.16 * (t - shot['start']) - 1.2))
+            else:
+                c = PUP.pose(c, rig, t, ph, amp=rig['amp'] * (0.75 if kind == 'walk' else 1.0))
         h, w = c.shape[:2]
         dx = dy = 0.0
         ang = 0.0
@@ -312,9 +332,24 @@ def shot_canvas(shot, t):
             M = cv2.getRotationMatrix2D((big.shape[1] / 2, big.shape[0] - 1), ang, 1.0)   # pivot at the feet
             cc = cv2.warpAffine(big, M, (big.shape[1], big.shape[0]), flags=cv2.INTER_LINEAR, borderValue=(0, 0, 0, 0))
             w2 = cc.shape[1]
-            paste_rgba(out, cc, int(cx - w2 / 2 + dx), int(by - cc.shape[0] + dy))
+            x0p, y0p = int(cx - w2 / 2 + dx), int(by - cc.shape[0] + dy)
+            paste_rgba(out, cc, x0p, y0p)
+            x0p += pad; y0p += pad
         else:
-            paste_rgba(out, cc, int(cx - w / 2 + dx), int(by - nh + dy))
+            x0p, y0p = int(cx - w / 2 + dx), int(by - nh + dy)
+            paste_rgba(out, cc, x0p, y0p)
+        if night_out and rig is not None and 'mouth' in rig and 'no_breath' not in fxs:
+            mx, my = rig['mouth']
+            fd = rig.get('face_dir', 0)
+            drift = 1.0 * fd + (0.5 if fd >= 0 else -0.1)
+            puffs.append((x0p + mx, y0p + my, ph, rig['head']['rx'] * 0.55 if rig['head'] else w * 0.08, drift))
+    if puffs:   # breath clouds in the freezing air, on a quarter-size layer
+        lay = np.zeros((BGH // 4, BGW // 4), np.float32)
+        for mx, my, ph, sc, drift in puffs:
+            PUP.breath(lay, mx / 4, my / 4, t, ph, sc / 4, drift)
+        lay = cv2.GaussianBlur(lay, (0, 0), 2.2)
+        lay = cv2.resize(np.minimum(lay * 1.1, 0.7), (BGW, BGH), interpolation=cv2.INTER_LINEAR)[..., None]
+        out = np.clip(out.astype(np.float32) * (1 - lay) + lay * np.array([232, 228, 222]), 0, 255).astype(np.uint8)
     return out
 
 # ------------------------------------------------------------------ text helpers (PIL -> BGRA numpy, cached)
@@ -580,20 +615,6 @@ def phone_overlay(fr, pct, calling, t, connected=False):
         put(p, text_rgba(pct, F_ANTON(120), WHITE, shadow=False), pw / 2, 360)
     put(fr, p, W - 330, H / 2 - 20)
 
-def split_frame(t, a_label='STAY INSIDE', b_label='GO OUT INTO THE STORM'):
-    L = load_bg('bg05_lobby_fire'); R = load_bg('bg11_porch_blizzard')
-    l = cv2.resize(L[:, int(BGW * 0.2):int(BGW * 0.7)], (W // 2, H))
-    r = cv2.resize(R[:, int(BGW * 0.25):int(BGW * 0.75)], (W // 2, H))
-    l = (l.astype(np.float32) * [0.85, 0.95, 1.1]).clip(0, 255).astype(np.uint8)
-    fr = np.hstack([l, r])
-    fx_snow(fr[:, W // 2:], t, 120)
-    cv2.line(fr, (W // 2, 0), (W // 2, H), (255, 255, 255), 4)
-    put(fr, text_rgba(a_label, F_ANTON(70), AMBER, stroke=2), W * 0.25, 170)
-    put(fr, text_rgba('Warm. The air is poison.', F_BAR(34), WHITE), W * 0.25, 250)
-    put(fr, text_rgba(b_label, F_ANTON(70), (150, 210, 255), stroke=2), W * 0.75, 170)
-    put(fr, text_rgba('Clean air. Nine degrees.', F_BAR(34), WHITE), W * 0.75, 250)
-    return fr
-
 def choice_frame(t, t0):
     fr = cv2.GaussianBlur(split_frame(t), (0, 0), 14)
     fr = (fr.astype(np.float32) * 0.45).astype(np.uint8)
@@ -610,14 +631,7 @@ def choice_frame(t, t0):
     cv2.rectangle(fr, (W // 2 - 600, 700), (int(W // 2 - 600 + 1200 * frac), 712), (71, 181, 255), -1)
     return fr
 
-def stat_frame(t, t0):
-    fr = np.full((H, W, 3), (18, 14, 12), np.uint8)
-    dt = t - t0
-    n = int(min(1, dt / 1.2) * 100)
-    put(fr, text_rgba(f'{n}+', F_ANTON(260), RED, stroke=2), W / 2, 420, ease(dt / 0.3))
-    put(fr, text_rgba('people die every year in the US', F_OSW(54, 'SemiBold'), WHITE), W / 2, 640, ease((dt - 0.4) / 0.4))
-    put(fr, text_rgba('from carbon monoxide from portable generators', F_OSW(44, 'Regular'), (215, 220, 230)), W / 2, 715, ease((dt - 0.7) / 0.4))
-    return fr
+exec(open(os.path.join(HERE, 'anim_extra.py')).read())
 
 _lando_photo = None
 def end_frame(t, t0):
@@ -822,9 +836,14 @@ def apply_fx(fr, shot, t):
         put(fr, text_rgba(val, F_ANTON(150), (150, 210, 255), stroke=2), W * 0.78, H * 0.35)
     if 'temp_9' in fx:
         put(fr, text_rgba('9°F', F_ANTON(170), (150, 210, 255), stroke=2), W * 0.78, H * 0.35)
+    if 'alarm_anim' in fx:
+        fr = alarm_fx(fr, shot, t)
+    if 'co_plume' in fx:
+        fr = co_plume(fr, shot, t)
     if 'no_battery' in fx and t >= t_of(150) - 0.1:
-        put(fr, panel_rgba(560, 90, 18, (200, 40, 40, 235)), W / 2, H * 0.74)
-        put(fr, text_rgba('NO BATTERY BACKUP', F_ANTON(56), WHITE, shadow=False), W / 2, H * 0.74)
+        k = ease((t - t_of(150) - 0.15) / 0.3) if 'alarm_anim' in fx else 1.0
+        put(fr, panel_rgba(560, 90, 18, (200, 40, 40, 235)), W / 2, H * 0.74, k)
+        put(fr, text_rgba('NO BATTERY BACKUP', F_ANTON(56), WHITE, shadow=False), W / 2, H * 0.74, k)
     if 'diagram_20ft' in fx and t_of(154) - 0.2 <= t < t_of(155) - 1.5:
         k = ease((t - t_of(154) + 0.2) / 0.4)
         y = int(H * 0.7)
