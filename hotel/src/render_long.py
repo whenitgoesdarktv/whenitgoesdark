@@ -284,15 +284,18 @@ def shot_layer(shot):
 
 WALK_DIR = {'hero_walk_headlamp': 1, 'lando_parade': 1, 'dale_generator': 1, 'hero_drag_dale': -1}   # unflipped facing
 
+BREATH_PAD = 0.02
 def breathe(c, amp):
-    """Stretch only the upper 55% (chest and head); legs, seats and props stay put."""
+    """Stretch only the upper 55% (chest and head); legs, seats and props stay put.
+    Sub-pixel: the output is always the same size, so the character never hops a whole pixel."""
     h, w = c.shape[:2]
     cut = int(h * 0.55)
-    top = c[:cut]
-    nt = max(1, int(round(cut * (1 + amp))))
-    if nt == cut:
-        return c
-    return np.concatenate([cv2.resize(top, (w, nt), interpolation=cv2.INTER_LINEAR), c[cut:]], axis=0)
+    pad = int(math.ceil(cut * BREATH_PAD)) + 1
+    s_ = 1 + amp
+    # y_out = pad + cut*(1 - s_)... anchored at the cut line: source row y maps to cut + (y - cut) * s_ (+pad)
+    M = np.float32([[1, 0, 0], [0, s_, pad + cut * (1 - s_)]])
+    top = cv2.warpAffine(c[:cut + 2], M, (w, pad + cut + 2), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=(0, 0, 0, 0))
+    return np.concatenate([top[:pad + cut], c[cut:]], axis=0)
 
 def shot_canvas(shot, t):
     """Background plate plus characters, posed for time t (breathing, walking across, rocking)."""
@@ -307,7 +310,7 @@ def shot_canvas(shot, t):
     for c, cx, by, kind, ph, wdir, rig in prepped:
         if rig is not None:
             if 'head_track' in fxs:   # following something with its eyes: a slow, wide head turn
-                c = PUP.pose(c, rig, t, ph, angle=-2.0 + 5.0 * math.sin(2 * math.pi * 0.16 * (t - shot['start']) - 1.2))
+                c = PUP.pose(c, rig, t, ph, angle=-1.0 + 2.6 * math.sin(2 * math.pi * 0.16 * (t - shot['start']) - 1.2))
             else:
                 c = PUP.pose(c, rig, t, ph, amp=rig['amp'] * (0.75 if kind == 'walk' else 1.0))
         h, w = c.shape[:2]
@@ -342,7 +345,7 @@ def shot_canvas(shot, t):
             mx, my = rig['mouth']
             fd = rig.get('face_dir', 0)
             drift = 1.0 * fd + (0.5 if fd >= 0 else -0.1)
-            puffs.append((x0p + mx, y0p + my, ph, rig['head']['rx'] * 0.55 if rig['head'] else w * 0.08, drift))
+            puffs.append((x0p + mx, y0p + my + (nh - h), ph, rig['head']['rx'] * 0.55 if rig['head'] else w * 0.08, drift))
     if puffs:   # breath clouds in the freezing air, on a quarter-size layer
         lay = np.zeros((BGH // 4, BGW // 4), np.float32)
         for mx, my, ph, sc, drift in puffs:
@@ -626,7 +629,8 @@ def choice_frame(t, t0):
         put(p, text_rgba(lab, F_ANTON(82), WHITE, shadow=False), 280, 92)
         put(p, text_rgba(sub, F_BAR(32), (190, 196, 210), shadow=False), 280, 168)
         put(fr, p, W / 2 + (-320 if i == 0 else 320), 500 + 30 * (1 - k), k)
-    frac = 1 - min(max(dt / 3.2, 0), 1)
+    end = next((s2['start'] for s2 in SHOTS if s2['start'] > t0 + 0.05), t0 + 3.4)
+    frac = 1 - min(max(dt / max(end - t0 - 0.25, 0.5), 0), 1)
     cv2.rectangle(fr, (W // 2 - 600, 700), (W // 2 + 600, 712), (60, 60, 60), -1)
     cv2.rectangle(fr, (W // 2 - 600, 700), (int(W // 2 - 600 + 1200 * frac), 712), (71, 181, 255), -1)
     return fr

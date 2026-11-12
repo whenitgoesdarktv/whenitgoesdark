@@ -57,11 +57,11 @@ def alarm_fx(fr, shot, t):
     dt = t - shot['start']
     ax, ay, z = p2f(shot, t, *ALARM_C)
     # 1) the beam sweeps in from the left and settles on the alarm
-    k = ease(dt / 1.4)
-    bx = (0.18 + (ax / W - 0.18) * k) + 0.012 * math.sin(t * 2.3)
-    by = (0.62 + (ay / H - 0.62) * k) + 0.010 * math.sin(t * 1.9)
+    k = ease(dt / 1.7)
+    bx = (0.06 + (ax / W - 0.06) * k) + 0.012 * math.sin(t * 2.3)
+    by = (0.86 + (ay / H - 0.86) * k) + 0.010 * math.sin(t * 1.9)
     m = beam_mask(bx, by, True)
-    fr = np.clip(fr.astype(np.float32) * (0.45 + 0.75 * m), 0, 255).astype(np.uint8)
+    fr = np.clip(fr.astype(np.float32) * (0.22 + 1.0 * m), 0, 255).astype(np.uint8)
     lx, ly, _ = p2f(shot, t, *ALARM_LED)
     r = 0.030 * W * z
     # 2) "Its light is off": a ring draws itself around the dead LED, with a tag
@@ -182,9 +182,11 @@ def split_frame(t, a_label='STAY INSIDE', b_label='GO OUT INTO THE STORM'):
     l = (l.astype(np.float32) * np.array([0.85, 0.95, 1.1]) * fl).clip(0, 255).astype(np.uint8)
     # the side being described is lit, the other one waits in shadow
     t156, t157 = t_of(156), t_of(157)
-    wl = 0.62 if t157 - 0.1 <= t < t157 + 4.2 else 1.0
-    wr = 0.62 if t156 - 0.1 <= t < t157 - 0.1 else 1.0
-    l = (l.astype(np.float32) * wl).astype(np.uint8); r = (r.astype(np.float32) * wr).astype(np.uint8)
+    on_l = t156 - 0.1 <= t < t157 - 0.1
+    on_r = t157 - 0.1 <= t < t157 + 4.2
+    wl = 0.62 if on_r else (1.3 if on_l else 1.0)
+    wr = 0.62 if on_l else (1.12 if on_r else 1.0)
+    l = (l.astype(np.float32) * wl).clip(0, 255).astype(np.uint8); r = (r.astype(np.float32) * wr).clip(0, 255).astype(np.uint8)
     fr = np.hstack([l, r])
     fx_snow(fr[:, W // 2:], t, 120)
     # frost creeping in from the edges of the cold side: fine crystals, never over the middle
@@ -233,6 +235,7 @@ def split_frame(t, a_label='STAY INSIDE', b_label='GO OUT INTO THE STORM'):
         cv2.circle(ov, (tx, gy1), 36, (240, 170, 90), -1, cv2.LINE_AA)
         cv2.rectangle(ov, (tx - 22, gy0), (tx + 22, gy1 - 30), (235, 235, 235), 4, cv2.LINE_AA)
         cv2.circle(ov, (tx, gy1), 46, (235, 235, 235), 4, cv2.LINE_AA)
-        put(ov, text_rgba(f'{temp}°F', F_ANTON(64), (150, 210, 255), stroke=2), tx + 120, top)
+        if t >= t157 - 0.05:   # the number only appears once we are talking about outside
+            put(ov, text_rgba(f'{temp}°F', F_ANTON(64), (150, 210, 255), stroke=2), tx + 120, top, ease((t - t157 + 0.05) / 0.2))
         fr[:] = (fr.astype(np.float32) * (1 - ga) + ov.astype(np.float32) * ga).astype(np.uint8)
     return fr
