@@ -261,7 +261,7 @@ def shot_layer(shot):
         nm = name.lower()
         wdir = 0
         for k, d in WALK_DIR.items():
-            if nm.startswith(k):
+            if nm.startswith(k) and 'no_travel' not in fxs:
                 wdir = -d if flip else d
         kind = ('walk' if any(k in nm for k in ('walk', 'parade', 'drag', 'generator')) else
                 'sleep' if any(k in nm for k in ('sleep', 'slumped', 'asleep', 'oxygen', 'bench', 'on_face')) else
@@ -916,8 +916,12 @@ def frame_at(t):
         if 'wallstrip' in shot['fx']:   # the wall he's listening to, right at his cupped hand
             x0 = int(W * 0.62)
             strip = cv2.resize(load_bg('bg07_room22')[int(BGH * 0.10):int(BGH * 0.40), int(BGW * 0.30):int(BGW * 0.42)], (W - x0, H))
-            fr[:, x0:] = (strip.astype(np.float32) * 0.55 * np.array([1.15, 1.0, 0.85])).clip(0, 255).astype(np.uint8)
-            cv2.line(fr, (x0, 0), (x0, H), (20, 22, 26), 6)
+            strip = cv2.LUT((strip.astype(np.float32) * 0.85).clip(0, 255).astype(np.uint8), LIFT_LUT).astype(np.float32)
+            ramp = np.clip(np.arange(W - x0) / 70.0, 0, 1) * 0.30 + 0.70          # soft corner shade, no hard edge
+            strip *= ramp[None, :, None]
+            yy = (np.arange(H)[:, None] - H * 0.45) / (H * 0.35); xx = np.arange(W - x0)[None, :] / 220.0
+            strip *= (1 + 0.45 * np.exp(-(yy ** 2 + xx ** 2)))[..., None]          # headlamp spill where his hand is
+            fr[:, x0:] = (strip * np.array([1.08, 1.0, 0.9])).clip(0, 255).astype(np.uint8)
         if 'jamb' in shot['fx']:   # drawn after the lift so your dark room stays dark
             fx = shot['fx']
             x0 = int(W * 0.60)

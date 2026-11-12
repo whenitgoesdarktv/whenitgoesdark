@@ -1,11 +1,11 @@
-# Publish kit: Winter Storm hotel episode (YouTube, Thu Nov 12, 4:00 PM ET)
+# Publish kit: Winter Storm hotel episode (YouTube, proposed Fri Nov 13, 4:00 PM ET)
 
 ## Title
 Winter Storm: 12 Hours Trapped in a Hotel With No Power
 
 Backups: "Blizzard: 12 Hours Trapped in a Mountain Hotel" · "Snowed In at a Hotel and Something Is in the Walls"
 
-## Thumbnails (run YouTube Test & Compare with both)
+## Thumbnails (run YouTube Test & Compare with all three)
 - A: thumb_A_walls.jpg ("IT'S IN THE WALLS", green eyes in the floor vent)
 - B: thumb_B_asleep.jpg ("DON'T FALL ASLEEP", Rosa asleep by the generator)
 - C: thumb_C_poison.jpg ("POISON INSIDE / 9°F OUTSIDE", the hero's scared face, Lando yowling)
@@ -46,7 +46,7 @@ Animated with AI-assisted art and narration.
 - Playlist: "Animated Blackout Survival Stories (Day by Day)".
 - Tags: winter storm, blizzard, snowed in, hotel, no power, power outage, generator, carbon monoxide, survival story, animated story
 - End screen: the hurricane full story (97WA72zzAa8) + subscribe.
-- Schedule: Thursday Nov 12, 4:00 PM ET.
+- Schedule: Friday Nov 13, 4:00 PM ET (vertical trailer Short at 6:00 PM ET), once Darien OKs.
 
 ## Pinned comment
 Three in the morning. Nine degrees outside. Poison inside. Would you go OUT into the blizzard or STAY where it's warm? 🔦 (Lando made it. He always does.)
