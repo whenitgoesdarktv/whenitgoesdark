@@ -119,7 +119,7 @@ def end_card(cv, t, lando):
         d = ImageDraw.Draw(pill); lw = RT.F_PILL.getlength(lab); d.text(((300 - lw) / 2, 14), lab, font=RT.F_PILL, fill=WHITE)
         RT.paste_center(cv, pill, W / 2 + (-170 if i == 0 else 170), 650, k(0.2 + 0.06 * i))
     RT.paste_center(cv, RT.text_img('Which one tries to kill everyone?', RT.F_END_SMALL, fill=(215, 220, 230), stroke=0), W / 2, 760, k(0.3))
-    bt = RT.text_img('FULL VIDEO ON THE CHANNEL', RT.F_END_BOX, fill=(14, 14, 18), stroke=0, shadow=False)
+    bt = RT.text_img(os.environ.get('END_CTA', 'FULL VIDEO ON THE CHANNEL'), RT.F_END_BOX, fill=(14, 14, 18), stroke=0, shadow=False)
     box = RT.rounded_panel(bt.width + 50, 132, 22, AMBER + (255,)); box.alpha_composite(bt, (25, (132 - bt.height) // 2 + 4))
     pulse = 1.0 + 0.025 * math.sin(max(dt - 0.8, 0) * 5.0)
     RT.paste_center(cv, box, W / 2, 935, k(0.45), (0.94 + 0.06 * k(0.45)) * pulse)
